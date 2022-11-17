@@ -1,5 +1,10 @@
 # Unidade 1
 
+## Vídeo de apresentação
+
+Vídeo apresentando o projeto e a documentação do projeto, feita até então</br></br>
+* [Link para o vídeo](https://youtu.be/mdsCpaUhSXI)
+
 ## Seminário dos processos e ciclos de vida
 
 Apresentação sobre os processos de desenvolvimento Cascata e Espiral
