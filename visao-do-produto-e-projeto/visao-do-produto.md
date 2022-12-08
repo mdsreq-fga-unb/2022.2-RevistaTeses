@@ -21,7 +21,7 @@
 
 ## Objetivos do Produto
 
-O objetivo é trazer para a comunidade acadêmica e a comunidade civil, discussões e sobre temas de relevância local, regional e nacional, com uma comunicabilidade mais fácil para gerar estímulos ao debate para a sociedade civil, trazendo um acréscimo à Democracia brasileira.
+O objetivo é trazer para a comunidade acadêmica e a comunidade civil, uma plataforma aberta a discussões sobre temas de relevância local, regional e nacional, com uma comunicabilidade mais fácil para gerar estímulos ao debate para a sociedade civil, trazendo um acréscimo à Democracia brasileira.
 
 ## Tecnologias  a Serem Utilizadas
 
