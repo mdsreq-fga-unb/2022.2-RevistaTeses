@@ -6,6 +6,10 @@
     - [Processo de Desenvolvimento](/visao-do-produto-e-projeto/processo-de-desenvolvimento.md)
     - [Lições Aprendidas](/visao-do-produto-e-projeto/licoes-aprendidas.md)
 
+- Backlog
+
+    - [Backlog do Produto](/backlog/backlog.md)
+
 - Entregas das Unidades
 
     - [Unidade 1](/entregas-unidades/unidade-1.md)
