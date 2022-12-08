@@ -1,7 +1,7 @@
 # Processo de Desenvolvimento de software
 A equipe Trilegal vai seguir as metodologias XP e Scrum, com o Scrum utilizaremos todos os recursos, aplicados junto com técnicas do XP, o desenvolvimento se dará por sprints que serão decididas nas reuniões de Sprint planning, sendo cada sprint com uma quantidade de features que deve ser implementada, já a implementação será feita com técnicas de XP como o Pair programming, TDD e integração contínua. As sprints serão de duas semanas cada. 
-### Eventos Scrum
-#### Daily Scrum
+## Eventos Scrum
+### Daily Scrum
 Daily scrum são reuniões diárias cujo objetivo é que todos os membros tenham conhecimento sobre o que foi feito, o que não foi feito e o porque, para este grupo foi identificado que reuniões presenciais ou remotas seria muito difícil de ser seguidas pois cada membro possui horários disponíveis que se diferem, por tanto foi decidido que os dailies serão feitos a partir de uma mensagem em um grupo de WhatsApp.
 Todos precisam responder às seguintes perguntas:
 - O que eu fiz hoje para progredir em direção a meta da sprint?
@@ -12,7 +12,7 @@ Ferramenta:
 - Grupo separado de whatsapp, segunda a sexta
 Entrega:
 	- Relato de situação
-#### Sprint planning
+### Sprint planning
 Sprint planning é uma reunião com todos os membros da equipe, o objetivo é definir qual será o objetivo da sprint, qual o valor da sprint, o que será feito e como será realizado este trabalho na sprint, os principais autores nessas decisões são o Product Owner e os Developers
 As seguintes perguntas devem ser respondidas por:
 
@@ -27,7 +27,7 @@ Ferramenta:
 - Google meets e google planilhas
 Entrega:
 	- Backlog da sprint
-#### Sprint review
+### Sprint review
 Neste evento,  o scrum team vai apresentar o que foi feito na última sprint.
 
 Primeiro apresentar o planos de sprints e mostrar o produto que foi gerado.
@@ -42,7 +42,7 @@ Ferramenta:
 - Google meets
 Entrega:
 	- Relatório de qualidade
-#### Sprint retrospective
+### Sprint retrospective
 Esta reunião serve para analisar a sprint anterior, identificar quais foram os erros, problemas ou qualquer impedimentos para a realização da sprint, os depoimentos devem ser recolhidos para que possa se fazer um novo plano para as próximas sprints.
 As seguintes perguntas devem ser respondidas pelo Scrum team: 
 
@@ -57,4 +57,12 @@ Ferramenta:
 - Google meets
 Entrega:
 	- Atualização do Relatório de situação do projeto (scrum master) e melhorias e lições aprendidas (scrum master)
-### Estratégias do XP e mais
+## Estratégias do XP e mais
+| Atividade           |                                                                                                                Método                                                                                                               |   Ferramenta   |
+|---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------:|
+| Integração contínua | Devops - A partir do próprio repositório do git, vamos criar uma esteira e executar os jobs dos testes                                                                                                                              | GitHub actions |
+| TDD                 | ATDD - Foco na precisão de aceitação dos requerimentos                                                                                                                                                                              | Gatling        |
+| Design simples      | Circular -Design que passa pelos designs feitos anteriores para gerar um novo                                                                                                                                                       | Figma          |
+| Refatoração         | Red-Green-Refactor: Red- parar e considerar o que precisa ser desenvolvido (fazer o teste). Green - Fazer o código suficiente para rodar no teste. Refactor- Refatorar e limpar o código sem adicionar nenhuma nova funcionalidade. | VsCode         |
+| Pair programming    | Ping-Pong Pairing, é uma ótima maneira de compartilhar responsabilidades uniformemente, através da troca de posto (navegador e piloto) entre cada interação                                                                         | VsCode         |
+| Design de interface | Paralelo - Criação de designs alternativos ao mesmo tempo, faz o teste de usuário e cria uma mescla entre os designs criados.                                                                                                       | Figma          |
