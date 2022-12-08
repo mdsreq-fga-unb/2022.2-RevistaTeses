@@ -29,22 +29,22 @@
 
 ## Matriz de Comunicação
 
-| Descrição                                                            | Área/ envolvidos                                            | Periodicidade                                | Produtos Gerados                                                                                                           | --------------------------------------------------------------------------------------------------------------------------------------------------------
-
-| **Daily Scrum** (Mensagem diária em grupo separado, segunda a sexta) | Scrum Team Developers                                       | Diário                                        | Relato de situação do projeto (scrum master)                                                                               |
-| **Sprint planning** ( 2h de duração máx)                             | Scrum Team                                                  | Semanal                                      | Backlog da Sprint</br>(Documentado pelo Product owner e o Developer responsável)                                           |
-| **Sprint review** (1h de duração máx)                                | Scrum Team,</br>Stakeholders da Teses</br>(Euric e Matheus) | Quinzenal                                    | Relatório de qualidade (analista de qualidade)                                                                             |
-| **Sprint retrospective** (1h de duração máx)                         | Scrum Team                                                  | Quinzenal                                    | Atualização do Relatório de situação do projeto (scrum master)</br>Documentar melhorias e lições aprendidas (scrum master) |
+|                           Descrição                           |                   Área/ envolvidos                   | Periodicidade |                                                       Produtos Gerados                                                      |
+|:-------------------------------------------------------------:|:----------------------------------------------------:|:-------------:|:---------------------------------------------------------------------------------------------------------------------------:|
+| Daily Scrum <br>(Mensagem em grupo separado, segunda a sexta) |                 Scrum Team Developers                |     Diário    |                                       <br>Relato de situação do projeto (scrum master)                                      |
+|              Sprint planning (2h de duração máx)              |                      Scrum Team                      |   Quinzenal   |                       Backlog da Sprint<br>(documentado pelo Product owner e o Developer responsável)                       |
+|               Sprint review (1h de duração máx)               | Scrum Team e Stakeholders da Teses (Euric e Matheus) |   Quinzenal   |                                        Relatório de qualidade (analista de qualidade)                                       |
+|            Sprint retrospective (1h de duração máx)           |                      Scrum Team                      |   Quinzenal   | Atualização do Relatório de situação do projeto (scrum master),<br> Documentar melhorias e lições aprendidas (scrum master) |
 
 
 ## Gerenciamento de Riscos
 
 | Lista de Riscos                                           | Ações para Mitigar os riscos                                          | Probabilidade |
 | --------------------------------------------------------- | --------------------------------------------------------------------- |---------------|
-| O time todo não conseguir aprender as tecnologias a tempo | Garantir semanalmente que os membros estão estudando a tecnologia     |       2       |
-| O cliente estar indisponível para a validação             | Planejamento com antecedência de todas as reuniões                    |       4       |
-| Tempo insuficiente para implementar o projeto             | Compreender bem a capacidade da equipe, bem como o escopo selecionado |       3       |
-| Trancamento de integrante                                 | Ajudar o máximo uns aos outros                                        |       2       |
+| O time todo não conseguir aprender as tecnologias a tempo | Garantir semanalmente que os membros estão estudando a tecnologia     |          2    |
+| O cliente estar indisponível para a validação             | Planejamento com antecedência de todas as reuniões                    |          4    |
+| Tempo insuficiente para implementar o projeto             | Compreender bem a capacidade da equipe, bem como o escopo selecionado |          3    |
+| Trancamento de integrante                                 | Ajudar o máximo uns aos outros                                        |          2    |
 
 ## Critérios de Replanejamento
 
