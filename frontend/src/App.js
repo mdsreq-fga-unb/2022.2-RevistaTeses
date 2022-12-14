@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-// import RoutesApp from '../../backend/routes';
+import RoutesApp from '../../backend/routes';
 import Login from './pages/login';
 
 class App extends Component {
   render() {
     return (
       <div classname="app">
-        {/* <RoutesApp> */}
+        <RoutesApp>
           <Login/>
-        {/* </RoutesApp> */}
+        </RoutesApp>
       </div>
     );
   }
