@@ -1,0 +1,22 @@
+body{
+    background-color: darkgray;
+    padding: auto;
+    width: auto;
+    height: auto;
+}
+header {
+    color: rgb(255, 255, 255);
+    background-color: darkgray;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+.container {
+    background-color: rgb(180, 41, 23);
+    margin: auto;
+    color: rgb(255, 255, 255);
+    width: 500px;
+    overflow: auto;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+  }

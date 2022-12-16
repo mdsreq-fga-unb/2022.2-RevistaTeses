@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(34, 34, 34);
+    padding: auto;
+    width: auto;
+    height: auto;
+}
+header {
+    background: #111;
+    color: rgb(211, 22, 22);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+.container {
+    margin: auto;
+    color: blue;
+    width: 500px;
+    overflow: auto;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+  }
