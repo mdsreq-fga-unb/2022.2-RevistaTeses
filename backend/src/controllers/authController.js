@@ -1,7 +1,8 @@
 require("dotenv").config();
-const userSchema = require("../models/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+
+const User = require("../models/user");
 
 const generateToken = (params = {}) => {
     return jwt.sign(params, process.env.SECRET, {
@@ -13,14 +14,14 @@ const generateToken = (params = {}) => {
 const login = async (req, res) => {
     const { email, password } = req.body;
 
-    const user = await userSchema.findOne({ email }).select("+password");
+    const user = await User.findOne({ email }).select("+password");
 
     if(!user){
-        return res.status(400).send("Usuário não encontrado");
+        return res.status(400).send({error: "Usuário não encontrado"});
     }
 
     if(!(await bcrypt.compare(password, user.password))){
-        return res.status(400).send("Senha incorreta");
+        return res.status(400).send({error: "Senha incorreta"});
     }
 
     user.password = undefined;
@@ -28,6 +29,25 @@ const login = async (req, res) => {
     return res.status(200).send({user, token: generateToken({id: user._id})});
 }
 
+const cadastro = async (req, res) => {
+    const { email } = req.body
+
+    try {
+        if(await User.findOne({ email })){
+            return res.status(400).send({error: "Email ja registrado"})
+        }
+
+        const user = await User.create(req.body)
+        
+        user.password = undefined;
+
+        return res.status(200).send({user: user})
+    } catch (err) {
+        return res.status(500).send({error: err.message});
+    }
+}
+
 module.exports = {
     login,
+    cadastro,
 }
