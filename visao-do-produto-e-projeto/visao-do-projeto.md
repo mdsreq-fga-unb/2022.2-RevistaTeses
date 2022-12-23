@@ -33,7 +33,7 @@
 |:-------------------------------------------------------------:|:----------------------------------------------------:|:-------------:|:---------------------------------------------------------------------------------------------------------------------------:|
 | Daily Scrum <br>(Mensagem em grupo separado, segunda a sexta) |                 Scrum Team Developers                |     Diário    |                                       <br>Relato de situação do projeto (scrum master)                                      |
 |              Sprint planning (2h de duração máx)              |                      Scrum Team                      |   Quinzenal   |                       Backlog da Sprint<br>(documentado pelo Product owner e o Developer responsável)                       |
-|               Sprint review (1h de duração máx)               | Scrum Team e Stakeholders da Teses (Euric e Matheus) |   Quinzenal   |                                        Relatório de qualidade (analista de qualidade)                                       |
+|               Sprint review (1h de duração máx)               | Scrum Team e Stakeholders da Teses (Euric e Matheus) |   Semanal (toda quarta 9h)  |                                        Relatório de qualidade (analista de qualidade)                                       |
 |            Sprint retrospective (1h de duração máx)           |                      Scrum Team                      |   Quinzenal   | Atualização do Relatório de situação do projeto (scrum master),<br> Documentar melhorias e lições aprendidas (scrum master) |
 
 
@@ -45,6 +45,7 @@
 | O cliente estar indisponível para a validação             | Planejamento com antecedência de todas as reuniões                    |          4    |
 | Tempo insuficiente para implementar o projeto             | Compreender bem a capacidade da equipe, bem como o escopo selecionado |          3    |
 | Trancamento de integrante                                 | Ajudar o máximo uns aos outros                                        |          2    |
+| Equipe de marketing n~ao cumprir os prazo                 | Tomar as decisões de frontend e conversar com os clientes             |          5    |
 
 ## Critérios de Replanejamento
 
