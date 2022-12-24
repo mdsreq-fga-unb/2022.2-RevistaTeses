@@ -14,6 +14,16 @@
 **Quantidade de sprints**: 2 sprints.</br>
 **Escopo**: Features 04, 05, 06, 12 e 13</br>
 
+## Personas
+
+| Personas     |                                           Descrição                                           |
+|--------------|:---------------------------------------------------------------------------------------------:|
+| Leitor       | É o usuário comum que somente lê e consome os conteúdos                                       |
+| Redator      | Pode somente ler e produzir conteúdo                                                          |
+| Editor       | Tem as mesmas permissões que redatores mas ele que "promove" um leitor a redator              |
+| Editor-chefe | Tem as mesmas permissões que editores mas ele também pode promover outros usuários a editores |
+
+
 ## Épicos
 
 | Código 	|          Épico          	|
@@ -49,6 +59,19 @@
 | Interface 	| A interface deve ser responsiva para dispositivos mobile 	|
 
 ## User Stories
+
+### EP01 - F1
+
+| User story                                                                                                |                                                                                                                                   Critérios de aceitação                                                                                                                                  |
+|-----------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Como usuário, desejo fazer o cadastro da minha conta, para ter acesso ao login da plataforma              | Email e senha são obrigatórios.<br>Não pode criar conta com email já cadastrado.<br>Conta deve estar disponível para o login, assim que finalizar o cadastro.                                                                                                                             |
+| Como usuário, desejo realizar o login na plataforma, para ter acesso à plataforma                         | Deve utilizar email e senha para realizar o login.<br>Caso os dados estejam incorretos, o login não pode ser realizado e deve retornar uma mensagem                                                                                                                                       |
+| Como usuário, desejo ser autenticado, para que eu não precise fazer login sempre que acessar a plataforma | Deve ter acesso à plataforma por 24h antes de precisar fazer login novamente.<br>Caso o usuário selecione a opção, o usuário deve ter acesso por 7 dias antes de precisar fazer login novamente.                                                                                          |
+| Como usuário, desejo poder editar a minha conta, para caso eu queira trocar os dados da minha conta       | Deve poder trocar o email, exigindo a senha para confirmar a mudança.<br>Para trocar a senha deve informar a senha atual e em seguida informar a nova senha.<br>Deve utilizar os novos dados para realizar o login imediatamente depois da alteração.<br>Deve realizar o login novamente. |
+| Como usuário, desejo poder excluir a minha conta, para caso eu não tenha mais interesse na plataforma     | Deve ter todos os dados excluídos.<br>O email deve estar disponível para criação de nova conta, logo após a exclusão da conta.<br>Os comentários e avaliações do usuário deve permanecer na plataforma.                                                                                   |
+
+### EP01 - F2
+...
 
 | MoSCoW 	| Épico 	| Feature 	|                                                                         User Story                                                                        	|                                Critérios de aceitação                                	|                                                                                                                	|                                                                                       	|                                                                            	|
 |:------:	|:-----:	|:-------:	|:---------------------------------------------------------------------------------------------------------------------------------------------------------:	|:------------------------------------------------------------------------------------:	|:--------------------------------------------------------------------------------------------------------------:	|:-------------------------------------------------------------------------------------:	|:--------------------------------------------------------------------------:	|
