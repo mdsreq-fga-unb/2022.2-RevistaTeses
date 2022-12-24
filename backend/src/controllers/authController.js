@@ -1,6 +1,7 @@
 require("dotenv").config();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const Blacklist = require("../models/blacklist");
 
 const User = require("../models/user");
 
@@ -47,7 +48,22 @@ const cadastro = async (req, res) => {
     }
 }
 
+const logout = async (req, res) => {
+    const usedToken = req.headers.authorization
+    const parts = usedToken.split(" ");
+    const [scheme, token] = parts;
+
+    try {
+        const blacklist = await Blacklist.create({token: token});
+
+        return res.status(200).send({blacklist: blacklist});
+    } catch (err) {
+        return res.status(500).send({error: err.message});
+    }
+}
+
 module.exports = {
     login,
     cadastro,
+    logout
 }
