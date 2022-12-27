@@ -6,7 +6,7 @@ const verifyToken = async (req, res, next) => {
     const authHeader = req.headers.authorization;
 
     if(!authHeader){
-        res.status(401).send({error: "No token provided"});
+        return res.status(401).send({error: "No token provided"});
     }
 
     const parts = authHeader.split(" ");

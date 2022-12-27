@@ -48,6 +48,22 @@ const cadastro = async (req, res) => {
     }
 }
 
+const excluir = async (req, res) => {
+    const { _id } = req.body
+
+    try {
+        if(!(await User.findOne({ _id }))){
+            return res.status(500).send({error: "Usuário não encontrado"})
+        }
+
+        await User.deleteOne({ _id })
+
+        return res.send({ _id, message: "Deletado com sucesso" })
+    } catch (err) {
+        return res.status(500).send({error: err.message});
+    }
+}
+
 const logout = async (req, res) => {
     const usedToken = req.headers.authorization
     const parts = usedToken.split(" ");
@@ -65,5 +81,6 @@ const logout = async (req, res) => {
 module.exports = {
     login,
     cadastro,
-    logout
+    logout,
+    excluir
 }

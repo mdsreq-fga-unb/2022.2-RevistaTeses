@@ -7,8 +7,10 @@ const routes = express.Router();
 routes.use(verifyToken);
 
 routes.get("/test", (req, res) => {
-    res.status(200).send({status: "ok"});
+    const a = req.body
+    res.status(200).send({status: "Token válido"});
 })
 routes.post("/logout", authController.logout);
+routes.delete("/delete", authController.excluir);
 
 module.exports = routes;
