@@ -3,7 +3,10 @@
 A equipe Trilegal vai seguir as metodologias XP e Scrum, com o Scrum utilizaremos todos os recursos, aplicados junto com técnicas do XP, o desenvolvimento se dará por sprints que serão decididas nas reuniões de Sprint planning, sendo cada sprint com uma quantidade de features que deve ser implementada, já a implementação será feita com técnicas de XP como o Pair programming, TDD e integração contínua. As sprints serão de duas semanas cada.</br>
 
 ![Scrum](imagens/013-Scrum-Process.jpg)
+figura 1. Fonte : https://www.buscaagil.com.br/post/vis%C3%A3o-geral-do-scrum
 ![XP](imagens/XP.jpg)
+figura 2. Fonte : https://medium.com/@thiagoctr/pair-programming-programa%C3%A7%C3%A3o-em-par-5cd19a1e3b22
+
 
 ## Eventos Scrum
 
