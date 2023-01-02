@@ -14,3 +14,7 @@
 
     - [Unidade 1](/entregas-unidades/unidade-1.md)
     - [Unidade 2](/entregas-unidades/unidade-2.md)
+  
+ - Kanban e sprints
+
+    - [Link para o kanban e relatos de sprints](Kanban-sprints.md)
