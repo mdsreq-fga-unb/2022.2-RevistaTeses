@@ -3,9 +3,13 @@
 A equipe Trilegal vai seguir as metodologias XP e Scrum, com o Scrum utilizaremos todos os recursos, aplicados junto com técnicas do XP, o desenvolvimento se dará por sprints que serão decididas nas reuniões de Sprint planning, sendo cada sprint com uma quantidade de features que deve ser implementada, já a implementação será feita com técnicas de XP como o Pair programming, TDD e integração contínua. As sprints serão de duas semanas cada.</br>
 
 ![Scrum](imagens/013-Scrum-Process.jpg)
+
 figura 1. Fonte : https://www.buscaagil.com.br/post/vis%C3%A3o-geral-do-scrum
+
 ![XP](imagens/XP.jpg)
+
 figura 2. Fonte : https://medium.com/@thiagoctr/pair-programming-programa%C3%A7%C3%A3o-em-par-5cd19a1e3b22
+
 
 
 ## Eventos Scrum
@@ -84,13 +88,16 @@ Entrega:
 
 - Atualização do Relatório de situação do projeto (scrum master) e melhorias e lições aprendidas (scrum master)
 
-## Estratégias do XP e mais
+## Estratégias do XP
 
-| Atividade           |                                                                                                                Método                                                                                                               |   Ferramenta   |
-|---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------:|
-| Integração contínua | Devops - A partir do próprio repositório do git, vamos criar uma esteira e executar os jobs dos testes                                                                                                                              | GitHub actions |
-| TDD                 | ATDD - Foco na precisão de aceitação dos requerimentos                                                                                                                                                                              | Gatling        |
-| Design simples      | Circular -Design que passa pelos designs feitos anteriores para gerar um novo                                                                                                                                                       | Figma          |
-| Refatoração         | Red-Green-Refactor: Red- parar e considerar o que precisa ser desenvolvido (fazer o teste). Green - Fazer o código suficiente para rodar no teste. Refactor- Refatorar e limpar o código sem adicionar nenhuma nova funcionalidade. | VsCode         |
-| Pair programming    | Ping-Pong Pairing, é uma ótima maneira de compartilhar responsabilidades uniformemente, através da troca de posto (navegador e piloto) entre cada interação                                                                         | VsCode         |
-| Design de interface | Paralelo - Criação de designs alternativos ao mesmo tempo, faz o teste de usuário e cria uma mescla entre os designs criados.                                                                                                       | Figma          |
+| Conceito a ser aplicado | Estratégia                                                                                                                                                                                                                                  | Ferramenta |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| Design simples          | Circular -Design que passa pelos designs feitos anteriores para gerar um novo                                                                                                                                                               | Figma      |
+| Refatoração e TDD       | Red-Green-Refactor: Red- parar e considerar o que precisa ser desenvolvido (fazer o teste).<br> Green - Fazer o código suficiente para rodar no teste. <br>Refactor- Refatorar e limpar o código sem adicionar nenhuma nova funcionalidade. | VsCode     |
+| Pair programming        | Ping-Pong Pairing, é uma ótima maneira de compartilhar responsabilidades uniformemente,<br>através da troca de posto (navegador e piloto) entre cada interação                                                                              | VsCode     |
+
+### Atividades do XP
+| Atividade           | ferramenta     |
+|---------------------|----------------|
+| Integração contínua | GitHub actions |
+| Testes              | Jest           |
