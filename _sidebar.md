@@ -17,4 +17,4 @@
   
  - Kanban e sprints
 
-    - [Link para o kanban e relatos de sprints](Kanban-sprints.md)
+    - [Registros Sprints](Kanban-sprints.md)
