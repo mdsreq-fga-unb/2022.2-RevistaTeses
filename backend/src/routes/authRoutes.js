@@ -1,20 +1,15 @@
 const express = require("express");
-const userController = require("../controllers/userController");
+const authController = require("../controllers/authController");
 const { verifyToken } = require("../middlewares/verifyToken");
 
 const routes = express.Router();
 
-routes.post("/auth", userController.login);
-routes.post("/register", userController.cadastro);
-routes.post("/logout", verifyToken, userController.logout);
-routes.delete("/delete", verifyToken, userController.excluir);
-routes.get("/user", verifyToken, userController.getUser);
-routes.get("/users", verifyToken, userController.getAllUsers);
-routes.post("/update", verifyToken, userController.update);
+routes.post("/login", authController.login);
+routes.post("/logout", verifyToken, authController.logout); 
 
 routes.get("/test", verifyToken, (req, res) => {
-  const a = req.body;
-  res.status(200).send({ status: "Token válido" });
+  // console.log(req)
+  return res.status(200).send({ user: req.userId, account: req.accountType });
 });
 
 module.exports = routes;

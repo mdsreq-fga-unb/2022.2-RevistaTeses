@@ -27,10 +27,11 @@ const verifyToken = async (req, res, next) => {
 
     jwt.verify(token, process.env.SECRET, (err, decoded) => {
         if (err) {
-        return res.status(401).send({ error: "Token invalid" });
+            return res.status(401).send({ error: "Token invalid" });
         }
 
         req.userId = decoded.id;
+        req.accountType = decoded.account;
         return next();
     });
 }
