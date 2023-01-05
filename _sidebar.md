@@ -26,5 +26,5 @@
   
   - Testes
   
-    - [Estratégia de testes](Documento de estratégia de testes.md)
+    - [Estratégias de testes](Documento%20de%20estratégia%20de%20testes)
    
