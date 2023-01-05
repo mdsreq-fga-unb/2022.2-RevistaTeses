@@ -3,8 +3,11 @@
 Serão feitos testes manuais, testes automatizados e integração contínua. Os critérios de teste serão os critérios de aceitação de cada user story para todos os testes.
 
 ## Testes manuais
+
+### ferramenta: Insomnia
 Com testes manuais vamos fazer testes de usuário e navegar pela inteface de maneiras diferentes para procurar por erros. 
 Também vamos disponibilizar o site para os clientes paraa que eles usem e reportem erros.
+O back end também deve ser testado utilizando a ferramenta para controlar os casos de teste e os resultados.
 
 ## Testes Unitários Automatizados
 ### ferramenta: Jest
