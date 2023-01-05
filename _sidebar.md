@@ -23,3 +23,8 @@
  - Kanban e sprints
 
     - [Registros Sprints](Kanban-sprints.md)
+  
+  - Testes
+  
+    - [Estratégia de testes](Documento de estratégia de testes.md)
+   

@@ -1,0 +1,31 @@
+# Estratégia de testes
+
+Serão feitos testes manuais, testes automatizados e integração contínua. Os critérios de teste serão os critérios de aceitação de cada user story para todos os testes.
+
+## Testes manuais
+Com testes manuais vamos fazer testes de usuário e navegar pela inteface de maneiras diferentes para procurar por erros. 
+Também vamos disponibilizar o site para os clientes paraa que eles usem e reportem erros.
+
+## Testes Unitários Automatizados
+### ferramenta: Jest
+
+Como usamos a arquitetura MVC, há a Model, o Controller e a View.
+### O que vai ser testado?
+
+- rotas e middleware: Controller
+- renderização da interface: View
+
+### Frequência: Toda Sprint
+
+## Integração Contínua
+
+### ferramenta: Github Actions
+
+### O que vai ser testado?
+
+A build em si, integração entre o front e o back e quais testes unitários estão rodando de maneira correta. 
+Vamos rodar todos os testes da integração contínua a cada push para o repositório e a cada merge.
+O deploy para a main e posteriormente para a produção só deve ser realizado caso TODOS os testes unitários e da integração contínua passarem.
+O código deve ser refatorado para isso, não o teste mudado, a não ser, claro, que este tenha um erro que todos os desenvolvedores concordem.
+
+### Frequência: Toda Sprint
