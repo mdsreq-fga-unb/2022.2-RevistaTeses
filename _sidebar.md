@@ -10,6 +10,11 @@
 
     - [Backlog do Produto](/backlog/backlog.md)
 
+- Design
+
+    - [Arquitetura](/design/Documento%20de%20arquitetura.md)
+    - [Interface](/design/Documento%20de%20interface.md)
+
 - Entregas das Unidades
 
     - [Unidade 1](/entregas-unidades/unidade-1.md)
