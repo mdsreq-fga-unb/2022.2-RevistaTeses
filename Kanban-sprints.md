@@ -9,6 +9,9 @@ Analista de qualidade: Holsback
 
 Essa Sprint é extremamente valiosa porque vamos definir o a interface do site, começar a programar e já fazer a base do site, já que serão feitas as features F01 e F03, que são features realicionadas ao crud de usuário e acesso ao perfil. Por ser nossa primeira sprint é considerável a  adaptação e prováveis erros não só no produto como no processo também.
 
+#### F01 - US01, US02, US03, US04, US05
+#### F03 - US01, US03, US04
+
 João vai ter um dia na semana com cada um pra todomundo ter contato com a parte de backend de login/cadastro e autenticação
 Pedro vai ter um dia na semana com Holsback, Fábio e Ana para pegarem a parte de front e desihn
 Ana e Fábio vão dar uma estudada extra em CI
@@ -48,3 +51,30 @@ Pedro e Holsback conseguiram trabalhar em dupla para fazer o front então o pair
 João e Fábio também conseguiram reunir uma vez e foi bem produtivo essa vez.
 Ana ficou sozinha mas fez de tudo um pouco.
 
+## Sprint 04:
+
+### Planning 
+Scrum Master: Fábio
+Analista de qualidade: João
+
+Essa Sprint é extremamente valiosa porque vamos definir o a interface do site, começar a programar e já fazer a base do site, já que serão feitas as features F01 e F03, que são features realicionadas ao crud de usuário e acesso ao perfil. Por ser nossa primeira sprint é considerável a  adaptação e prováveis erros não só no produto como no processo também.
+
+#### F01 - US01, US02, US03, US04, US05 (Débito da sprint 3)
+#### F02 - US01, US02, US03, US04, US05 
+#### F03 - US01, US03, US04 (Débito da sprint 3)
+#### F10 - US01, US02, US03, US04
+
+Holsback e Pedro estão viajando e a comunicação está mais difícil.
+Para começar:
+Ana vai organizar a documentação.
+Fábio vai cuidar do CI de todo o projeto.
+João vai cuidar de cookies e organização de arquivos.
+
+Depois iremos nos reunir dia 07/01:
+Ana vai fazer a página de login: A história completa, ou seja, backend, frontend, teste e CI.
+Fábio vai fazer a página de cadastro: A história completa, ou seja, backend, frontend, teste e CI.
+Ana e Fábio se ajudam dadas as similaridades.
+João vai dar apoio técnico e fazer página de perfil: A história completa, ou seja, backend, frontend, teste e CI.
+
+Depois iremos nos reunir dia 10/01:
+Na reunião, Ana, João e Fábio vão trabalhar juntos e fazer a página home e notícias completas
