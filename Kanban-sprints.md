@@ -14,24 +14,28 @@ Pedro vai ter um dia na semana com Holsback, Fábio e Ana para pegarem a parte d
 Ana e Fábio vão dar uma estudada extra em CI
 Holsback vai montar o backlog em quadro Kanban
 
-### Review
+### Reuniões de acompanhamento
 
 Ana e Pedro reuniram com os clientes. Cobramos o documento da equipe de marketing e fomos informados que eles não estão organizados e não teremos essa resposta. Os clientes deram permissão para fazermos o que quisermos com a interface. Apresentamos o design que já tínhamos prototipado, discutimos cada elemento e chegamos a um consenso do que vai ter no site, qual vai ser o layout,paleta de cores e fontes. Os clientes também ficaram de nos passar o domínio e o banco de dados que eles compraram e que nós devemos usar.
+
+### Review
+
+Como nenhuma história de usuário ficou pronta, não tinhamos nenhuma entrega a ser apresentada, logo, não houve review.
 
 ### Retrospectiva
 
 #### O que deu certo nessa  última Sprint ?
-Conseguimos esclarecer muitas coisas com os clientes e já ter uma ótima Review de tudo com eles. Foi ótimo!
+Conseguimos esclarecer a interface com o cliente e entender as prioridades deles quanto o que deve ter no MVP.
 
 #### Quais problemas foram foram encontrados?
-A falta de disponibilidade dos membros de fazer o pair programming acabou gerando atrasos nas entregas e fez com que todo mundo trabalhasse sozinho.Todos tinham coisas externas pra fazer, as datas próximas e no recesso/feriados complicam muito também. Isso acabou atrasando tudo e ficamos com débito técnicos de front e end, além da falta do documento do pessoal do marketing.
+A falta de disponibilidade dos membros de fazer o pair programming acabou gerando atrasos nas entregas e fez com que todo mundo trabalhasse sozinho.Todos tinham coisas externas pra fazer, as datas próximas e no recesso/feriados complicam muito também. Isso acabou atrasando e ficamos com débito técnicos de frontend, ou seja, nenhuma história de usuário foi completa por  ue só tinha o backend. Isso também foi muito afetado pala falta do documento do pessoal do marketing.
 
 #### Como esses problemas foram resolvidos ?
 Tomamos as decisões pelo marketing e discutimos com os clientes. Na medida do possivel foi feito o pair programming com quem estava disponível, mas ainda é necessario rever esta estratégia. Passamos os débitos técnicos pra próxima Sprint.
 
 #### O que pode ser mudado para que o time seja mais eficaz?
 
-Uma mudança no foco do desenvolvimento, ja que o backend e frontend possuem complexidades diferentes. Tentar definir um horário fixo todo dia pra trabalhar no projeto talvez possa nos ajudar a manter tudo em dia. Também é necessária a maior participação e comunicação entre TODOS os membros.
+Uma mudança no foco do desenvolvimento, ja que o backend e frontend possuem complexidades diferentes. Focar em histórias completas não em frontend/backend. Tentar definir um horário fixo todo dia pra trabalhar no projeto talvez possa nos ajudar a manter tudo em dia. Também é necessária a maior participação e comunicação entre TODOS os membros.
 
 #### O que cada um pode melhorar?
 
