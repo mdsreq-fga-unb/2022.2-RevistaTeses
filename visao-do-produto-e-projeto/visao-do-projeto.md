@@ -23,7 +23,7 @@
 | Sprint 1                                                              | Definição do Produto e Planejamento do Projeto   | 15/11/22    | 21/11/22 |
 | Sprint 2                                                              | Definição de requisitos e conhecer as tecnologias| 22/11/22    | 07/12/22 |
 | Sprint 3 (MVP1) - Pedro: Scrum Master, Holsback: Analista de qualidade| Design interface, F01, F03                       | 08/12/22    | 21/12/22 |
-| Sprint 4 (MVP1)                                                       | F02,F10                                          | 22/12/22    | 11/01/23 |
+| Sprint 4 (MVP1) - Pedro: Scrum Master, Holsback: Analista de qualidade| F02,F10                                          | 22/12/22    | 11/01/23 |
 | Sprint 5 (MVP2)                                                       | F12,F13                                          | 12/01/23    | 24/01/23 |
 | Sprint 6 (MVP2)                                                       | F04,F05,F06                                      | 25/01/23    | 08/02/23 |
 
