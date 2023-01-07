@@ -1,13 +1,15 @@
 import React from 'react'
 import '../login/styles.css'
+import ButtonEntrar from '../../components/button-entrar.js'
 
 const Login = () => {
   return ( 
     <div id="login">
-        <header> <h1 className='title'>Login do sistema</h1></header>
+        <h1 className='title'>Portal Teses</h1>
         <div>
-        <body>
-            <div className='container'>
+        <background/>
+        <div className='container'>
+            <h2 className='subtitle'>Faça seu login</h2>
                 <form>
                 <div className='field'>
                     <label htmlFor='email'>Email</label>
@@ -17,12 +19,10 @@ const Login = () => {
                     <label htmlFor='password'>Senha</label>
                     <input type="password" name='password' id='password'/>
                 </div>
-                <div className='actions'>
-                    <button type='submit'>Entrar</button>
-                </div>
                 </form> 
+            <ButtonEntrar/>
+            <h3 className='subtitle'>Ainda não tem uma conta? Cadastre-se</h3>
             </div>
-        </body>
         </div>
     </div>
   )

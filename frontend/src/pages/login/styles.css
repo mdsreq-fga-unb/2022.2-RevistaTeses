@@ -1,23 +1,46 @@
 body{
-    background-color: darkgray;
+    background-color: #00719E;
     padding: auto;
+    /* opacity: 0.5; */
     width: auto;
     height: auto;
     margin-top: 100 px;
+    align-items: center;
 }
-header {
-    color: rgb(255, 255, 255);
-    background-color: darkgray;
-    padding: 1rem;
-    text-align: center;
-  }
-  
+
 .container {
-    background-color: rgb(180, 41, 23);
+    background-color: #FFFFFF;
     margin: auto;
-    color: rgb(255, 255, 255);
-    width: 500px;
+    color: #FFFFFF;
+    align-items: center;
+    width: 40%;
+    height: 50%;
     overflow: auto;
     padding: 3rem 2rem;
     border-radius: 20px;
+    justify-content: center;
   }
+
+.subtitle {
+  color: #000000;
+  padding: auto;
+  position: center;
+}
+
+.title {
+  color: #FFFFFF;
+  padding: auto;
+  position: center;
+}
+
+.field {
+  color: #000000;
+  padding: 5%;
+  position: center;
+}
+
+.label {
+  color: #000000;
+  padding: 5%;
+}
+
