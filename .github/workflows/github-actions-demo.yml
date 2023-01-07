@@ -1,13 +1,23 @@
-name: GitHub Actions Demo
+name: GitHub Actions Workflow Portal Teses
 on:
+  push:
   pull_request:
     types: [opened]
 jobs:
   build:
-    name: Post welcome comment
+    name: Cria uma build e testa
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+
     steps:
-      - run: gh pr comment $PR_URL --body "Welcome to the repository"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_URL: ${{ github.event.pull_request.html_url }}      
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test  
