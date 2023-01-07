@@ -26,8 +26,9 @@ Como usamos a arquitetura MVC, há a Model, o Controller e a View.
 
 ### O que vai ser testado?
 
-A build em si, integração entre o front e o back e quais testes unitários estão rodando de maneira correta. 
-Vamos rodar todos os testes da integração contínua a cada push para o repositório e a cada merge.
+Será construída uma build e vão rodar os testes unitários. Vai ser testado se a build é formada com sucesso nas versões 16,17,18 e 19 do node.js .
+Depois todos os testes vão ser rodados e caso algum deles quebrem todos serão avisados.
+Vamos rodar todos os testes da integração contínua a cada push para o repositório e a cada pull request aberto.
 O deploy para a main e posteriormente para a produção só deve ser realizado caso TODOS os testes unitários e da integração contínua passarem.
 O código deve ser refatorado para isso, não o teste mudado, a não ser, claro, que este tenha um erro que todos os desenvolvedores concordem.
 
