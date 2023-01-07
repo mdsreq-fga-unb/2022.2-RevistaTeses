@@ -1,17 +1,17 @@
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
-const Blacklist = require("../models/blacklist");
+const Blacklist = require("../../models/schemas/blacklist");
 
 const verifyToken = async (req, res, next) => {
-    const authHeader = req.headers.authorization;
+    const authCookie = req.cookies
 
-    if(!authHeader){
+    if(!authCookie.Authorization){
         return res.status(401).send({error: "No token provided"});
     }
 
-    const parts = authHeader.split(" ");
+    const parts = authCookie.Authorization.split(" ");
 
-    if (!parts.length === 2) {
+    if (parts.length !== 2) {
         return res.status(401).send({ error: "Token error" });
     }
 

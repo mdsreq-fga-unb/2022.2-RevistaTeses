@@ -1,8 +1,8 @@
 const { isObjectIdOrHexString } = require("mongoose");
 const emailValidator = require("deep-email-validator");
 
-const Blacklist = require("../models/blacklist");
-const User = require("../models/user");
+const Blacklist = require("../models/schemas/blacklist");
+const User = require("../models/schemas/user");
 
 async function isEmailValid(email) {
   return emailValidator.validate(email);

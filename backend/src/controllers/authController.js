@@ -2,8 +2,8 @@ require("dotenv").config();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-const Blacklist = require("../models/blacklist");
-const User = require("../models/user");
+const Blacklist = require("../models/schemas/blacklist");
+const User = require("../models/schemas/user");
 
 const generateToken = (params = {}) => {
   return jwt.sign(params, process.env.SECRET, {
@@ -34,21 +34,24 @@ const login = async (req, res) => {
 
   user.password = undefined;
 
-  return res.status(200).send({
+  const token = generateToken({ id: user._id, account: user.account });
+  const formattedToken = "Bearer " + token;
+
+  return res.status(200).cookie("Authorization", formattedToken, {maxAge: (86400 * 1000)}).send({
     user,
-    token: generateToken({ id: user._id, account: user.account }),
+    token: token,
   });
 };
 
 const logout = async (req, res) => { 
-  const usedToken = req.headers.authorization;
+  const usedToken = req.cookies.Authorization;
   const parts = usedToken.split(" ");
   const [scheme, token] = parts;
 
   try {
     const blacklist = await Blacklist.create({ token: token });
 
-    return res.status(200).send({ blacklist: blacklist });
+    return res.status(200).clearCookie("Authorization").send({ blacklist: blacklist });
   } catch (err) {
     return res.status(500).send({ error: err.message });
   }

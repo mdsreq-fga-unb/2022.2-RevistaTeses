@@ -1,7 +1,7 @@
 const express = require("express");
 
-const newsController = require("../controllers/newsController");
-const { verifyToken } = require("../middlewares/verifyToken");
+const newsController = require("../../controllers/newsController");
+const { verifyToken } = require("../../controllers/middlewares/verifyToken");
 
 const routes = express.Router();
 

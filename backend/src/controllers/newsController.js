@@ -1,4 +1,4 @@
-const News = require("../models/news");
+const News = require("../models/schemas/news");
 const { isObjectIdOrHexString } = require("mongoose");
 
 const create = async (req, res) => { 
