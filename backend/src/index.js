@@ -18,15 +18,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// app.use(express.static(__dirname + '/views'))
+app.use(express.static(__dirname + '/views'))
 
 app.use("/auth", authRouter);
 app.use("/user", userRouter);
 app.use("/news", newsRouter);
 
-// app.get("/", (req, res) => {
-//   res.sendFile(__dirname + "/views/index.html")
-// })
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html")
+})
 
 connectToDb();
 
