@@ -7,7 +7,7 @@ const blacklistSchema = new mongoose.Schema(
     },
     expireAt: {
       type: Date,
-      default: new Date(new Date().valueOf() + (360 * 1000)),
+      default: new Date(new Date().valueOf() + (86460 * 1000)),
       expires: 60,
     },
   },

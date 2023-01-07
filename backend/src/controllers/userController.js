@@ -1,56 +1,73 @@
-require("dotenv").config();
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 const { isObjectIdOrHexString } = require("mongoose");
+const emailValidator = require("deep-email-validator");
 
-const Blacklist = require("../models/blacklist");
-const User = require("../models/user");
+const Blacklist = require("../models/schemas/blacklist");
+const User = require("../models/schemas/user");
 
-const generateToken = (params = {}) => {
-  return jwt.sign(params, process.env.SECRET, {
-    expiresIn: 300,
-  });
-};
+async function isEmailValid(email) {
+  return emailValidator.validate(email);
+}
 
-const login = async (req, res) => {
-  const { email, password } = req.body;
+const register = async (req, res) => { 
+  const { name, email, password } = req.body;
+
+  if (!name) {
+    return res.status(400).send({ error: "Name field must have a value" });
+  }
 
   if (!email) {
-    return res.status(400).send({ error: "Campo email não foi preenchido" });
+    return res.status(400).send({ error: "Email field must have a value" });
   }
 
   if (!password) {
-    return res.status(400).send({ error: "Campo password não foi preenchido" });
+    return res.status(400).send({ error: "Password field must have a value" });
   }
 
-  const user = await User.findOne({ email }).select("+password");
+  // const { valid } = await isEmailValid(email);
 
-  if (!user) {
-    return res.status(400).send({ error: "Usuário não encontrado" });
+  // if (!valid) {
+  //   return res.status(400).send({ error: "Invalid Email" });
+  // }
+
+  try {
+    if (await User.findOne({ email })) {
+      return res.status(400).send({ error: "Email already registered" });
+    }
+
+    const user = await User.create(req.body);
+
+    user.password = undefined;
+
+    return res.status(201).send({ user: user });
+  } catch (err) {
+    return res.status(500).send({ error: err.message });
   }
-
-  if (!(await bcrypt.compare(password, user.password))) {
-    return res.status(400).send({ error: "Senha incorreta" });
-  }
-
-  user.password = undefined;
-
-  return res.status(200).send({ user, token: generateToken({ id: user._id }) });
 };
 
-const getUser = async (req, res) => {
-  const { _id } = req.body;
+const findUser = async (req, res) => { 
+  let id = req.userId;
 
-  if (!_id) {
-    return res.status(400).send({ error: "Não foi disponibilizado um ID" });
+  if (req.accountType === 10) {
+    id = req.body._id;
+    if (id == "" || id == undefined) {
+      id = req.userId;
+    }
   }
 
-  if (!isObjectIdOrHexString(_id)) {
-    return res.status(400).send({ error: "ID inválido" });
+  if (!id) {
+    return res.status(400).send({ error: "ID does not have a value" });
+  }
+
+  if (!isObjectIdOrHexString(id)) {
+    return res.status(400).send({ error: "Invalid ID" });
   }
 
   try {
-    const user = await User.findOne({ _id });
+    const user = await User.findOne({ _id: id });
+
+    if (!user) {
+      return res.status(404).send({ error: "User not found" });
+    }
 
     return res.status(200).send({ user });
   } catch (err) {
@@ -58,95 +75,102 @@ const getUser = async (req, res) => {
   }
 };
 
-const getAllUsers = async (req, res) => {
+const findAllUsers = async (req, res) => { 
+  if (req.accountType !== 10) {
+    return res.status(404).send({ message: "Not found" });
+  }
+
   const users = await User.find();
 
   if (users.length === 0) {
-    return res.status(200).send({ message: "Nenhum usuário encontrado" });
+    return res.status(200).send({ message: "No users registered" });
   }
 
   return res.status(200).send({ users });
 };
 
-const cadastro = async (req, res) => {
-  const { name, email, password } = req.body;
+const update = async (req, res) => { 
+  let id = req.userId;
+  let { name, email, password, account } = req.body;
 
-  if (!name) {
-    return res.status(400).send({ error: "Campo name não foi preenchido" });
+  if (req.accountType === 10) {
+    //Funciona, mas pode ficar melhor
+    id = req.body._id;
+    name = undefined;
+    email = undefined;
+    password = undefined;
+    if (id == "" || id == undefined) {
+      id = req.userId;
+      name = req.body.name;
+      email = req.body.email;
+      password = req.body.password;
+      account = undefined;
+    }
+  } else {
+    account = undefined;
   }
 
-  if (!email) {
-    return res.status(400).send({ error: "Campo email não foi preenchido" });
+  if (!id) {
+    return res.status(400).send({ error: "ID does not have a value" });
   }
 
-  if (!password) {
-    return res.status(400).send({ error: "Campo password não foi preenchido" });
+  if (!isObjectIdOrHexString(id)) {
+    return res.status(400).send({ error: "Invalid ID" });
+  }
+
+  if (!name && !email && !account) {
+    return res.status(400).send({ error: "Need at least one field to update" });
   }
 
   try {
-    if (await User.findOne({ email })) {
-      return res.status(400).send({ error: "Email ja registrado" });
+    if (!(await User.findOne({ _id: id }))) {
+      return res.status(404).send({ error: "User not found" });
     }
 
-    const user = await User.create(req.body);
+    const user = await User.updateOne(
+      { _id: id },
+      { name, email, account, password }
+    );
 
     user.password = undefined;
 
-    return res.status(200).send({ user: user });
+    return res.status(200).send({
+      message: "User has been updated",
+      _id: id,
+      user: name,
+      email: email,
+      account: account,
+    });
   } catch (err) {
     return res.status(500).send({ error: err.message });
   }
 };
 
-const update = async (req, res) => {
-  const { _id, name, email, account } = req.body
-
-  if (!_id) {
-    return res.status(400).send({ error: "Não foi disponibilizado um ID" });
-  }
-
-  if (!isObjectIdOrHexString(_id)) {
-    return res.status(400).send({ error: "ID inválido" });
-  }
-
-  if(!name && !email && !account){
-    return res.status(400).send({ error: "Informe pelo menos um campo para atualizar"})
-  }
-
-  try {
-    const user = await User.updateOne( { _id }, { name, email, account })
-
-    return res.status(200).send({ user, _id: _id, user: name, email: email, account: account, message: "Usuário atualizado com sucesso"})
-  } catch (err) {
-    return res.status(500).send({ error: err.message });
-  }
-}
-
-const excluir = async (req, res) => {
-  const { _id } = req.body;
+const erase = async (req, res) => { 
+  const id = req.userId;
   const usedToken = req.headers.authorization;
   const parts = usedToken.split(" ");
   const [scheme, token] = parts;
 
-  if (!_id) {
-    return res.status(400).send({ error: "Não foi disponibilizado um ID" });
+  if (!id) {
+    return res.status(400).send({ error: "ID does not have a value" });
   }
 
-  if (!isObjectIdOrHexString(_id)) {
-    return res.status(400).send({ error: "ID inválido" });
+  if (!isObjectIdOrHexString(id)) {
+    return res.status(400).send({ error: "Invalid ID" });
   }
 
   try {
-    if (!(await User.findOne({ _id }))) {
-      return res.status(500).send({ error: "Usuário não encontrado" });
+    if (!(await User.findOne({ _id: id }))) {
+      return res.status(404).send({ error: "User not found" });
     }
 
-    await User.deleteOne({ _id });
+    await User.deleteOne({ _id: id });
     const blacklist = await Blacklist.create({ token: token });
 
     return res.send({
-      message: "Deletado com sucesso",
-      _id,
+      message: "User deleted",
+      id,
       blacklist: blacklist,
     });
   } catch (err) {
@@ -154,26 +178,10 @@ const excluir = async (req, res) => {
   }
 };
 
-const logout = async (req, res) => {
-  const usedToken = req.headers.authorization;
-  const parts = usedToken.split(" ");
-  const [scheme, token] = parts;
-
-  try {
-    const blacklist = await Blacklist.create({ token: token });
-
-    return res.status(200).send({ blacklist: blacklist });
-  } catch (err) {
-    return res.status(500).send({ error: err.message });
-  }
-};
-
 module.exports = {
-  login,
-  cadastro,
-  logout,
-  excluir,
-  getUser,
-  getAllUsers,
-  update
+  register,
+  findUser,
+  findAllUsers,
+  update,
+  erase,
 };
