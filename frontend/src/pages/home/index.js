@@ -12,26 +12,37 @@ const Home = () => {
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="#">Portal Teses</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
+    <img src="../2022.2-RevistaTeses/images/logo.png" title="logo" style="width: 250px;"/>
 
-        <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Colunas</a></li>
-          <li><a href="#">Notícias</a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Entrar</a></li>
+    <header>
+      <div id="menuPrincipal" class="menuPrincipal">
+        <ul>
+          <li>Inicio</li>
+          <li>Colunas</li>
+          <li>Noticias</li>
+          <li>Eventos</li>
+          <li>Entrar</li>
         </ul>
-      </nav>
+      </div>
     </header>
-    <main></main>
-    <script src="mobile-navbar.js"></script>
+
+    <main>
+      <div id="areaNoticias" class="areaNoticias">
+        <div id="noticia" class="noticia">
+
+        </div>
+      </div>
+      <div id="areaColunas" class="areaColunas">
+        <div id="coluna" class="coluna">
+
+        </div>
+      </div>
+      <div id="areaEventos" class="areaEventos">
+        <div id="evento" class="evento">
+
+        </div>
+      </div>
+    </main>
   </body>
 </html>
   )
