@@ -1,58 +1,84 @@
-body{
-    background-color: #00719E;
-    padding: auto;
-    /* opacity: 0.5; */
-    width: auto;
-    height: auto;
-    margin-top: 100 px;
-    align-items: center;
+body {
+  background-color: #00719e;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.container {
-    background-color: #FFFFFF;
-    margin: auto;
-    color: #FFFFFF;
-    align-items: center;
-    width: 40%;
-    height: 50%;
-    overflow: auto;
-    padding: 3rem 2rem;
-    border-radius: 20px;
-    justify-content: center;
-  }
-
-.subtitle {
-  color: #000000;
-  padding: auto;
-  position: center;
+header {
+  margin-left: 70px;
+  margin-right: 50px;
 }
 
-.title {
-  color: #FFFFFF;
-  padding: auto;
-  position: center;
+img,
+logo {
+  margin-left: 70px;
+  height: 180px;
 }
 
-.field {
-  color: #000000;
-  padding: 5%;
-  position: center;
+.menuPrincipal {
+  /*variaveis de posicao do menu*/
+  margin-top: -130px;
+  margin-left: 285px;
+  background-color: #ffffff;
+  height: 40px;
+  width: 800px;
+  border-radius: 10px;
 }
 
-.label {
-  color: #000000;
-  padding: 5%;
+ul {
+  /*variaveis do bloco das opcoes*/
+  padding-top: 10px;
+  border-radius: 20px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.button{
-  background-color: #00719E;
-  color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
+li {
+  /*variaveis da fonte do menu*/
   font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  /*variaveis da area de trabalho*/
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffffe5;
+  border-radius: 20px;
+  margin-left: 400px;
+  margin-top: 120px;
+  min-width: 500px;
+  max-width: fit-content;
+}
+
+h2 {
+  margin-left: 180px;
+  padding-top: 10px;
+}
+
+form {
+  margin-left: 70px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+input {
+  width: 300px;
+}
+
+button {
+  margin-left: 100px;
+  width: 200px;
+  margin-top: 10px;
+  border-color: #ffffffe5;
+  background-color: #6cb6d3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  margin-left: 70px;
+  padding-bottom: 10px;
 }
