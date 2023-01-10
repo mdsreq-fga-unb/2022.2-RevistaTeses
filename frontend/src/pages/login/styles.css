@@ -1,23 +1,84 @@
-body{
-    background-color: darkgray;
-    padding: auto;
-    width: auto;
-    height: auto;
-    margin-top: 100 px;
+body {
+  background-color: #00719e;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
 header {
-    color: rgb(255, 255, 255);
-    background-color: darkgray;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-.container {
-    background-color: rgb(180, 41, 23);
-    margin: auto;
-    color: rgb(255, 255, 255);
-    width: 500px;
-    overflow: auto;
-    padding: 3rem 2rem;
-    border-radius: 20px;
-  }
+  margin-left: 70px;
+  margin-right: 50px;
+}
+
+img,
+logo {
+  margin-left: 70px;
+  height: 180px;
+}
+
+.menuPrincipal {
+  /*variaveis de posicao do menu*/
+  margin-top: -130px;
+  margin-left: 285px;
+  background-color: #ffffff;
+  height: 40px;
+  width: 800px;
+  border-radius: 10px;
+}
+
+ul {
+  /*variaveis do bloco das opcoes*/
+  padding-top: 10px;
+  border-radius: 20px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  /*variaveis da fonte do menu*/
+  font-size: 20px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  /*variaveis da area de trabalho*/
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffffe5;
+  border-radius: 20px;
+  margin-left: 400px;
+  margin-top: 120px;
+  min-width: 500px;
+  max-width: fit-content;
+}
+
+h2 {
+  margin-left: 180px;
+  padding-top: 10px;
+}
+
+form {
+  margin-left: 70px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+input {
+  width: 300px;
+}
+
+button {
+  margin-left: 100px;
+  width: 200px;
+  margin-top: 10px;
+  border-color: #ffffffe5;
+  background-color: #6cb6d3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  margin-left: 70px;
+  padding-bottom: 10px;
+}

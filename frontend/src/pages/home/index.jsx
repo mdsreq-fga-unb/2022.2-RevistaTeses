@@ -1,29 +1,51 @@
-import React, { Fragment } from "react";
-import Header from "../../components/Header";
-import './styles.css'
+import React from 'react'
 
 const Home = () => {
   return (
-    <Fragment>
-      {/* <img
-        src="../../../../../images/logo.png"
-        title="logo"
-        style="width: 250px;"
-      /> */}
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Teses</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <Header/>
+  <body>
+    <img src="../2022.2-RevistaTeses/images/logo.png" title="logo" style="width: 250px;"/>
 
-        <div id="areaNoticias" className="areaNoticias">
-          <div id="noticia" className="noticia"></div>
-        </div>
-        <div id="areaColunas" className="areaColunas">
-          <div id="coluna" className="coluna"></div>
-        </div>
-        <div id="areaEventos" className="areaEventos">
-          <div id="evento" className="evento"></div>
-        </div>
-    </Fragment>
-  );
-};
+    <header>
+      <div id="menuPrincipal" class="menuPrincipal">
+        <ul>
+          <li>Inicio</li>
+          <li>Colunas</li>
+          <li>Noticias</li>
+          <li>Eventos</li>
+          <li>Entrar</li>
+        </ul>
+      </div>
+    </header>
 
-export default Home;
+    <main>
+      <div id="areaNoticias" class="areaNoticias">
+        <div id="noticia" class="noticia">
+
+        </div>
+      </div>
+      <div id="areaColunas" class="areaColunas">
+        <div id="coluna" class="coluna">
+
+        </div>
+      </div>
+      <div id="areaEventos" class="areaEventos">
+        <div id="evento" class="evento">
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+  )
+}
+
+export default Home

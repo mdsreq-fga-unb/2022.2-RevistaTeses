@@ -1,40 +1,39 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { api } from '../../api/index'
-import '../login/styles.css'
+import "../login/styles.css";
 
 const Login = () => {
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
-    const handleLogin = async () => {
-        await api.post("/auth/login", {email: email, password: password})
-        .then(function(res){
-            console.log(res.data)
-        })
-    }
+  const handleLogin = async () => {
+    await api.post("/auth/login", {email: email, password: password})
+    .then(function(res){
+      console.log(res.data)
+    })
+  }
 
-  return ( 
+  return (
     <div id="login">
-        <h1 className='title'>Login do sistema</h1>
-        <div>
-            <div className='container'>
-                <form>
-                <div className='field'>
-                    <label htmlFor='email'>Email</label>
-                    <input type="email" name='email' value={email} onChange={(e) => setEmail(e.target.value)} id='email'/> 
-                </div>
-                <div className='field'>
-                    <label htmlFor='password'>Senha</label>
-                    <input type="password" name='password' value={password} onChange={(e) => setPassword(e.target.value)} id='password'/>
-                </div>
-                <div className='actions'>
-                    <button type='button' onClick={() => handleLogin()}>Entrar</button>
-                </div>
-                </form> 
-            </div>
+      <h2 className="login">Faça seu login</h2>
+
+      <form>
+        <div id="campoEmail" class="campoEmail">
+          <label htmlFor="email"><b>Email</b></label>
+          <input type="email" name="email" id="email" required />
         </div>
+
+        <div id="campoSenha" class="campoSenha">
+          <label htmlFor="password"><b>Senha</b></label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <button type="button" onClick={() => handleLogin()} className="botaoEntrar">Entrar</button>
+      </form>
+
+      <h3 className="cadastro">Ainda não tem uma conta? <a href="#">Cadastre-se aqui!</a></h3>
     </div>
-  )
-}
+  );
+};
 
 export default Login
