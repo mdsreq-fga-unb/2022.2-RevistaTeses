@@ -1,30 +1,28 @@
 import React from 'react'
 import Header from '../../components/Header'
+import './styles.css'
 
 const Home = () => {
   return (
-  <div id="body">
-    <img src="../2022.2-RevistaTeses/images/logo.png" title="logo" style="width: 250px;"/>
+  <div >
 
     <Header/>
 
-    <main>
-      <div id="areaNoticias" class="areaNoticias">
-        <div id="noticia" class="noticia">
+      <div id="areaNoticias" className="areaNoticias">
+        <div id="noticia" className="noticia">
 
         </div>
       </div>
-      <div id="areaColunas" class="areaColunas">
-        <div id="coluna" class="coluna">
+      <div id="areaColunas" className="areaColunas">
+        <div id="coluna" className="coluna">
 
         </div>
       </div>
-      <div id="areaEventos" class="areaEventos">
-        <div id="evento" class="evento">
+      <div id="areaEventos" className="areaEventos">
+        <div id="evento" className="evento">
 
         </div>
       </div>
-    </main>
 
   </div>
   )
