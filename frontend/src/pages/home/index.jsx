@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 const Home = () => {
   return (
   <div id="body">
-    <img src="../2022.2-RevistaTeses/images/logo.png" title="logo" style="width: 250px;"/>
+    <img src="../2022.2-RevistaTeses/images/logo.png" title="logo"/>
 
     <Header/>
 
