@@ -1,6 +1,10 @@
 .headerContainer {
-  margin-left: 70px;
-  margin-right: 50px;
+  margin-top: -130px;
+  margin-left: 285px;
+  background-color: #00719e;
+  height: 80px;
+  width: 910px;
+  border-radius: 10px;
 }
 
 img,
