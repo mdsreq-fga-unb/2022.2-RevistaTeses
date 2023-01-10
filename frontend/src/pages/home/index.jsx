@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Header from "../../components/Header";
 import './styles.css'
 
 const Home = () => {
@@ -10,15 +11,7 @@ const Home = () => {
         style="width: 250px;"
       /> */}
 
-        <div id="menuPrincipal" className="menuPrincipal">
-          <ul>
-            <li>Inicio</li>
-            <li>Colunas</li>
-            <li>Noticias</li>
-            <li>Eventos</li>
-            <li>Entrar</li>
-          </ul>
-        </div>
+        <Header/>
 
         <div id="areaNoticias" className="areaNoticias">
           <div id="noticia" className="noticia"></div>

@@ -3,17 +3,17 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 
 // import Home from './pages/home/index'
-// import Login from './pages/login/index'
+import Login from './pages/login/index'
 import Perfil from "./pages/perfil/index";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/perfil",
     element: <Perfil/>,
   },
   {
-    path: "/login",
-    // element: <Login />
+    path: "/",
+    element: <Login />
   },
   {
     path: "/home",
@@ -23,6 +23,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );

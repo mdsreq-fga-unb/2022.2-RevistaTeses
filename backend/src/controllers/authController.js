@@ -37,9 +37,14 @@ const login = async (req, res) => {
   const token = generateToken({ id: user._id, account: user.account });
   const formattedToken = "Bearer " + token;
 
-  return res.status(200).cookie("Authorization", formattedToken, {maxAge: (86400 * 1000)}).send({
-    user,
-    token: token,
+  return res.status(200).cookie("Authorization", formattedToken, {
+      maxAge: (86400 * 1000),
+      secure: true,
+      sameSite: 'none',
+    })
+    .send({
+      user,
+      token: formattedToken,
   });
 };
 
