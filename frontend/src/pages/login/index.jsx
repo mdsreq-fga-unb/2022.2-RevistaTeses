@@ -20,12 +20,12 @@ const Login = () => {
       <form>
         <div id="campoEmail" class="campoEmail">
           <label htmlFor="email"><b>Email</b></label>
-          <input type="email" name="email" id="email" required />
+          <input type="email" name='email' value={email} onChange={(e) => setEmail(e.target.value)} id='email'/>
         </div>
 
         <div id="campoSenha" class="campoSenha">
           <label htmlFor="password"><b>Senha</b></label>
-          <input type="password" name="password" id="password" required />
+          <input type="password" name='password' value={password} onChange={(e) => setPassword(e.target.value)} id='password'/>
         </div>
 
         <button type="button" onClick={() => handleLogin()} className="botaoEntrar">Entrar</button>
