@@ -1,9 +1,10 @@
 import React from "react";
+import "./styles.css"
 
 const Header = () => {
     return(
         <div className="headerContainer">
-            <img src="../2022.2-RevistaTeses/images/logo.svg" title="logo" style="width: 250px;"/>
+            {/* <img src="../2022.2-RevistaTeses/images/logo.svg" title="logo" style="width: 250px;"/> */}
             <ul>
                 <li><a href="/">Inicio</a></li>
                 <li><a>Colunas</a></li>  
