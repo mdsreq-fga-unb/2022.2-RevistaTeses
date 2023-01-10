@@ -14,6 +14,9 @@ const Login = () => {
   }
 
   return (
+    <>
+    <Header/>
+
     <div id="login">
       <h2 className="login">Faça seu login</h2>
 
@@ -33,6 +36,7 @@ const Login = () => {
 
       <h3 className="cadastro">Ainda não tem uma conta? <a href="#">Cadastre-se aqui!</a></h3>
     </div>
+    </>
   );
 };
 

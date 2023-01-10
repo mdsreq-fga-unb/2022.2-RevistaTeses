@@ -1,28 +1,7 @@
-body {
+.body {
   background-color: #ffffff;
   margin-left: 50px;
   margin-right: 50px;
-}
-
-header {
-  margin-left: 70px;
-  margin-right: 50px;
-}
-
-img,
-
-logo{
-    margin-left: 70px;
-}
-
-.menuPrincipal {
-  /*variaveis de posicao do menu*/
-  margin-top: -130px;
-  margin-left: 285px;
-  background-color: #00719e;
-  height: 80px;
-  width: 910px;
-  border-radius: 10px;
 }
 
 ul {
