@@ -2,6 +2,21 @@ import React from "react";
 import "./styles.css";
 
 const Header = () => {
+  function handleLogPro() {
+    if (!document.cookie) {
+      return (
+        <li>
+          <a href="/login">Entrar</a>
+        </li>
+      );
+    } else {
+      return (
+        <li>
+          <a href="/perfil">Perfil</a>
+        </li>
+      );
+    }
+  }
   return (
     <div className="header">
       <svg
@@ -109,11 +124,19 @@ c-13 -1 -47 -6 -76 -11z"
 
       <div className="headerContainer">
         <ul className="opcoes">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/">Colunas</a></li>
-          <li><a href="/">Noticias</a></li>
-          <li><a href="/">Eventos</a></li>
-          <li><a href="/login" >Entrar</a></li>
+          <li>
+            <a href="/">Inicio</a>
+          </li>
+          <li>
+            <a href="/">Colunas</a>
+          </li>
+          <li>
+            <a href="/">Noticias</a>
+          </li>
+          <li>
+            <a href="/">Eventos</a>
+          </li>
+          <li>{handleLogPro()}</li>
         </ul>
       </div>
     </div>

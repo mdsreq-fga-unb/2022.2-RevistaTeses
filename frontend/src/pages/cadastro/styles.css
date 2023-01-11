@@ -1,3 +1,28 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #111;
+}
+
+.wrap-layout {
+  width: 390px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 77px 55px 33px 55px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
 .login-form {
   width: 100%;
 }
@@ -124,6 +149,15 @@
   background: -o-linear-gradient(to left, #21d4fd, #b721ff);
   background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
   background: linear-gradient(to left, #21d4fd, #b721ff);
+}
+
+.textoAlerta {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 1.5;
+  color: red;
+  margin-left: 522.5px;
+  padding-top: 5px;
 }
 
 .login-form-btn:hover {

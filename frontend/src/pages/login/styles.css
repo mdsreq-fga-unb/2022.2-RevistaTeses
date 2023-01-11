@@ -37,12 +37,12 @@ iframe {
 	border: none !important;
 }
 
-.textoEsqueci {
+.textoAlerta {
   font-family: Poppins-Regular;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.5;
-  color: #666666;
-  padding-left: 70px;
+  color: red;
+  padding-left: 55px;
   padding-top: 5px;
 }
 
