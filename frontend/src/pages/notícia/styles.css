@@ -1,0 +1,17 @@
+.body {
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.areaNoticias {
+    background-color: rgba(0, 113, 158, 0.3);
+    height: 350px;
+    width: 800px;
+    border-radius: 20px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

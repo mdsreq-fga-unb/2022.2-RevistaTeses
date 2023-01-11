@@ -6,6 +6,7 @@ import Home from './pages/home/index'
 import Login from './pages/login/index'
 import Perfil from "./pages/perfil/index";
 import Cadastro from "./pages/cadastro";
+import Noticias from "./pages/notícia";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/cadastro",
     element: <Cadastro />
+  },
+  {
+    path: "/noticias",
+    element: <Noticias />
   }
 ]);
 

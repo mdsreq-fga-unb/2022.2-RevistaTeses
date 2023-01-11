@@ -131,7 +131,7 @@ c-13 -1 -47 -6 -76 -11z"
             <a href="/">Colunas</a>
           </li>
           <li>
-            <a href="/">Noticias</a>
+            <a href="/noticias">Noticias</a>
           </li>
           <li>
             <a href="/">Eventos</a>
