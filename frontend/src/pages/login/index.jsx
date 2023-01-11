@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from '../../api/index'
-import Header from "../../components/Header";
+import Header from '../../components/Header';
 import "../login/styles.css";
 
 const Login = () => {
@@ -19,7 +19,6 @@ const Login = () => {
 
   return (
     <>
-    <div>Ola mundo!</div>
     <Header/>
 
     <div id="login" data-testid="area_login">
