@@ -1,8 +1,16 @@
 import React from 'react'
+import { useEffect } from 'react'
+import { api } from '../../api'
 import Header from '../../components/Header'
 import './styles.css'
 
 const Home = () => {
+  useEffect(() => {
+    api.get("/news/").then((res) => {
+      console.log(res.data)
+    })
+  })
+  
   return (
 <<<<<<< HEAD
   <div id="body">

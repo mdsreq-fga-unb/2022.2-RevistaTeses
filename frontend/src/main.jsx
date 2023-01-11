@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Home from './pages/home/index'
 import Login from './pages/login/index'
 import Perfil from "./pages/perfil/index";
+import Cadastro from "./pages/cadastro";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />
+  },
+  {
+    path: "/cadastro",
+    element: <Cadastro />
   }
 ]);
 
