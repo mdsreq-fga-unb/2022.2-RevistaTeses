@@ -56,7 +56,6 @@
 | Categoria          | Requisito não funcional                                                          |
 |--------------------|----------------------------------------------------------------------------------|
 | Interface          | Banner de notícias                                                               |
-| Interface          | A interface deve ser responsiva para dispositivos mobile                         |
 | Interface          | As fontes a serem usadas no site devem ser Roboto e Oswald                       |
 | Interface          | O layout deve ser azul                                                           |
 | Interoperabilidade | O domínio e banco de dados a serem usados devem ser os que o cliente já adquiriu |
