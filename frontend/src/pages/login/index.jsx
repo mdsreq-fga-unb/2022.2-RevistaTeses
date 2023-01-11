@@ -18,7 +18,7 @@ const Login = () => {
     <div>Ola mundo!</div>
     <Header/>
 
-    <div id="login">
+    <div id="login" data-testid="area_login">
       <h2 className="login">Faça seu login</h2>
 
       <form>
@@ -32,7 +32,7 @@ const Login = () => {
           <input type="password" name='password' value={password} onChange={(e) => setPassword(e.target.value)} id='password'/>
         </div>
 
-        <button type="button" onClick={() => handleLogin()} className="botaoEntrar">Entrar</button>
+        <button type="button" data-testid="botao_login" onClick={() => handleLogin()} className="botaoEntrar">Entrar</button>
       </form>
 
       <h3 className="cadastro">Ainda não tem uma conta? <a href="#">Cadastre-se aqui!</a></h3>
