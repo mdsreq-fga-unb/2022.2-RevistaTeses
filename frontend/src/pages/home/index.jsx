@@ -12,17 +12,8 @@ const Home = () => {
   })
   
   return (
-<<<<<<< HEAD
   <div id="body">
-    <img src="../2022.2-RevistaTeses/images/logo.png" title="logo"/>
-=======
-  <div >
-<<<<<<< HEAD
->>>>>>> 18128ae (add o css)
-
-=======
-    <>
->>>>>>> bc401b4 (att Header)
+    
     <Header/>
 
       <div id="areaNoticias" className="areaNoticias">
@@ -40,7 +31,7 @@ const Home = () => {
 
         </div>
       </div>
-      </>
+      
   </div>
   )
 }
