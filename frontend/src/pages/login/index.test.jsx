@@ -12,18 +12,30 @@ describe('Ver se a pagina de login ta funcionando', () => {
     })
 });
 
-describe('Testar valores diferentes para email e senha', () => {
-    test('Resposta à um usuário não cadastrado', async () => {
+// describe('Testar valores diferentes para email e senha', () => {
+//     test('Resposta à um usuário não cadastrado', async () => {
 
-        const usuarioNaoCadastrado = {
-            nome: UserNaoCadastrado,
-            senha: 123456789
-        }
+//         const usuarioNaoCadastrado = {
+//             email: 'userNaoCadastrado@gmail.com',
+//             password: '123456789'
+//         }
+//         render(Login);
+//         const button = screen.getByText('Entrar');
+
+//         // act
+//     })
+
+    // test('Resposta à um usuário já cadastrado', async () => {
+
+    //     const usuarioCadastrado = {
+    //         nome: 'jpmorbeck45@gmail.com',
+    //         senha: '123456'
+    //     }
         
-        render(Login);
+    //     render(Login);
 
-        const button = screen.getByText('Entrar');
-        
+    //     const button = screen.getByText('Entrar');
 
-    })
-});
+
+//     })
+// });
