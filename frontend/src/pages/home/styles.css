@@ -4,31 +4,6 @@
   margin-right: 50px;
 }
 
-ul {
-  /*variaveis do bloco das opcoes*/
-  padding-top: 25px;
-  border-radius: 20px;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-li {
-  /*variaveis da fonte do menu*/
-  font-size: 20px;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-  /*variaveis da area de trabalho*/
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 31px;
-}
-
 .areaNoticias {
   background-color: rgba(0, 113, 158, 0.3);
   height: 80px;
