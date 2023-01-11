@@ -2,7 +2,10 @@ import React from "react";
 import "./styles.css"
 
 const Header = () => {
+
     return(
+        <>
+        <img src="./images/logo.svg" alt="logo"/>
         <div className="headerContainer">
             <ul className="opcoes">
                 <li>Inicio</li>
@@ -12,6 +15,7 @@ const Header = () => {
                 <li>Entrar</li>
             </ul>
         </div>
+        </>
     );
 }
 
