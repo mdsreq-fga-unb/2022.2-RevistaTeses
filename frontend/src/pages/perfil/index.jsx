@@ -21,6 +21,13 @@ const Perfil = () => {
       })
   })
 
+  function handleLogout() {
+    api.post("/auth/logout", {_id:""}, {headers: {'Authorization': document.cookie}})
+      .then(function(res){
+        console.log(res)
+      })
+  }
+
   return ( 
     <>
       <Header/>
@@ -29,7 +36,7 @@ const Perfil = () => {
         <span>{name}</span>
         <span>{email}</span>
         <span>{account}</span>
-        <a href="/"><button type="button">Editar</button></a>
+        <button type="button" onClick={() => {handleLogout()}}>Editar</button>
       </div>
     </>
   );

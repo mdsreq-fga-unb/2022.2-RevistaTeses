@@ -1,14 +1,18 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { api } from '../../api/index'
+import Header from "../../components/Header";
 import "../login/styles.css";
 
 const Login = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const navigate = useNavigate()
 
   const handleLogin = async () => {
     await api.post("/auth/login", {email: email, password: password})
     .then(function(res){
+      navigate("/perfil")
       console.log(res.data)
     })
   }
