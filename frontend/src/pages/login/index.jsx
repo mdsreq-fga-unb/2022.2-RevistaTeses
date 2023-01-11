@@ -19,27 +19,33 @@ const Login = () => {
 
   return (
     <>
-    <Header/>
+      <Header />
 
-    <div id="login" data-testid="area_login">
-      <h2 className="login">Faça seu login</h2>
+      <div id="login" data-testid="area_login">
+        <form class="login">
+          <span class="loginTitulo"> Faça seu login </span>
 
-      <form>
-        <div id="campoEmail" class="campoEmail">
-          <label htmlFor="email"><b>Email</b></label>
-          <input type="email" name='email' value={email} onChange={(e) => setEmail(e.target.value)} id='email'/>
-        </div>
+          <div class="areaEmail" data-validate="É necessário um e-mail válido: ex@abc.xyz">
+            <input class="input100" type="text" name="email" placeholder="E-mail" />
+          </div>
 
-        <div id="campoSenha" class="campoSenha">
-          <label htmlFor="password"><b>Senha</b></label>
-          <input type="password" name='password' value={password} onChange={(e) => setPassword(e.target.value)} id='password'/>
-        </div>
+          <div class="areaSenha" data-validate="É necessário inserir uma senha">
+            <input class="input100" type="password" name="senha" placeholder="Senha" />
+          </div>
 
-        <button type="button" data-testid="botao_login" onClick={() => handleLogin()} className="botaoEntrar">Entrar</button>
-      </form>
+          <div class="botao">
+            <button class="botao">Entrar</button>
+          </div>
 
-      <h3 className="cadastro">Ainda não tem uma conta? <a href="#">Cadastre-se aqui!</a></h3>
-    </div>
+          <div class="textoEsqueci">
+            <a class="textoEsqueci" href="#"> Esqueci usuário/senha </a>
+          </div>
+
+          <div class="textoCriar">
+            <a class="textoCriar" href="#">Crie sua conta</a>
+          </div>
+        </form>
+      </div>
     </>
   );
 };
