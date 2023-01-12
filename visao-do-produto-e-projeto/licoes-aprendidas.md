@@ -17,4 +17,4 @@ Foi também na unidade 2 que percebemos que precisa melhorar a comunicação com
 Uma lição importante que foi tomada sobre a Unidade 2 é de todos os membros ter pleno conhecimento sobre as tecnologias que serão utilizadas, até o fim desta unidade não foi tomada nenhuma medida para estudo e alinhamento de conhecimentos, porém em breve e antes do início da unidade 3 será feito um "dojo" sobre as tecnologias que serão utilizadas para obter esse alinhamento de conhecimento antes do início da produção do software aqui documentado.</br>
 
 ## Unidade 3
-Aprendemos a tecnologia e precisamos aprender bem mais. Aprendemos sobre organização também. 
+Aprendemos a tecnologia e precisamos aprender bem mais. Aprendemos sobre organização também. Aprendemos a necessidade de dedicar mais diariamente para a produção individual e um semanal pra reunião em grupo. Aprendemos ci no actions e testes também.
