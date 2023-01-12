@@ -100,14 +100,15 @@ Holsback e Pedro estavam viajando e os outros membros ficaram sobrecarregados at
 De última hora, o jest não conseguir ler modulos e o teste estava falhando no actions, isso vai ser resolvido só na próxima sprint.
 
 #### Como esses problemas foram resolvidos ?
+Utilizamos as aulas disponibilizadas pelo professor para se reunir presencialmente, fazer partes do site juntos e organizar uma nova reunião para terminar tudo. Reunião que teve uma duração extensa com programação cojunta através da ferramenta do VScode Liveshare e Discord
 
 
 #### O que pode ser mudado para que o time seja mais eficaz?
-
+Os membros estudarem e melhorarem suas habilidades no uso das ferramentas do projeto e ter mais disponibilidade semanal para o trabalho em equipe
 
 
 #### O que cada um pode melhorar?
-
+Organizar melhor o tempo entre os estudos que a faculdade exige e horas semanais para produzir o produto com mais tranquilidade
 
 
 ### Relato de programação em pares
