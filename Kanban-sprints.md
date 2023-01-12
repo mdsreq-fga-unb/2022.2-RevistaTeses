@@ -81,12 +81,23 @@ Na reunião, Ana, João, Fábio, Holsback e Pedro vão trabalhar juntos e fazer 
 
 ### Review
 
+Foi apresentado ao cliente o site com : 
+F01 - us: 01,02,03,04,05
+F02 - us: 01,03,04
+F03 - us: 01,04
+F10 - us: 01,02
+
+Seguimos a interface combinada com o cliente e fizemos um exemplo de como achamos que a interface ficaria melhor. O cliente preferiu o que sugerimos e nos deu carta branca para todas as alterações de interface e layout. Foram aprovadas todas as entregas dessas user storys mas discutimos novamente sobre a interface e vamos ter que incluir os novos pedidos, logo teremos que redimensionar as próximas entregas.
+
+
 ### Retrospectiva
 
 #### O que deu certo nessa  última Sprint ?
+Conseguimos finalizar 12 histórias de usuário quando não tinhamos nenhuma. Conseguimos configurar a ci , fazer o front e conectar com o back, de acordo com o feedback dado pelo professor George na última aula.
 
 #### Quais problemas foram foram encontrados?
-
+Holsback e Pedro estavam viajando e os outros membros ficaram sobrecarregados até o dia 10/01.
+De última hora, o jest não conseguir ler modulos e o teste estava falhando no actions, isso vai ser resolvido só na próxima sprint.
 
 #### Como esses problemas foram resolvidos ?
 
@@ -100,5 +111,5 @@ Na reunião, Ana, João, Fábio, Holsback e Pedro vão trabalhar juntos e fazer 
 
 
 ### Relato de programação em pares
-
+Ana trabalhou com todos e foi produtivo. Holsback, João, Ana e Fabio fizeram uma call e todos trabalharam juntos para finalizar as entregas. Foi muito produtivo apesar de exaustivo (10h seguidas arrumando tudo).
 
