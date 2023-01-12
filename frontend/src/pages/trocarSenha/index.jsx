@@ -92,7 +92,7 @@ const TrocarSenha = () => {
               type="button"
               onClick={() => handleEdit()}
             >
-              Editar
+              Atualizar
             </button>
           </div>
 

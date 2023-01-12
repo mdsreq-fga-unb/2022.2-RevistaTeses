@@ -102,7 +102,7 @@ const EditarConta = () => {
               type="button"
               onClick={() => handleEdit()}
             >
-              Editar
+              Atualizar
             </button>
           </div>
 

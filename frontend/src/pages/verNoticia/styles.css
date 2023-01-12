@@ -1,8 +1,8 @@
 .noticiaContainerExt{
-    width: 700px;
+    width: 950px;
     height: auto;
     position: absolute;
-    left: 25%;
+    left: 14%;
     background-color: #72bcda;
     border-radius: 15px;
     margin-top: 90px;
@@ -23,4 +23,14 @@
     justify-items: center;
     /* flex-grow: 0.5; */
     align-self: stretch;
+}
+
+.title, .lead, .text{
+    font-family: Poppins-Regular;
+    color:#ffffff;
+    display: flex;
+}
+
+.text{
+    font-size: 16px;
 }

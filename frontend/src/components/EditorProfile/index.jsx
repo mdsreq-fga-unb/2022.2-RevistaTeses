@@ -20,29 +20,35 @@ const EditorProfile = (params) => {
   return (
     <>
       <div className="containerB">
+        <h1 className="editorTitle">Postar Nova Notícia</h1>
         <input
+          className="input100"
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           placeholder="Título"
         />
         <input
+          className="input100"
           type="text"
           value={banner}
           onChange={(e) => setBanner(e.target.value)}
           placeholder="Link para o banner"
         />
         <input
+          className="input100"
           type="text"
           value={lead}
           onChange={(e) => setLead(e.target.value)}
           placeholder="Lead"
         />
-        <input
-          type="text"
+        <textarea
+          className="input1000"
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Texto"
+          cols="36"
+          rows="4"
         />
         <button className="botaoA" onClick={() => handlePost()} type="button">
           Postar Notícia

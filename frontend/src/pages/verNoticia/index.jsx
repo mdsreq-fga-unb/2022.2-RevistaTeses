@@ -18,7 +18,7 @@ const [title, setTitle] = useState("")
 const [lead, setLead] = useState("")
 const [text, setText] = useState("")
 const [banner, setBanner] = useState("")
-const [author, setUser] = useState("")
+// const [author, setAuthor] = useState("")
 
 useEffect(() => {
     api.get(`/news/find/${idNoticia}`, { _id: idNoticia }, )
@@ -27,10 +27,8 @@ useEffect(() => {
         setLead(res.data.news.lead);
         setText(res.data.news.text);
         setBanner(res.data.news.banner);
-        setUser(res.data.news.user);
         console.log(res)
     }).catch((err) => {
-        console.log(idNoticia)
         console.log(err)
     });
 }, []);;
@@ -41,14 +39,14 @@ return (
         <Header />
         <div id= "noticia" className="noticiaContainerExt">
             <div id= "noticiaContainerInt" className="noticiaContainerInt"> 
-                <h1>{title}</h1>
-                <h2>{lead}</h2> 
+                <h1 className="title">{title}</h1>
+                <h2 className="lead">{lead}</h2> 
                 <img className="imagensThumb"
                     src={banner}
                     alt="banner"
                     /> 
-                <h3>{author}</h3> 
-                <h5>{text}</h5>  
+                {/* <h3>{author}</h3>  */}
+                <h5 className="text">{text}</h5>  
             </div>
         </div>
     </div>
