@@ -1,0 +1,143 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+a:hover {
+	text-decoration: none;
+  color: #00719e;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+.containerB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  width: 500px;
+  position:relative;
+  left: 32%;
+  background-color: #72bcda;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+.info{
+    font-family: Poppins-Medium;
+    font-size: 18px;
+    color: #666666;
+    
+}
+
+.textContainer {
+    background: #e6e6e6;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.editorTitle{
+  font-family: Poppins-Regular;
+  color:#ffffff;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.input100 {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+  margin-bottom: 10px;
+}
+
+.input1000 {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height:300px;
+  text-align: start;
+  border-radius: 25px;
+  padding: 10px 68px 0 68px;
+  margin-bottom: 10px;
+}
+
+.botaoA {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #00719e;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.botaoA:hover {
+  background: #333333;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: #adadad;
+}
