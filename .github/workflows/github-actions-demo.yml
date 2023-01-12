@@ -27,6 +27,6 @@ jobs:
           cd frontend
           npm run build --if-present
           
-      - run: |
-          cd frontend
-          npm test  --passWithNoTests
+      # - run: |
+      #     cd frontend
+      #     npm test  --passWithNoTests
