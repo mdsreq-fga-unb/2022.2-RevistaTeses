@@ -57,7 +57,7 @@ Ana ficou sozinha mas fez de tudo um pouco.
 Scrum Master: Fábio
 Analista de qualidade: João
 
-Essa Sprint é extremamente valiosa porque vamos definir o a interface do site, começar a programar e já fazer a base do site, já que serão feitas as features F01 e F03, que são features realicionadas ao crud de usuário e acesso ao perfil. Por ser nossa primeira sprint é considerável a  adaptação e prováveis erros não só no produto como no processo também.
+Essa Sprint é extremamente valiosa porque vamos pagar os débitos técnicos da sprint passada assim como adicionar as funcionalidades de notícias. Será uma sprint bem apertada com relação ao tempo.
 
 #### F01 - US01, US02, US03, US04, US05 (Débito da sprint 3)
 #### F02 - US01, US02, US03, US04, US05 
@@ -77,4 +77,28 @@ Ana e Fábio se ajudam dadas as similaridades.
 João vai dar apoio técnico e fazer página de perfil: A história completa, ou seja, backend, frontend, teste e CI.
 
 Depois iremos nos reunir dia 10/01:
-Na reunião, Ana, João e Fábio vão trabalhar juntos e fazer a página home e notícias completas
+Na reunião, Ana, João, Fábio, Holsback e Pedro vão trabalhar juntos e fazer a página home e notícias completas
+
+### Review
+
+### Retrospectiva
+
+#### O que deu certo nessa  última Sprint ?
+
+#### Quais problemas foram foram encontrados?
+
+
+#### Como esses problemas foram resolvidos ?
+
+
+#### O que pode ser mudado para que o time seja mais eficaz?
+
+
+
+#### O que cada um pode melhorar?
+
+
+
+### Relato de programação em pares
+
+
