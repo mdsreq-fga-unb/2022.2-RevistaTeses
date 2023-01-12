@@ -15,3 +15,6 @@ Durante a unidade 2 o grupo teve a oportunidade de aprofundar os estudos sobre a
 Foi também na unidade 2 que percebemos que precisa melhorar a comunicação com o cliente, apesar de utilizarmos a metodologia Scrum que tem como um dos grandes objetivos trazer o cliente para perto da produção da aplicação, o nosso cliente não possui tempo para estar presente e a falta de conhecimento quanto à natureza de um software pode agravar esse problema de comunicação, portanto, aprendemos que precisamos melhorar por nossa parte a entender melhor quais são os problemas do cliente e explicar o conteúdo relacionado à produção de software de maneira mais informal e sem termos técnicos, explicar o nosso lado como time de desenvolvimento e sobre o que é ou não relevante para nós sabermos.</br>
 
 Uma lição importante que foi tomada sobre a Unidade 2 é de todos os membros ter pleno conhecimento sobre as tecnologias que serão utilizadas, até o fim desta unidade não foi tomada nenhuma medida para estudo e alinhamento de conhecimentos, porém em breve e antes do início da unidade 3 será feito um "dojo" sobre as tecnologias que serão utilizadas para obter esse alinhamento de conhecimento antes do início da produção do software aqui documentado.</br>
+
+## Unidade 3
+Aprendemos a tecnologia e precisamos aprender bem mais. Aprendemos sobre organização também. 
