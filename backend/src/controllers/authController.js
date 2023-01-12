@@ -62,7 +62,25 @@ const logout = async (req, res) => {
   }
 };
 
+const verifyPassword = async (req, res) => {
+  const userId = req.userId
+  const { password } = req.body
+
+  try{
+    const user = await User.findOne({_id: userId}).select("+password")
+
+    if(!(await bcrypt.compare(password, user.password))){
+      return res.status(400).send({error: "Incorrect password"})
+    }
+
+    return res.status(200).send({message: "Correct password"})
+  } catch {
+    return res.status(500).send({ error: err.message });
+  }
+}
+
 module.exports = {
   login,
   logout,
+  verifyPassword
 };

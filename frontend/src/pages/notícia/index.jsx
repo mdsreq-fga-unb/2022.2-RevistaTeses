@@ -2,7 +2,7 @@ import Header from "../../components/Header";
 
 const Noticias = () => {
     return (
-        <div id="body">
+        <div id="body" data-testid="noticias">
     
             <Header/>
     

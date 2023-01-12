@@ -7,6 +7,9 @@ import Login from './pages/login/index'
 import Perfil from "./pages/perfil/index";
 import Cadastro from "./pages/cadastro";
 import Noticias from "./pages/notícia";
+import VerNoticia from "./pages/verNoticia";
+import EditarConta from "./pages/editarConta";
+import TrocarSenha from "./pages/trocarSenha";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +31,18 @@ const router = createBrowserRouter([
   {
     path: "/noticias",
     element: <Noticias />
+  },
+  {
+    path: "/verNoticia/:idNoticia",
+    element: <VerNoticia />
+  },
+  {
+    path: "/perfil/editar",
+    element: <EditarConta/>
+  },
+  {
+    path: "/perfil/senha",
+    element: <TrocarSenha/>
   }
 ]);
 

@@ -41,8 +41,8 @@ const Login = () => {
           <div className="botao">
             <button className="botao" type="button" onClick={() => handleLogin()}>Entrar</button>
           </div>
-
           <div className="textoAlerta">
+
             <span className="textoAlerta">{invalid}</span>
           </div>
 

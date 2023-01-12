@@ -6,6 +6,7 @@ const routes = express.Router();
 
 routes.post("/login", authController.login);
 routes.post("/logout", verifyToken, authController.logout); 
+routes.post("/verify", verifyToken, authController.verifyPassword)
 
 routes.get("/test", verifyToken, (req, res) => {
   // console.log(req)

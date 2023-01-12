@@ -42,8 +42,9 @@ iframe {
   font-size: 18px;
   line-height: 1.5;
   color: red;
-  padding-left: 55px;
-  padding-top: 5px;
+  /* left: -133px; */
+  /* padding-left: 55px; */
+  /* padding-top: 5px; */
 }
 
 .textoCriar {

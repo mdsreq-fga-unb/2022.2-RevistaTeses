@@ -5,7 +5,7 @@ import './styles.css'
 import Header from "../../components/Header";
 import { api } from "../../api";
 
-const Cadastro = () => {
+const Cadastro = () => { 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -28,57 +28,59 @@ const Cadastro = () => {
   }
 
   return (
-    <div className="container">
-      <div className="container-layout">
-        {/* <Header/> */}
-        <form className="login-form">
-          <span className="login-form-title"> Criar Conta </span>
+    <>
+      <Header />
+      <div className="container" data-testid="area_cadastro">
+        <div className="container-layout">
+            <form className="login-form">
+              <span className="login-form-title"> Criar Conta </span>
 
-          <div className="wrap-input">
-            <input
-              className={name !== "" ? "has-val input" : "input"}
-              type="email"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <span className="focus-input" data-placeholder="Nome"></span>
+              <div className="wrap-input">
+                <input
+                  className={name !== "" ? "has-val input" : "input"}
+                  type="email"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+                <span className="focus-input" data-placeholder="Nome"></span>
+              </div>
+
+              <div className="wrap-input">
+                <input
+                  className={email !== "" ? "has-val input" : "input"}
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <span className="focus-input" data-placeholder="Email"></span>
+              </div>
+
+              <div className="wrap-input">
+                <input
+                  className={password !== "" ? "has-val input" : "input"}
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <span className="focus-input" data-placeholder="Password"></span>
+              </div>
+
+              <span className="textoAlerta">{invalid}</span>
+
+              <div className="container-login-form-btn">
+                <button type="button" onClick={() => handleRegister()} className="login-form-btn">Registrar</button>
+              </div>
+
+              <div className="text-center">
+                <span className="txt1">Já possui conta? </span>
+                <Link className="txt2" to="/login">
+                Acessar com Email e Senha.
+                </Link>
+              </div>
+            </form>
           </div>
-
-          <div className="wrap-input">
-            <input
-              className={email !== "" ? "has-val input" : "input"}
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <span className="focus-input" data-placeholder="Email"></span>
-          </div>
-
-          <div className="wrap-input">
-            <input
-              className={password !== "" ? "has-val input" : "input"}
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <span className="focus-input" data-placeholder="Password"></span>
-          </div>
-
-          <span className="textoAlerta">{invalid}</span>
-
-          <div className="container-login-form-btn">
-            <button type="button" onClick={() => handleRegister()} className="login-form-btn">Registrar</button>
-          </div>
-
-          <div className="text-center">
-            <span className="txt1">Já possui conta? </span>
-            <Link className="txt2" to="/login">
-              Acessar com Email e Senha.
-            </Link>
-          </div>
-        </form>
-      </div>
-    </div>
+        </div>
+    </>
   );
 };
 

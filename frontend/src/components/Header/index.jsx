@@ -5,20 +5,16 @@ const Header = () => {
   function handleLogPro() {
     if (!document.cookie) {
       return (
-        <li>
-          <a href="/login">Entrar</a>
-        </li>
+        <a href="/login">Entrar</a>
       );
     } else {
       return (
-        <li>
-          <a href="/perfil">Perfil</a>
-        </li>
+        <a href="/perfil">Perfil</a>
       );
     }
   }
   return (
-    <div className="header">
+    <div className="header" data-testid="header">
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -124,19 +120,19 @@ c-13 -1 -47 -6 -76 -11z"
 
       <div className="headerContainer">
         <ul className="opcoes">
-          <li>
+          <li key="inicio">
             <a href="/">Inicio</a>
           </li>
-          <li>
+          <li key="colunas">
             <a href="/">Colunas</a>
           </li>
-          <li>
+          <li key="noticias">
             <a href="/noticias">Noticias</a>
           </li>
-          <li>
+          <li key="eventos">
             <a href="/">Eventos</a>
           </li>
-          <li>{handleLogPro()}</li>
+          <li key={Math.random()}>{handleLogPro()}</li>
         </ul>
       </div>
     </div>

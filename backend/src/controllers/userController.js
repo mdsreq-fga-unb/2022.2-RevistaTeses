@@ -8,7 +8,7 @@ async function isEmailValid(email) {
   return emailValidator.validate(email);
 }
 
-const register = async (req, res) => { 
+const register = async (req, res) => {
   const { name, email, password } = req.body;
 
   if (!name) {
@@ -44,7 +44,7 @@ const register = async (req, res) => {
   }
 };
 
-const findUser = async (req, res) => { 
+const findUser = async (req, res) => {
   let id = req.userId;
 
   if (req.accountType === 10) {
@@ -75,7 +75,7 @@ const findUser = async (req, res) => {
   }
 };
 
-const findAllUsers = async (req, res) => { 
+const findAllUsers = async (req, res) => {
   if (req.accountType !== 10) {
     return res.status(404).send({ message: "Not found" });
   }
@@ -89,7 +89,7 @@ const findAllUsers = async (req, res) => {
   return res.status(200).send({ users });
 };
 
-const update = async (req, res) => { 
+const update = async (req, res) => {
   let id = req.userId;
   let { name, email, password, account } = req.body;
 
@@ -118,21 +118,25 @@ const update = async (req, res) => {
     return res.status(400).send({ error: "Invalid ID" });
   }
 
-  if (!name && !email && !account) {
-    return res.status(400).send({ error: "Need at least one field to update" });
-  }
-
   try {
     if (!(await User.findOne({ _id: id }))) {
       return res.status(404).send({ error: "User not found" });
     }
 
+    const testEmail = await User.findOne({email: email});
+
+    if(testEmail && testEmail.email !== email){
+      return res.status(400).send({ error: "Email already registered" });
+    }
+
+    if(!password){
+      const user = await User.findOneAndUpdate({_id: id}, {name:name, email: email, account: account})
+    } else {
     const user = await User.updateOne(
       { _id: id },
       { name, email, account, password }
     );
-
-    user.password = undefined;
+    }
 
     return res.status(200).send({
       message: "User has been updated",
@@ -146,7 +150,7 @@ const update = async (req, res) => {
   }
 };
 
-const erase = async (req, res) => { 
+const erase = async (req, res) => {
   const id = req.userId;
   const usedToken = req.headers.authorization;
   const parts = usedToken.split(" ");
