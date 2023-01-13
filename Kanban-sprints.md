@@ -87,8 +87,9 @@ F02 - us: 01,03,04
 F03 - us: 01,04
 F10 - us: 01,02
 
-Seguimos a interface combinada com o cliente e fizemos um exemplo de como achamos que a interface ficaria melhor. O cliente preferiu o que sugerimos e nos deu carta branca para todas as alterações de interface e layout. Foram aprovadas todas as entregas dessas user storys mas discutimos novamente sobre a interface e vamos ter que incluir os novos pedidos, logo teremos que redimensionar as próximas entregas.
+Seguimos a interface combinada com o cliente e fizemos um exemplo de como achamos que a interface ficaria melhor. O cliente preferiu o que sugerimos e nos deu carta branca para todas as alterações de interface e layout. Foram aprovadas todas as entregas dessas user storys mas discutimos novamente sobre a interface e vamos ter que incluir os novos pedidos, logo teremos que redimensionar as próximas entregas.2
 
+*[Link para o vídeo](https://youtu.be/3wUCVSJqDj4)
 
 ### Retrospectiva
 
