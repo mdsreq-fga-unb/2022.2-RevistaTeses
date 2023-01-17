@@ -7,6 +7,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  background: linear-gradient(to bottom, #98d8f1, #41f141);
 }
 
 .container-layout {
@@ -17,17 +18,8 @@
   align-items: center;
   justify-content: center;
   padding: 15px;
-  background-color: #72bcda;
 }
 
-/*.wrap-layout {
-  width: 390px;
-  background-color: #333;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 77px 55px 33px 55px;
-  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
-}*/
 
 .login-form {
   width: 390px;

@@ -1,21 +1,24 @@
 .header {
+  background-color: inherit;
   display: flex;
   align-items: center;
-  margin-left: 35px;
-  margin-top: 15px;
+  padding-left: 3.5%;
+  padding-top: 1.5%;
+  justify-content: space-around;
 }
 
 .headerContainer {
-  margin-left: 90px;
-  background-color: #00719e;
-  height: 50px;
+  
+  background-color: #075c7d;
+  height: 4%;
   width: 75%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .opcoes {
-  padding-top: 15px;
-  border-radius: 20px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 2%;
   display: flex;
   list-style-type: none;
   justify-content: space-around;
@@ -24,12 +27,29 @@
 }
 
 li a{
-  font-size: 20px;
+  cursor: pointer;
+  font-size: 100%;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
 li a:hover{
-  color: #d9d9d9;
+   color: #95db95
+}
+
+@media screen and (max-width:700px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    
+  } 
+}
+
+@media screen and (max-width:700px) {
+  .headerContainer, .opcoes{
+    flex-direction: column;
+    line-height: 140%;
+    max-width: 400px;
+  }
 }
