@@ -21,9 +21,8 @@ import Perfil from '../src/pages/perfil';
     14. Deve ter acesso à área de criação de notícias (16)
     15. A coluna deve estar disponível imediatamente após a postagem (33)
     16. O link deve estar disponível imediatamente após a postagem (36)
-    
     -Como Leitor:
-    15. Deve poder ver os próprios dados
-    16. Deve poder editar os próprios dados
+    17. Deve poder ver os próprios dados (14)
+    18. Deve poder editar os próprios dados (14)
 
 */ 
