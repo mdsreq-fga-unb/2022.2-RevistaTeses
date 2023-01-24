@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import {describe, expect, it, render, screen } from 'vitest';
 import Cadastro from '../src/pages/cadastro';
 
 /* Testes para se fazer com o Cadastro:
@@ -11,7 +11,7 @@ import Cadastro from '../src/pages/cadastro';
 
 
 describe('Testar Cadastro',()=>{
-    test('Renderizar a página',()=>{
+    it('Renderizar a página',()=>{
         render(Cadastro);
 
         const cadastroTitle = screen.getByRole('Criar Conta')
@@ -19,7 +19,7 @@ describe('Testar Cadastro',()=>{
         expect(cadastroTitle).toBeInTheDocument();
     })
 
-    test('Email e senha obrigatórios', () =>{
+    it('Email e senha obrigatórios', () =>{
         
 
 
