@@ -12,20 +12,20 @@
 
 - Design
 
-    - [Arquitetura](/design/Documento%20de%20arquitetura.md)
-    - [Interface](/design/Documento%20de%20interface.md)
+    - [Arquitetura](/design/documento-de-arquitetura.md)
+    - [Interface](/design/documento-de-interface.md)
 
 - Entregas das Unidades
 
     - [Unidade 1](/entregas-unidades/unidade-1.md)
     - [Unidade 2](/entregas-unidades/unidade-2.md)
-    - [Unidade 3](/entregas-unidades/Unidade3.md)
+    - [Unidade 3](/entregas-unidades/unidade-3.md)
   
  - Kanban e sprints
 
-    - [Registros Sprints](Kanban-sprints.md)
+    - [Registros Sprints](/kanban-sprints/kanban-sprints.md)
   
   - Testes
   
-    - [Estratégias de testes](Documento%20de%20estratégia%20de%20testes)
+    - [Estratégias de testes](/testes/estrategia-de-testes.md)
    
