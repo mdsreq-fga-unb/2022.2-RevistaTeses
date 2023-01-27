@@ -51,8 +51,8 @@ const Login = () => {
       setInvalid("")
 
       const cobertura = document.getElementById('cobertura');
-      cobertura.classList.add('left');
-      cobertura.classList.remove('right');
+      cobertura.classList.add('right');
+      cobertura.classList.remove('left');
   
       const login = document.getElementById('deslizanteLogin');
       login.classList.add('esconde');
@@ -67,8 +67,8 @@ const Login = () => {
       setInvalid("")
       
       const cobertura = document.getElementById('cobertura');
-      cobertura.classList.add('right');
-      cobertura.classList.remove('left');
+      cobertura.classList.add('left');
+      cobertura.classList.remove('right');
   
       const login = document.getElementById('deslizanteLogin');
       login.classList.remove('esconde');
@@ -105,7 +105,6 @@ const Login = () => {
         <section className="formulario" id="login">
           <h1 className="titulo">Entrar</h1>
           <div className="campoPreenchimento">
-            <input className="campoFormulario" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome"/>
             <input className="campoFormulario" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
             <input className="campoFormulario" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha"/>
             <div className="botao">
