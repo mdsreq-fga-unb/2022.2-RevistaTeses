@@ -59,6 +59,7 @@
   width: 50%;
   height: 100%;
 }
+
 .deslizante {
   position: absolute;
   display: flex;
@@ -151,6 +152,7 @@
 
 .campoFormulario {
   width: 100%;
+  height: auto;
   margin: 0 0 1.2rem;
   border: none;
   background: rgb(228, 228, 228);

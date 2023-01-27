@@ -87,7 +87,7 @@ const Perfil = () => {
           Logout
         </button>
         <button
-          className="botaoA"
+          className="botaoA" //editarConta
           type="button"
           onClick={() => {
             navigate("/perfil/editar");
@@ -96,13 +96,22 @@ const Perfil = () => {
           Editar Conta
         </button>
         <button
-          className="botaoA"
+          className="botaoA" //editarSenha
           type="button"
           onClick={() => {
             navigate("/perfil/senha");
           }}
         >
           Trocar a Senha
+        </button>
+        <button
+          className="botaoExcluir" //excluirConta
+          type="button"
+          onClick={() => {
+            //Excluir a conta - colocar back
+          }}
+        >
+          Excluir Conta
         </button>
       </div>
       {handleEditor()}

@@ -19,6 +19,16 @@ const EditorProfile = (params) => {
 
   return (
     <>
+      
+        <button
+          className="botaoVerNoticias" //Ver notícias
+          type="button"
+          onClick={() => {
+            //Ver as notícias - colocar back
+          }}
+        >
+          Ver minhas notícias
+        </button>
       <div className="containerB">
         <h1 className="editorTitle">Postar Nova Notícia</h1>
         <input
