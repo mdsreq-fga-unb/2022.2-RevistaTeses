@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Cookies from "universal-cookie";
 import { api } from "../../api";
 
 import EditorProfile from "../../components/EditorProfile";
@@ -17,38 +18,32 @@ const Perfil = () => {
   const [accountTitle, setAccountTitle] = useState("Leitor");
   const navigate = useNavigate();
 
+  const cookies = new Cookies();
+  
   useEffect(() => {
-    api
-      .get(
-        "/user",
-        { _id: "" },
-        { headers: { Authorization: document.cookie } }
-      )
-      .then(function (res) {
-        setName(res.data.user.name);
-        setEmail(res.data.user.email);
-        setAccount(res.data.user.account);
-        setId(res.data.user._id)
-        if (account === 10) {
-          setAccountTitle("Editor-Chefe");
-        } else if (account === 1) {
-          setAccountTitle("Editor");
-        } else {
-          setAccountTitle("Leitor");
-        }
-      });
+    const token = cookies.get("Authorization");
+    api.post("/user", { token: token }).then((res) => {
+      setName(res.data.user.name);
+      setEmail(res.data.user.email);
+      setAccount(res.data.user.account);
+      setId(res.data.user._id);
+      if (account === 10) {
+        setAccountTitle("Editor-Chefe");
+      } else if (account === 1) {
+        setAccountTitle("Editor");
+      } else {
+        setAccountTitle("Leitor");
+      }
+    });
   }, );
 
   function handleLogout() {
-    api
-      .post(
-        "/auth/logout",
-        { _id: "" },
-        { headers: { Authorization: document.cookie } }
-      )
-      .then(function (res) {
-        navigate("/");
-      });
+    const token = cookies.get("Authorization");
+
+    api.post("/auth/logout", { _id: "", token: token }).then(function (res) {
+      cookies.remove("Authorization");
+      navigate("/");
+    });
   }
 
   function handleEditor() {

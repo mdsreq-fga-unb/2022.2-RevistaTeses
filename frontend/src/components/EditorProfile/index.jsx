@@ -1,20 +1,34 @@
 import React from "react";
 import { useState } from "react";
-import {api} from "../../api"
+import { useNavigate } from "react-router-dom";
+import Cookies from "universal-cookie";
+import { api } from "../../api";
 import "./styles.css";
 
-const EditorProfile = (params) => {
+
+const EditorProfile = (props) => {
+  const cookies = new Cookies();
+
   const [title, setTitle] = useState("");
   const [banner, setBanner] = useState("");
   const [lead, setLead] = useState("");
   const [text, setText] = useState("");
-
+  const navigate = useNavigate();
+  
   function handlePost() {
-    api.post(
-      "/news/create",
-      { title: title, banner: banner, lead: lead, text: text, user: params.user },
-      { headers: { Authorization: document.cookie } }
-    );
+    const token = cookies.get("Authorization");
+    api
+    .post("/news/create", {
+      title: title,
+        banner: banner,
+        lead: lead,
+        text: text,
+        user: props.user,
+        token: token,
+      })
+      .then((data) => {
+        navigate(`/verNoticia/${res.data._id}`);
+      });
   }
 
   return (

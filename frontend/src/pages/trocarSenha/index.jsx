@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Cookies from 'universal-cookie'
 import { api } from "../../api/index";
 import Header from "../../components/Header";
 import "./styles.css";
+
 
 const TrocarSenha = () => {
   const [newPassword, setNewPassword] = useState("");
@@ -10,22 +12,23 @@ const TrocarSenha = () => {
   const [password, setPassword] = useState("");
   const [invalid, setInvalid] = useState("");
   const navigate = useNavigate();
-
+  
+  const cookies = new Cookies()
+  
   const handleEdit = async () => {
+    const token = cookies.get("Authorization");
     await api
-      .post(
-        "/auth/verify",
-        { password: password },
-        { headers: { Authorization: document.cookie } }
+    .post(
+      "/auth/verify",
+      { password: password, token: token }
       )
       .then(async function (res) {
         setInvalid("");
         if(newPassword === newPassword2){
-        await api
+          await api
           .patch(
             "/user/update",
-            { password: newPassword },
-            { headers: { Authorization: document.cookie } }
+            { password: newPassword, token: token }
           )
           .then(function (res) {
             navigate("/perfil");

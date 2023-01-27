@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Cookies from 'universal-cookie'
 import { api } from "../../api/index";
 import Header from "../../components/Header";
 import "./styles.css";
+
+const cookies = new Cookies()
+const token = cookies.get("Authorization");
 
 const EditarConta = () => {
   const [name, setName] = useState("");
@@ -10,13 +14,11 @@ const EditarConta = () => {
   const [password, setPassword] = useState("");
   const [invalid, setInvalid] = useState("");
   const navigate = useNavigate();
-
+  
   useEffect(() => {
-    api
-      .get(
-        "/user",
-        { _id: "" },
-        { headers: { Authorization: document.cookie } }
+    api.post(
+      "/user",
+      { _id: "", token: token },
       )
       .then(function (res) {
         setName(res.data.user.name);
@@ -28,16 +30,14 @@ const EditarConta = () => {
     await api
       .post(
         "/auth/verify",
-        { password: password },
-        { headers: { Authorization: document.cookie } }
+        { password: password, token: token },
       )
       .then(async function (res) {
         setInvalid("");
         await api
           .patch(
             "/user/update",
-            { name: name, email: email, password: password },
-            { headers: { Authorization: document.cookie } }
+            { name: name, email: email, password: password, token: token },
           )
           .then(function (res) {
             navigate("/perfil");
@@ -67,7 +67,7 @@ const EditarConta = () => {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Senha"
+              placeholder="Nome"
             />
           </div>
 
