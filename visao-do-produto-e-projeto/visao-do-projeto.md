@@ -18,12 +18,13 @@
 | Developer             | Codificar o produto, codificar testes unitários, realizar refatoração, criar um plano para cada sprint                                                              | João Pedro  | Ana,</br>Pedro,</br>Holsback,</br>Fabio                |
 ## Organização do Projeto - Unidade 4 (Squads)
 
-| Product owner | Atualizar o escopo do produto, organizar o escopo das sprints, validar as entregas | Ana            |
+| Papel         | Atribuição                                                                         | Responsáveis   |
 |---------------|------------------------------------------------------------------------------------|----------------|
 | Dev CI/Teste  | Integração contínua , Cloud , TDD ,Testes Unitários, Automatização de Testes       | Ana e Holsback |
 | Dev Frontend  | Usabilidade , Componentes , Padrões , Integração Front e Back                      | Pedro          |
 | Dev Backend   | Dados, Codificação, Padrões, Arquitetura                                           | João           |
 | Dev master    | ScrumXP , Requisitos , Qualidade                                                   | Fábio          |
+| Product owner | Atualizar o escopo do produto, organizar o escopo das sprints, validar as entregas | Ana            |
 
 ## Planejamento das Fases
 
