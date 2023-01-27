@@ -6,46 +6,10 @@ Essa página destina-se ao armazenamento da documentação do projeto "Portal Te
 
 ## 2. **Membros da Equipe**
 
-<table>
-    <tr>
-        <td align="center">
-        <a href="https://github.com/uMorbeck" target="_blank">
-        	<img style="border-radius: 50%;" src="https://github.com/uMorbeck.png" width="150px;" alt=""/><br />
-        	<sub><b>João Pedro Morbeck</b></sub>
-        	</a><br />
-        	<a href="https://github.com/uMorbeck" target="_blank"></a>
-       	</td>
-
-        <td align="center">
-        <a href="https://github.com/CarolCoCe" target="_blank">
-        	<img style="border-radius: 50%;" src="https://github.com/CarolCoCe.png" width="150px;" alt=""/><br />
-        	<sub><b>Ana Carolina Cesar</b></sub>
-        	</a><br />
-        	<a href="https://github.com/CarolCoCe" target="_blank"></a>
-       	</td>
-
-       	<td align="center">
-        <a href="https://github.com/ahbreu" target="_blank">
-        	<img style="border-radius: 50%;" src="https://github.com/ahbreu.png" width="150px;" alt=""/><br />
-        	<sub><b>Pedro Abreu</b></sub>
-        	</a><br />
-        	<a href="https://github.com/ahbreu" target="_blank"></a>
-       	</td>
-
-       	<td align="center">
-        <a href="https://github.com/Theholsback" target="_blank">
-        	<img style="border-radius: 50%;" src="https://github.com/Theholsback.png" width="150px;" alt=""/><br />
-        	<sub><b>Gabriel Holsback</b></sub>
-        	</a><br />
-        	<a href="https://github.com/Theholsback" target="_blank"></a>
-       	</td>
-
-       	<td align="center">
-        <a href="https://github.com/fabioaletorres" target="_blank">
-        	<img style="border-radius: 50%;" src="https://github.com/fabioaletorres.png" width="150px;" alt=""/><br />
-        	<sub><b>Fábio Torres</b></sub>
-        	</a><br />
-        	<a href="https://github.com/fabioaletorres" target="_blank"></a>
-       	</td>
-    </tr>
-    </table>
+| Nome                                                 | Matrícula |
+| ---------------------------------------------------- | --------- |
+| [João Pedro Morbeck](https://github.com/uMorbeck)    | 202063300 |
+| [Ana Carolina Cesar](https://github.com/CarolCoCe)   | 190101750 |
+| [Pedro Abreu](https://github.com/ahbreu)             | 190036605 |
+| [Gabriel Holsback](https://github.com/Theholsback)   | 190013303 |
+| [Fabio Torres](https://github.com/fabioaletorres)    | 200037170 |
