@@ -5,11 +5,11 @@ const Header = () => {
   function handleLogPro() {
     if (!document.cookie) {
       return (
-        <a href="/login">Entrar</a>
+        <a href="/login">ENTRAR</a>
       );
     } else {
       return (
-        <a href="/perfil">Perfil</a>
+        <a href="/perfil">PERFIL</a>
       );
     }
   }
@@ -121,16 +121,16 @@ c-13 -1 -47 -6 -76 -11z"
       <div className="headerContainer">
         <ul className="opcoes">
           <li key="inicio">
-            <a href="/">Inicio</a>
+            <a href="/">INÍCIO</a>
           </li>
           <li key="colunas">
-            <a href="/">Colunas</a>
+            <a href="/">COLUNAS</a>
           </li>
           <li key="noticias">
-            <a href="/noticias">Noticias</a>
+            <a href="/noticias">NOTÍCAS</a>
           </li>
           <li key="eventos">
-            <a href="/">Eventos</a>
+            <a href="/">EVENTOS</a>
           </li>
           <li key={Math.random()}>{handleLogPro()}</li>
         </ul>

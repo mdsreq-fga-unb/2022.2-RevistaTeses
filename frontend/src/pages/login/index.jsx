@@ -3,54 +3,85 @@ import { useNavigate } from "react-router-dom";
 import { api } from '../../api/index'
 import Header from '../../components/Header';
 import "../login/styles.css";
+import { useEffect } from "react";
 
 const Login = () => {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [invalid, setInvalid] = useState("")
-  const navigate = useNavigate()
 
-  const handleLogin = async () => {
-    await api.post("/auth/login", {email: email, password: password})
-    .then(function(res){
-      setInvalid("");
-      navigate("/perfil")
-      console.log(res.data)
+  useEffect(() => {
+    document.getElementById('deslizaLogin').addEventListener('click', () =>{
+      const cobertura = document.getElementById('cobertura');
+      cobertura.classList.add('left');
+      cobertura.classList.remove('right');
+  
+      const login = document.getElementById('deslizanteLogin');
+      login.classList.add('esconde');
+  
+      const cadastro = document.getElementById('deslizanteCadastro');
+      cadastro.classList.remove('esconde');
     })
-    .catch((err) => {
-      setInvalid("E-mail ou senha incorreta");
+  
+    document.getElementById('deslizaCadastro').addEventListener('click', () => {
+      const cobertura = document.getElementById('cobertura');
+      cobertura.classList.add('right');
+      cobertura.classList.remove('left');
+  
+      const login = document.getElementById('deslizanteLogin');
+      login.classList.remove('esconde');
+  
+      const cadastro = document.getElementById('deslizanteCadastro');
+      cadastro.classList.add('esconde');
     })
-  }
-
+  });
+  
   return (
     <>
       <Header />
+      
+      <div className="body">
+      <div className="abaFormularios">
 
-      <div id="login" data-testid="area_login">
-        <form className="login">
-          <span className="loginTitulo"> Faça seu login </span>
-
-          <div className="areaEmail" data-validate="É necessário um e-mail válido: ex@abc.xyz">
-            <input className="input100" type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-mail" />
+        <section className="formulario" id="login">
+          <h1 className="titulo">Entrar</h1>
+          <div className="campoPreenchimento">
+            <input className="campoFormulario" type="text" placeholder="Email"/>
+            <input className="campoFormulario" type="password" placeholder="Senha"/>
+            <div className="botao">
+              <button className="botaoLogin">ENTRAR</button>
+            </div>
           </div>
+        </section>
 
-          <div className="areaSenha" data-validate="É necessário inserir uma senha">
-            <input className="input100" type="password" name="senha" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha" />
+        <section className="formulario" id="cadastro">
+          <h1 className="titulo">Criar Conta</h1>
+          <div className="campoPreenchimento">
+            <input className="campoFormulario" type="text" placeholder="Nome"/>
+            <input className="campoFormulario" type="text" placeholder="Email"/>
+            <input className="campoFormulario" type="password" placeholder="Senha"/>
+            <div className="botao">
+              <button className="botaoCadastro">CRIAR CONTA</button>
+            </div>
           </div>
+        </section>
 
-          <div className="botao">
-            <button className="botao" type="button" onClick={() => handleLogin()}>Entrar</button>
-          </div>
-          <div className="textoAlerta">
+        <section className="deslizante" id="deslizanteLogin">
+          <h1 className="titulo">Bem-Vindo de Volta!</h1>
+          <span className="subtitulo">Mantenha-se conectado fazendo login <br></br> com as suas informações!</span>
+          <button className="botaoDeslizante" id="deslizaLogin">Já tenho conta!</button>
+        </section>
 
-            <span className="textoAlerta">{invalid}</span>
-          </div>
+        <section className="deslizante" id="deslizanteCadastro">
+          <h1 className="titulo">Olá, colega!</h1>
+          <span className="subtitulo">Insira algumas informações e comece <br></br> a sua jornada conosco!</span>
+          <button className="botaoDeslizante" id="deslizaCadastro"> Quero criar uma conta</button>
+        </section>
 
-          <div className="textoCriar">
-            <a className="textoCriar" href="/cadastro">Crie sua conta</a>
-          </div>
-        </form>
+        <div id="cobertura"></div>
+
       </div>
+
+      
+      </div>
+
     </>
   );
 };
