@@ -6,8 +6,9 @@
 |------|--------|-----------|-----------|
 | 16/11/2022 | 0.1 | Criação do Documento | Ana Carolina Costa Cesar</br> Gabriel Holsback Dantas</br> João Pedro Rodrigues Morbeck</br> Pedro Marcos Abreu Bernardo</br> Fabio Alessandro Torres Santos |
 | 17/11/2022 | 0.2 | Alterando o Gerenciamento de Riscos e</br>Critérios de Replanejamento | Ana Carolina Costa Cesar</br> Gabriel Holsback Dantas</br> João Pedro Rodrigues Morbeck</br> Fabio Alessandro Torres Santos |
+| 26/01/2023 | 1.0 | Alterando conforme a nova</br> negociação de escopo | Ana Carolina Costa Cesar</br> Gabriel Holsback Dantas</br> João Pedro Rodrigues Morbeck</br> Fabio Alessandro Torres Santos</br> Pedro Marcos Abreu Bernardo |
 
-## Organização do Projeto
+## Organização do Projeto - Unidades 1, 2 e 3
 
 | Papel                 | Atribuições                                                                                                                                                         | Responsável | Participantes                                       |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------- |
@@ -15,6 +16,14 @@
 | Scrum master          | Garantir a aplicação do scrum, ajudar o scrum team, cuidar dos eventos scrum, produzir as atas de reunião                                                           | Rotativo    | Ana,</br>Pedro,</br>Holsback,</br>João Pedro,</br>Fabio |
 | Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código, (essa pessoa inspeciona os testes tb) | Rotativo    | Ana,</br>Pedro,</br>Holsback,</br>João Pedro,</br>Fabio |
 | Developer             | Codificar o produto, codificar testes unitários, realizar refatoração, criar um plano para cada sprint                                                              | João Pedro  | Ana,</br>Pedro,</br>Holsback,</br>Fabio                |
+## Organização do Projeto - Unidade 4 (Squads)
+
+| Product owner | Atualizar o escopo do produto, organizar o escopo das sprints, validar as entregas | Ana            |
+|---------------|------------------------------------------------------------------------------------|----------------|
+| Dev CI/Teste  | Integração contínua , Cloud , TDD ,Testes Unitários, Automatização de Testes       | Ana e Holsback |
+| Dev Frontend  | Usabilidade , Componentes , Padrões , Integração Front e Back                      | Pedro          |
+| Dev Backend   | Dados, Codificação, Padrões, Arquitetura                                           | João           |
+| Dev master    | ScrumXP , Requisitos , Qualidade                                                   | Fábio          |
 
 ## Planejamento das Fases
 
@@ -22,10 +31,10 @@
 | --------------------------------------------------------------------- | ------------------------------------------------ | ----------- | -------- |
 | Sprint 1                                                              | Definição do Produto e Planejamento do Projeto   | 15/11/22    | 21/11/22 |
 | Sprint 2                                                              | Definição de requisitos e conhecer as tecnologias| 22/11/22    | 07/12/22 |
-| Sprint 3 (MVP1) - Pedro: Scrum Master, Holsback: Analista de qualidade| Design interface, F01, F03                       | 08/12/22    | 21/12/22 |
-| Sprint 4 (MVP1) - Fábio: Scrum Master, Joaõ: Analista de qualidade    | F02,F10                                          | 22/12/22    | 11/01/23 |
-| Sprint 5 (MVP2)                                                       | F12,F13                                          | 12/01/23    | 24/01/23 |
-| Sprint 6 (MVP2)                                                       | F04,F05,F06                                      | 25/01/23    | 08/02/23 |
+| Sprint 3 (MVP1) - Pedro: Scrum Master, Holsback: Analista de qualidade| Design interface, F01(US: 01,02,03,04,05), F03(US: 14,16,17,18)| 08/12/22    | 21/12/22 |
+| Sprint 4 (MVP1) - Fábio: Scrum Master, João: Analista de qualidade    | Débitos técnicos da sprint anterior, F02(US: 06,07,10,12), F10(US: 29,30,31,32)| 22/12/22    | 11/01/23 |
+| Sprint 5 (MVP2)  SQUADS                                               | Mudar interface,fazer testes. Acabar os débitos técnicos da sprint anterior : F01-US5, F03-US16, F10(US:31,32)                      | 12/01/23    | 24/01/23 |
+| Sprint 6 (MVP2)  SQUADS                                               | F12(US:33,34,35),F13(US:36,37,38),F14(US:39,40,41)| 25/01/23    | 08/02/23 |
 
 ## Matriz de Comunicação
 
