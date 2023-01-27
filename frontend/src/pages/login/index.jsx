@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Cookies from 'universal-cookie'
 import { api } from '../../api/index'
 import Header from '../../components/Header';
 import "../login/styles.css";
@@ -7,8 +8,49 @@ import { useEffect } from "react";
 
 const Login = () => {
 
+  const [emailLog, setEmailLog] = useState("")
+  const [passwordLog, setPasswordLog] = useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [invalid, setInvalid] = useState("")
+  const navigate = useNavigate()
+  const cookies = new Cookies()
+
+  const handleLogin = async () => {
+    await api.post("/auth/login", {email: emailLog, password: passwordLog})
+    .then(function(res){
+      setInvalid("");
+      cookies.set('Authorization', res.data.token, {path: '/', maxAge: 86400, secure: true, sameSite: 'none'})
+      navigate("/perfil")
+    })
+    .catch((err) => {
+      console.log(err)
+      setInvalid("E-mail ou senha incorreta");
+    })
+  };
+
+  function handleRegister(){
+    api.post("/user/register", {name: name, email: email, password: password})
+    .then(async (res) => {
+      await api.post("/auth/login", {email: email, password: password}).then((res) => {
+        cookies.set('Authorization', res.data.token, {path: '/', maxAge: 86400, secure: true, sameSite: 'none'})
+      })
+      navigate("/perfil")
+    })
+    .catch((err) => {
+      if(err.response.data.error === "Email already registered"){
+        setInvalid("Email já registrado")
+      } else if(err.response.data.error === "Invalid Email"){
+        setInvalid("Email inválido")
+      }
+    })
+  }
+
   useEffect(() => {
     document.getElementById('deslizaLogin').addEventListener('click', () =>{
+      setInvalid("")
+
       const cobertura = document.getElementById('cobertura');
       cobertura.classList.add('left');
       cobertura.classList.remove('right');
@@ -21,6 +63,8 @@ const Login = () => {
     })
   
     document.getElementById('deslizaCadastro').addEventListener('click', () => {
+      setInvalid("")
+      
       const cobertura = document.getElementById('cobertura');
       cobertura.classList.add('right');
       cobertura.classList.remove('left');
@@ -31,6 +75,7 @@ const Login = () => {
       const cadastro = document.getElementById('deslizanteCadastro');
       cadastro.classList.add('esconde');
     })
+    
   });
   
   return (
@@ -43,23 +88,25 @@ const Login = () => {
         <section className="formulario" id="login">
           <h1 className="titulo">Entrar</h1>
           <div className="campoPreenchimento">
-            <input className="campoFormulario" type="text" placeholder="Email"/>
-            <input className="campoFormulario" type="password" placeholder="Senha"/>
+            <input className="campoFormulario" type="email" name="email" value={emailLog} onChange={(e) => setEmailLog(e.target.value)} placeholder="Email"/>
+            <input className="campoFormulario" type="password" name="password" value={passwordLog} onChange={(e) => setPasswordLog(e.target.value)} placeholder="Senha"/>
             <div className="botao">
-              <button className="botaoLogin">ENTRAR</button>
+              <button className="botaoLogin" onClick={() => handleLogin()}>ENTRAR</button>
             </div>
+            <span>{invalid}</span>
           </div>
         </section>
 
         <section className="formulario" id="cadastro">
           <h1 className="titulo">Criar Conta</h1>
           <div className="campoPreenchimento">
-            <input className="campoFormulario" type="text" placeholder="Nome"/>
-            <input className="campoFormulario" type="text" placeholder="Email"/>
-            <input className="campoFormulario" type="password" placeholder="Senha"/>
+            <input className="campoFormulario" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome"/>
+            <input className="campoFormulario" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
+            <input className="campoFormulario" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha"/>
             <div className="botao">
-              <button className="botaoCadastro">CRIAR CONTA</button>
+              <button className="botaoCadastro" onClick={() => handleRegister()}>CRIAR CONTA</button>
             </div>
+            <span>{invalid}</span>
           </div>
         </section>
 

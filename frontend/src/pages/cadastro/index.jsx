@@ -1,9 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import './styles.css'
+import Cookies from 'universal-cookie'
 
+import './styles.css'
 import Header from "../../components/Header";
 import { api } from "../../api";
+
+const cookies = new Cookies()
 
 const Cadastro = () => { 
   const [email, setEmail] = useState("");
@@ -15,7 +18,9 @@ const Cadastro = () => {
   function handleRegister(){
     api.post("/user/register", {name: name, email: email, password: password})
     .then(async (res) => {
-      await api.post("/auth/login", {email: email, password: password})
+      await api.post("/auth/login", {email: email, password: password}).then((res) => {
+        cookies.set('Authorization', res.data.token, {path: '/', maxAge: 86400, secure: true, sameSite: 'none'})
+      })
       navigate("/perfil")
     })
     .catch((err) => {

@@ -2,24 +2,24 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Cookies from "universal-cookie";
 import { api } from "../../api";
 import "./styles.css";
 
+
 const ChiefProfile = () => {
+  const cookies = new Cookies();
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
-
+  const token = cookies.get("Authorization");
+  
   useEffect(() => {
-    api
-      .get(
-        "/user/all",
-        { _id: "" },
-        { headers: { Authorization: document.cookie } }
-      )
-      .then((res) => {
+    const getAllInfo = async () => {
+      api.post("/user/all", { _id: "", token: token }).then((res) => {
         setUsers(res.data.users);
-        console.log(users);
       });
+    };
+    getAllInfo();
   }, []);
 
   function handleUsers() {
@@ -58,8 +58,7 @@ const ChiefProfile = () => {
     api
       .patch(
         "/user/update",
-        { _id: user._id, account: troca },
-        { headers: { Authorization: document.cookie } }
+        { _id: user._id, account: troca, token: token },
       )
       .then((res) => {
         console.log(res);

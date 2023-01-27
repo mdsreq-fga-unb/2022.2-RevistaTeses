@@ -152,7 +152,7 @@ const update = async (req, res) => {
 
 const erase = async (req, res) => {
   const id = req.userId;
-  const usedToken = req.headers.authorization;
+  const usedToken = req.body.token;
   const parts = usedToken.split(" ");
   const [scheme, token] = parts;
 
