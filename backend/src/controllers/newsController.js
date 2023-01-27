@@ -69,6 +69,23 @@ const findAllNews = async (req, res) => {
   return res.status(200).send({ news });
 };
 
+const findNewsById = async (req, res) => {
+  const user = req.userId
+  
+  if (req.accountType !== 10 && req.accountType !== 1) {
+    return res.status(401).send({ error: "Unauthorized" });
+  }
+
+  const news = await News.find({user: user})
+
+  if(news.length === 0){
+    return res.status(200).send({message: "There is no news"})
+  }
+
+  return res.status(200).send({ news })
+
+}
+
 const update = async (req, res) => {
   const { _id, title, text, lead, banner } = req.body;
 
@@ -154,6 +171,7 @@ module.exports = {
   create,
   findOneNews,
   findAllNews,
+  findNewsById,
   update,
   erase,
 };

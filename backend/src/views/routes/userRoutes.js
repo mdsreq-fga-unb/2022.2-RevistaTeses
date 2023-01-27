@@ -6,8 +6,8 @@ const { verifyToken } = require("../../controllers/middlewares/verifyToken");
 const routes = express.Router();
 
 routes.post("/register", userController.register);
-routes.get("/", verifyToken, userController.findUser); 
-routes.get("/all", verifyToken, userController.findAllUsers); 
+routes.post("/", verifyToken, userController.findUser); 
+routes.post("/all", verifyToken, userController.findAllUsers); 
 routes.patch("/update", verifyToken, userController.update); 
 routes.delete("/delete", verifyToken, userController.erase); 
 

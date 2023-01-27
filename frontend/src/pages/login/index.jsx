@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Cookies from 'universal-cookie'
 import { api } from '../../api/index'
 import Header from '../../components/Header';
 import "../login/styles.css";
@@ -10,14 +11,17 @@ const Login = () => {
   const [invalid, setInvalid] = useState("")
   const navigate = useNavigate()
 
+  const cookies = new Cookies()
+
   const handleLogin = async () => {
     await api.post("/auth/login", {email: email, password: password})
     .then(function(res){
       setInvalid("");
+      cookies.set('Authorization', res.data.token, {path: '/', maxAge: 86400, secure: true, sameSite: 'none'})
       navigate("/perfil")
-      console.log(res.data)
     })
     .catch((err) => {
+      console.log(err)
       setInvalid("E-mail ou senha incorreta");
     })
   }
