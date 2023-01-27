@@ -29,7 +29,7 @@ const Cadastro = () => {
 
   return (
     <>
-      <Header />
+     <Header />
       <div className="container" data-testid="area_cadastro">
         <div className="container-layout">
             <form className="login-form">
@@ -40,6 +40,7 @@ const Cadastro = () => {
                   className={name !== "" ? "has-val input" : "input"}
                   type="email"
                   value={name}
+                  data-testid= "name_input"
                   onChange={(e) => setName(e.target.value)}
                 />
                 <span className="focus-input" data-placeholder="Nome"></span>
@@ -50,6 +51,7 @@ const Cadastro = () => {
                   className={email !== "" ? "has-val input" : "input"}
                   type="email"
                   value={email}
+                  data-testid= "email_input"
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <span className="focus-input" data-placeholder="Email"></span>
@@ -60,6 +62,7 @@ const Cadastro = () => {
                   className={password !== "" ? "has-val input" : "input"}
                   type="password"
                   value={password}
+                  data-testid= "password_input"
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <span className="focus-input" data-placeholder="Password"></span>
