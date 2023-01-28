@@ -1,16 +1,25 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../../components/Header";
-import { api } from "../../api";
+import Cookie from "universal-cookie"
 
-const Noticias = () => {
+import { api } from "../../api"
+import Header from "../../components/Header";
+
+const cookies = new Cookie()
+
+const ManageNoticias = () => {
 
 const [noticias, setNoticias] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
-    api.get("/news/").then((res) => {
+    const token = cookies.get('Authorization')
+
+    api.post("/news/findByUser", {token: token})
+    .then((res) => {
       setNoticias(res.data.news);
+    }).catch((err) => {
+      console.log(err)
     });
   }, []);
 
@@ -53,4 +62,4 @@ const [noticias, setNoticias] = useState([]);
         </div>
         )
 }
-export default Noticias
+export default ManageNoticias

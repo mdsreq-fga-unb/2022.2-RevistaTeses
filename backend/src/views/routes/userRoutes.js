@@ -9,6 +9,6 @@ routes.post("/register", userController.register);
 routes.post("/", verifyToken, userController.findUser); 
 routes.post("/all", verifyToken, userController.findAllUsers); 
 routes.patch("/update", verifyToken, userController.update); 
-routes.delete("/delete", verifyToken, userController.erase); 
+routes.post("/delete", verifyToken, userController.erase); 
 
 module.exports = routes;

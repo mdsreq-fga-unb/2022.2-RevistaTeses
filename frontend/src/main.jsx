@@ -5,11 +5,11 @@ import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Home from './pages/home/index'
 import Login from './pages/login/index'
 import Perfil from "./pages/perfil/index";
-import Cadastro from "./pages/cadastro";
 import Noticias from "./pages/notícia";
 import VerNoticia from "./pages/verNoticia";
 import EditarConta from "./pages/editarConta";
 import TrocarSenha from "./pages/trocarSenha";
+import ManageNoticias from "./pages/manageNotícia"
 
 const router = createBrowserRouter([
   {
@@ -25,12 +25,12 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: "/cadastro",
-    element: <Cadastro />
-  },
-  {
     path: "/noticias",
     element: <Noticias />
+  },
+  {
+    path: "/minhasNoticias",
+    element: <ManageNoticias/>
   },
   {
     path: "/verNoticia/:idNoticia",
