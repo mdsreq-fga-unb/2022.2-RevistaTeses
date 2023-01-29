@@ -20,3 +20,6 @@ Uma lição importante que foi tomada sobre a Unidade 2 é de todos os membros t
 Aprendemos a tecnologia e precisamos aprender bem mais. Aprendemos sobre organização também. Aprendemos a necessidade de dedicar mais diariamente para a produção individual e um semanal pra reunião em grupo. Aprendemos ci no actions e testes também.
 
 ## Unidade 4
+A estratégia de squads utilizada nessa estratégia foi muito boa, além de aprendermos sobre a estratégia em si,conseguimos ter tempo e nos organizar para tirarmos as dúvidas e aprender junto aos colegas de outras equipes. Isso também foi muito bom para não sobrecarregar membros das equipes ao dividir as responsabilidades.
+
+Aprendemos muito sobre testes, melhoramos nossa noção de frontend de um modo geral também. O backend e o master também ficaram mais estruturados com a estratégia.
