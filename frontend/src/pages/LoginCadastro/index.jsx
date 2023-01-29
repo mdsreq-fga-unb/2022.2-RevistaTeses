@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Cookies from 'universal-cookie'
 import { api } from '../../api/index'
 import Header from '../../components/Header';
-import "../login/styles.css";
+import "./styles.css";
 
-const Login = () => {
+const LoginCadastro = () => {
 
   const [emailLog, setEmailLog] = useState("")
   const [passwordLog, setPasswordLog] = useState("")
@@ -113,7 +113,7 @@ const Login = () => {
           </div>
         </section>
 
-        <section className="deslizante" id="deslizanteCadastro">
+        <section className="deslizante esconde" id="deslizanteCadastro">
           <h1 className="titulo">Olá, colega!</h1>
           <span className="subtitulo">Insira algumas informações e comece <br></br> a sua jornada conosco!</span>
           <button className="botaoDeslizante" id="deslizaCadastro"> Já tenho conta!</button>
@@ -136,4 +136,4 @@ const Login = () => {
   );
 };
 
-export default Login
+export default LoginCadastro

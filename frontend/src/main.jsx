@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 
 import Home from './pages/home/index'
-import Login from './pages/login/index'
+import LoginCadastro from './pages/LoginCadastro/index'
 import Perfil from "./pages/perfil/index";
 import Noticias from "./pages/notícia";
 import VerNoticia from "./pages/verNoticia";
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
     element: <Perfil/>,
   },
   {
-    path: "/login",
-    element: <Login />
+    path: "/auth",
+    element: <LoginCadastro />
   },
   {
     path: "/",
