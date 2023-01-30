@@ -3,13 +3,6 @@
   src: url() format("opentype");
 }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 :root {
   --text: #5e5b5e;
@@ -21,11 +14,9 @@
 
 .body {
   height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--background);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -42,13 +33,18 @@
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.27);
 }
 
-.formulario .login {
+.formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 50%;
   height: 100%;
+}
+
+#login{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 #cadastro{
@@ -94,8 +90,8 @@
 }
 
 #deslizanteCadastro {
-  left: unset;
-  right: 0;
+    left: unset;
+    right: 0;
 }
 
 .esconde {

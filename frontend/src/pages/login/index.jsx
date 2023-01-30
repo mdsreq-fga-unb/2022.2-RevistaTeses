@@ -49,7 +49,7 @@ const Login = () => {
   useEffect(() => {
     document.getElementById('deslizaLogin').addEventListener('click', () =>{
       setInvalid("")
-
+      
       const cobertura = document.getElementById('cobertura');
       cobertura.classList.add('right');
       cobertura.classList.remove('left');
@@ -65,7 +65,7 @@ const Login = () => {
   
     document.getElementById('deslizaCadastro').addEventListener('click', () => {
       setInvalid("")
-      
+
       const cobertura = document.getElementById('cobertura');
       cobertura.classList.add('left');
       cobertura.classList.remove('right');
@@ -78,7 +78,7 @@ const Login = () => {
 
       setInvalid("")
     })
-    
+
   });
   
   return (
