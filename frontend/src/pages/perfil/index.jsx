@@ -1,8 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
+
 import { api } from "../../api";
 
 import EditorProfile from "../../components/EditorProfile";
@@ -11,22 +12,24 @@ import Header from "../../components/Header";
 import "./styles.css";
 
 const Perfil = () => {
-  const [id, setId] = useState("");
+  const {state} = useLocation()
+  const [userId, setUserId] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [account, setAccount] = useState(0);
   const [accountTitle, setAccountTitle] = useState("Leitor");
   const navigate = useNavigate();
-
+  
   const cookies = new Cookies();
   
   useEffect(() => {
     const token = cookies.get("Authorization");
+    console.log({state})
     api.post("/user", { token: token }).then((res) => {
       setName(res.data.user.name);
       setEmail(res.data.user.email);
       setAccount(res.data.user.account);
-      setId(res.data.user._id);
+      setUserId(res.data.user._id);
       if (account === 10) {
         setAccountTitle("Editor-Chefe");
       } else if (account === 1) {
@@ -61,7 +64,11 @@ const Perfil = () => {
 
   function handleEditor() {
     if (account === 10 || account === 1) {
-      return <EditorProfile user={id} />;
+      if(state){
+        const {id, title, banner, lead, text} = state;
+        return <EditorProfile user={userId} id={id} title={title} banner={banner} lead={lead} text={text} />
+      }
+      return <EditorProfile user={userId} />;
     }
   }
 

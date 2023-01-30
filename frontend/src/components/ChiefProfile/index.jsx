@@ -36,7 +36,7 @@ const ChiefProfile = () => {
             <tr key={user._id}>
               <td className="column">{user.name}</td>
               <td className="column">{user.email}</td>
-              <td className="column">{user.account}</td>
+              <td className="column">{conta}</td>
               <td className="column">
                 <button
                   className="botaoA"

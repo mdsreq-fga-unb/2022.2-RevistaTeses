@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
 import { api } from "../../api";
+import './styles.css'
 
 const Noticias = () => {
 
@@ -23,8 +24,8 @@ const [noticias, setNoticias] = useState([]);
               <div id="news" >
                 <div> 
                   <h3>{news.title}</h3>
-                  <div >
-                    <img 
+                  <div className="images">
+                    <img className="imageThumb"
                       src={news.banner}
                       alt="banner"
                       onClick={() => {
