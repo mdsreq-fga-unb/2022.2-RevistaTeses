@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 
-import './global.css'
-
 import Home from './pages/home/index'
 import LoginCadastro from './pages/LoginCadastro/index'
 import Perfil from "./pages/perfil/index";

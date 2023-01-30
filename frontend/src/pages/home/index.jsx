@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../api";
 import Header from "../../components/Header";
-// import "./styles.css";
+import "./styles.css";
 
 const Home = () => {
   const [noticias, setNoticias] = useState([]);

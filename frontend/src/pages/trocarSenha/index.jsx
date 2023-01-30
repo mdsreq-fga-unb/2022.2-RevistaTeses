@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Cookies from 'universal-cookie'
 import { api } from "../../api/index";
 import Header from "../../components/Header";
-// import "./styles.css";
+import "./styles.css";
 
 
 const TrocarSenha = () => {
@@ -89,9 +89,9 @@ const TrocarSenha = () => {
             />
           </div>
 
-          <div>
+          <div className="botao">
             <button
-              className="botaoA"
+              className="botao"
               type="button"
               onClick={() => handleEdit()}
             >
