@@ -34,12 +34,12 @@ const ChiefProfile = () => {
         return (
           <>
             <tr key={user._id}>
-              <td className="column" id="nome">{user.name}</td>
-              <td className="column" id="email">{user.email}</td>
-              <td className="column" id="tipoConta">{user.account}</td>
-              <td className="column" id="atualizarConta">
+              <td className="column">{user.name}</td>
+              <td className="column">{user.email}</td>
+              <td className="column">{user.account}</td>
+              <td className="column">
                 <button
-                  className="botaoAtualizar"
+                  className="botaoA"
                   onClick={() => handleAccountChange(user)}
                 >
                   Atualizar
@@ -80,10 +80,10 @@ const ChiefProfile = () => {
         <table>
           <tbody>
             <tr>
-              <th className="column" id="nome">Nome</th>
-              <th className="column" id="email">Email</th>
-              <th className="column" id="tipoConta">Conta</th>
-              <th className="column" id="atualizarPetrmissao">Atualizar Permissão</th>
+              <th className="column">Nome</th>
+              <th className="column">Email</th>
+              <th className="column">Conta</th>
+              <th className="column">Atualizar Permissão</th>
             </tr>
 
             {handleUsers()}
@@ -94,7 +94,7 @@ const ChiefProfile = () => {
   }
 
   return (
-    <div className="listaUsuarios">
+    <div className="containerB">
       <h1 className="chiefTitle">Lista de Usuários</h1>
       {tableConstruction()}
     </div>

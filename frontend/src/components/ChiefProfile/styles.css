@@ -37,7 +37,7 @@ iframe {
 	border: none !important;
 }
 
-.listaUsuarios {
+.containerB {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,7 @@ iframe {
   margin-bottom: 10px;
 }
 
-.botaoAtualizar {
+.botaoA {
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -107,6 +107,6 @@ iframe {
   transition: all 0.4s;
 }
 
-.botaoAtualizar:hover {
+.botaoA:hover {
   background: #333333;
 }
