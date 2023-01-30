@@ -28,12 +28,12 @@ const [noticias, setNoticias] = useState([]);
       return (
         <li key={news._id}>
           <div /*class="flex-container"*/ /*data-testid="home" id= {news._id? Number.parseInt(news._id, 10) : null}*/>
-            <div id="editNews" >
-              <div id="news" >
+            <div id="areaNoticias" className="areaNoticias">
+              <div id="noticia" className="noticia" >
                 <div> 
                   <h3>{news.title}</h3>
-                  <div >
-                    <img 
+                  <div className="imagensLaterais">
+                    <img className="imagensThumb"
                       src={news.banner}
                       alt="banner"
                       onClick={() => {

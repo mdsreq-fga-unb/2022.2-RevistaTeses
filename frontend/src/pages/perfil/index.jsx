@@ -8,7 +8,7 @@ import { api } from "../../api";
 import EditorProfile from "../../components/EditorProfile";
 import ChiefProfile from "../../components/ChiefProfile";
 import Header from "../../components/Header";
-import "./styles.css";
+// import "./styles.css";
 
 const Perfil = () => {
   const [id, setId] = useState("");

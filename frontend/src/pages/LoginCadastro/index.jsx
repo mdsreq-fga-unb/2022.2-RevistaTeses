@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Cookies from 'universal-cookie'
 import { api } from '../../api/index'
 import Header from '../../components/Header';
-import "./styles.css";
+// import "./styles.css";
 
 const LoginCadastro = () => {
 

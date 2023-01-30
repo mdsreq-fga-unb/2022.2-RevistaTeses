@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
 import { api } from "../../api";
-import "./styles.css";
+// import "./styles.css";
 
 
 const ChiefProfile = () => {
