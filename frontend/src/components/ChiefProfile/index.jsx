@@ -36,10 +36,10 @@ const ChiefProfile = () => {
             <tr key={user._id}>
               <td className="column" id="nome">{user.name}</td>
               <td className="column" id="email">{user.email}</td>
-              <td className="column" id="tipoConta">{conta}</td>
+              <td className="column" id="tipoConta">{user.account}</td>
               <td className="column" id="atualizarConta">
                 <button
-                  className="botaoA"
+                  className="botaoAtualizar"
                   onClick={() => handleAccountChange(user)}
                 >
                   Atualizar
@@ -94,7 +94,7 @@ const ChiefProfile = () => {
   }
 
   return (
-    <div className="containerB">
+    <div className="listaUsuarios">
       <h1 className="chiefTitle">Lista de Usuários</h1>
       {tableConstruction()}
     </div>
