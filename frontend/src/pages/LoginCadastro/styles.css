@@ -135,7 +135,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 100%;
   color: var(--text);
   z-index: 0;
 }
@@ -155,6 +155,10 @@
 
 .campoFormulario:focus {
   outline-color: var(--secondary);
+}
+
+.campoPreenchimento {
+  margin: 2rem
 }
 
 .botao {

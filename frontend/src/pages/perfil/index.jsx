@@ -37,6 +37,19 @@ const Perfil = () => {
     });
   }, );
 
+  async function handleDelete() {
+    const token = cookies.get("Authorization");
+
+    await api.post("/user/delete", {token: token})
+    .then(function (res) {
+      cookies.remove("Authorization");
+      navigate("/")
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+  }
+
   function handleLogout() {
     const token = cookies.get("Authorization");
 
@@ -102,9 +115,7 @@ const Perfil = () => {
         <button
           className="botaoExcluir" //excluirConta
           type="button"
-          onClick={() => {
-            //Excluir a conta - colocar back
-          }}
+          onClick={() => handleDelete()}
         >
           Excluir Conta
         </button>

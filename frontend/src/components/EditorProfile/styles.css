@@ -38,10 +38,10 @@ iframe {
 }
 
 .containerB {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 500px;
   position:relative;
   left: 32%;
@@ -140,4 +140,51 @@ iframe {
   left: 0;
   pointer-events: none;
   color: #adadad;
+}
+
+.botaoVerNoticias{
+  position:relative;
+  left: 32%;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  background: #0d7736;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.botaoVerNoticias:hover {
+  background: #333333;
+}
+
+.botaoPostarNoticia{
+  position:relative;
+  left: 32%;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  background: #0d7736;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.botaoPostarNoticia:hover {
+  background: #333333;
 }

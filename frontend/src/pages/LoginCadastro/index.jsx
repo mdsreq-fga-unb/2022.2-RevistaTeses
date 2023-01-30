@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Cookies from 'universal-cookie'
 import { api } from '../../api/index'
 import Header from '../../components/Header';
-import "../login/styles.css";
+import "./styles.css";
 
-const Login = () => {
+const LoginCadastro = () => {
 
   const [emailLog, setEmailLog] = useState("")
   const [passwordLog, setPasswordLog] = useState("")
@@ -91,22 +91,21 @@ const Login = () => {
         <section className="formulario" id="cadastro">
           <h1 className="titulo">Criar Conta</h1>
           <div className="campoPreenchimento">
-          <input className="campoFormulario" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome"/>
-          <input className="campoFormulario" type="email" name="email" value={emailLog} onChange={(e) => setEmailLog(e.target.value)} placeholder="Email"/>
-          <input className="campoFormulario" type="password" name="password" value={passwordLog} onChange={(e) => setPasswordLog(e.target.value)} placeholder="Senha"/>
+          <input className="campoFormulario" type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome"/>
+          <input className="campoFormulario" type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
+          <input className="campoFormulario" type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha"/>
           <div className="botao">
               <button className="botaoCadastro" onClick={() => handleRegister()}>CRIAR CONTA</button>
             <span>{invalid}</span>
           </div>
-            <span>{invalid}</span>
           </div>
         </section>
 
         <section className="formulario" id="login">
           <h1 className="titulo">Entrar</h1>
           <div className="campoPreenchimento">
-            <input className="campoFormulario" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
-            <input className="campoFormulario" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha"/>
+            <input className="campoFormulario" type="email" name="emailLog" value={emailLog} onChange={(e) => setEmailLog(e.target.value)} placeholder="Email"/>
+            <input className="campoFormulario" type="password" name="passwordLog" value={passwordLog} onChange={(e) => setPasswordLog(e.target.value)} placeholder="Senha"/>
             <div className="botao">
               <button className="botaoLogin" onClick={() => handleLogin()}>ENTRAR</button>
             </div>
@@ -114,7 +113,7 @@ const Login = () => {
           </div>
         </section>
 
-        <section className="deslizante" id="deslizanteCadastro">
+        <section className="deslizante esconde" id="deslizanteCadastro">
           <h1 className="titulo">Olá, colega!</h1>
           <span className="subtitulo">Insira algumas informações e comece <br></br> a sua jornada conosco!</span>
           <button className="botaoDeslizante" id="deslizaCadastro"> Já tenho conta!</button>
@@ -137,4 +136,4 @@ const Login = () => {
   );
 };
 
-export default Login
+export default LoginCadastro

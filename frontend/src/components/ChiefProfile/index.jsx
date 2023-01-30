@@ -23,8 +23,14 @@ const ChiefProfile = () => {
   }, []);
 
   function handleUsers() {
+    let conta = ""
     const listaUsers = users.map((user) => {
       if (user.account === 1 || user.account === 0) {
+        if(user.account === 1){
+          conta = "Editor"
+        } else if(user.account === 0){
+          conta = "Leitor"
+        }
         return (
           <>
             <tr key={user._id}>
@@ -61,7 +67,6 @@ const ChiefProfile = () => {
         { _id: user._id, account: troca, token: token },
       )
       .then((res) => {
-        console.log(res);
         navigate(0);
       })
       .catch((err) => {

@@ -5,7 +5,7 @@ const Header = () => {
   function handleLogPro() {
     if (!document.cookie) {
       return (
-        <a href="/login">ENTRAR</a>
+        <a href="/auth">ENTRAR</a>
       );
     } else {
       return (

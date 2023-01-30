@@ -37,11 +37,19 @@ const EditorProfile = (props) => {
         <button
           className="botaoVerNoticias" //Ver notícias
           type="button"
-          onClick={() => {
-            //Ver as notícias - colocar back
-          }}
+          onClick={() => navigate("/minhasNoticias")}
         >
           Ver minhas notícias
+        </button>
+
+        <button
+          className="botaoPostarNoticia" //Postar nova notícia dropdown
+          type="button"
+          onClick={() => {
+            //dropdown a aparece área de postar notícia
+          }}
+        >
+          + Postar Nova Notícia 
         </button>
       <div className="containerB">
         <h1 className="editorTitle">Postar Nova Notícia</h1>
