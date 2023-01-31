@@ -1,5 +1,5 @@
 .header {
-  background: none;
+  background: transparent;
   display: flex;
   align-items: center;
   padding-left: 3.5%;
@@ -43,9 +43,6 @@ li a:hover{
     display: flex;
     flex-direction: column;
   } 
-}
-
-@media screen and (max-width:700px) {
   .headerContainer, .opcoes{
     flex-direction: column;
     line-height: 140%;
