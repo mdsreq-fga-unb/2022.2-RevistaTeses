@@ -120,16 +120,47 @@ Ana trabalhou com todos e foi produtivo. Holsback, João, Ana e Fabio fizeram um
 
 ### Planning 
 Scrum Master: Fábio
-Analista de qualidade: Pedro e Holsback
 
-Urilizamos essa Sprint para resolver alguns débitos técnicos relacionados a entrega do MVP1, principalmente relacionada ao Fron-end (onde optamos por refatorar), algumas US incompletas ou descontinuadas e a reorganização do backlog de acordo com as mudanças.
+Vamos utilizar essa sprint para resolver os débitos técnicos restantes das sprints passadas. Esses débitos técnicos referem-se à US incompletas e testes não iniciados por problemas com o Jest. Também conversamos com o cliente e ele queria mudar todo o frontend que havia sido previamente discutido e definido por eles e nos deu poder total de decisão sobre a interface. Dessa forma vamos ter que refazer a interface nessa e na próxima sprint, bem como reorganizar o backlog de acordo com as mudanças. Vamos realizar as seguintes US:
 
-#### US02, US04, US04.1, US05, US06, US07, US10, US12, US16, US29, US30, US31, US32, US33, US34, US35, US36, US37 e US38.
+#### US06, US07, US10, US12, US16, US17(melhorar de acordo com o feedback do professor) US29, US30, US31, US32.
 
 
 ### Review
 
 Apresentamos as mudanças ao cliente que prontamente aceitou e nos deixou seguindo o desenvolovimento das próximas funcionalidades.
+
+
+### Retrospectiva
+
+#### O que deu certo nessa  última Sprint ?
+Nessa ultima sprint fizemos muito progresso, foi finalizadas todas as USs que vieram da sprint anterior, assim, zeramos o debito técnico de US e tivemos progresso quanto ao design da aplicação. Também resolvemos o problema com o Jest e já fizemos testes automatizados de acordo com as US.
+
+#### Quais problemas foram foram encontrados?
+Foi identificado que a aplicação possui falhas quanto ao frontend, apesar de ser possivel utilizar a aplicação, falta um melhor tratamento no UX, tanto quanto o design quanto o feedback ao usuário
+
+#### Como esses problemas foram resolvidos ?
+Foi feita uma análise dos problemas e planejamento para serem resolvidos na proxima sprint
+
+#### O que pode ser mudado para que o time seja mais eficaz?
+Uma melhor separação de tarefas e um cuidado maior quanto à política de commits
+
+#### O que cada um pode melhorar?
+Uma pesquisa sobre conteúdos de UX e UI e aprender mais sobre CSS, assim como organizar melhor o tempo e estar mais compromissados com a entrega de resultados.
+
+### Relato de programação em pares
+Apesar de que a programação em pares não foi feita como desejavamos, quando foi feita tivemos bastante progresso quanto a aplicação, porem não houve um aumento mútuo no quesito de conhecimento da aplicação.
+
+## Sprint 06:
+
+### Planning 
+Scrum Master: Fábio
+
+Para essa sprint conversamos com o professor George e negociamos o escopo do nosso produto. Anteriormente, nessa sprint, fariamos as features F04, relativa a comentários em postagens e F06, relativa a curtida de postagem. Devido a restrições de tempo, débitos técnicos que se acularam nas sprints e priorização com o cliente, vamos agregar mais valor se realizarmos as features abaixo, relativas ao CRUD de eventos, podcasts e colunas. Também vamos refatorar toda a interface.
+#### F12(US:33,34,35), F13(US:36,37,38), F14(US:39,40,41), refatorar interface.
+
+
+### Review
 
 
 ### Retrospectiva
@@ -150,5 +181,6 @@ Apresentamos as mudanças ao cliente que prontamente aceitou e nos deixou seguin
 
 
 ### Relato de programação em pares
+
 
 
