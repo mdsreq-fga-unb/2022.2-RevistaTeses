@@ -15,6 +15,7 @@ const EditorProfile = (props) => {
   const [banner, setBanner] = useState("");
   const [lead, setLead] = useState("");
   const [text, setText] = useState("");
+  const [type, setType] = useState("noticia");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,6 +24,7 @@ const EditorProfile = (props) => {
       setBanner(props.banner);
       setLead(props.lead);
       setText(props.text);
+      setType(props.type);
       setFormTitle("Editar Notícia")
       setFormButton("Editar")
     }
@@ -37,6 +39,7 @@ const EditorProfile = (props) => {
         lead: lead,
         text: text,
         user: props.user,
+        type: type,
         token: token,
       })
       .then((data) => {
@@ -52,6 +55,7 @@ const EditorProfile = (props) => {
       banner: banner,
       lead: lead,
       text: text,
+      type: type,
       token: token,
     }).then((res) => {
       console.log(res)
@@ -109,6 +113,21 @@ const EditorProfile = (props) => {
           cols="36"
           rows="4"
         />
+
+        <div onChange={(e) => setType(e.target.value)}>
+          <input type="radio" id="noticia" name="type" value="noticia" checked={type === "noticia"}/>
+          <label for="noticia">Notícia</label>
+
+          <input type="radio" id="coluna" name="type" value="coluna" checked={type === "coluna"}/>
+          <label for="coluna">Coluna</label>
+
+          <input type="radio" id="podcast" name="type" value="podcast" checked={type === "podcast"}/>
+          <label for="podcast">Podcast</label>
+
+          <input type="radio" id="evento" name="type" value="evento" checked={type === "evento"}/>
+          <label for="evento">Evento</label>
+        </div>
+
         <button
           className="botaoA"
           onClick={() => {
