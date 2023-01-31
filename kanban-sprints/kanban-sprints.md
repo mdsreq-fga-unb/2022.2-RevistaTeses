@@ -115,3 +115,40 @@ Organizar melhor o tempo entre os estudos que a faculdade exige e horas semanais
 ### Relato de programação em pares
 Ana trabalhou com todos e foi produtivo. Holsback, João, Ana e Fabio fizeram uma call e todos trabalharam juntos para finalizar as entregas. Foi muito produtivo apesar de exaustivo (10h seguidas arrumando tudo).
 
+
+## Sprint 05:
+
+### Planning 
+Scrum Master: Fábio
+Analista de qualidade: Pedro e Holsback
+
+Urilizamos essa Sprint para resolver alguns débitos técnicos relacionados a entrega do MVP1, principalmente relacionada ao Fron-end (onde optamos por refatorar), algumas US incompletas ou descontinuadas e a reorganização do backlog de acordo com as mudanças.
+
+#### US02, US04, US04.1, US05, US06, US07, US10, US12, US16, US29, US30, US31, US32, US33, US34, US35, US36, US37 e US38.
+
+
+### Review
+
+Apresentamos as mudanças ao cliente que prontamente aceitou e nos deixou seguindo o desenvolovimento das próximas funcionalidades.
+
+
+### Retrospectiva
+
+#### O que deu certo nessa  última Sprint ?
+
+
+#### Quais problemas foram foram encontrados?
+
+
+#### Como esses problemas foram resolvidos ?
+
+
+#### O que pode ser mudado para que o time seja mais eficaz?
+
+
+#### O que cada um pode melhorar?
+
+
+### Relato de programação em pares
+
+
