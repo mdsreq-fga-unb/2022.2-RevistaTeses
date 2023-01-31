@@ -80,10 +80,10 @@ const ChiefProfile = () => {
         <table>
           <tbody>
             <tr>
-              <th className="column">Nome</th>
-              <th className="column">Email</th>
-              <th className="column">Conta</th>
-              <th className="column">Atualizar Permissão</th>
+              <th className="column" id="colunaNome">Nome</th>
+              <th className="column" id="colunaEmail">Email</th>
+              <th className="column" id="colunaConta">Conta</th>
+              <th className="column" id="colunaAtualizar">Atualizar Permissão</th>
             </tr>
 
             {handleUsers()}
@@ -94,7 +94,7 @@ const ChiefProfile = () => {
   }
 
   return (
-    <div className="containerB">
+    <div className="containerB" id="listaUsuarios">
       <h1 className="chiefTitle">Lista de Usuários</h1>
       {tableConstruction()}
     </div>

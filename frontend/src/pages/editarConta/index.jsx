@@ -60,7 +60,7 @@ const EditarConta = () => {
         <form className="editar">
           <span className="editarTitulo"> Edição de conta </span>
 
-          <div className="areaInput">
+          <div className="areaInput" id="inputNome">
             <input
               className="input100"
               type="text"
@@ -71,7 +71,7 @@ const EditarConta = () => {
             />
           </div>
 
-          <div className="areaInput">
+          <div className="areaInput" id="inputEmail">
             <input
               className="input100"
               type="text"
@@ -88,6 +88,7 @@ const EditarConta = () => {
           >
             <input
               className="input100"
+              id="inputSenha"
               type="password"
               name="senha"
               value={password}
@@ -99,6 +100,7 @@ const EditarConta = () => {
           <div className="botao">
             <button
               className="botao"
+              id="botaoAtualizar"
               type="button"
               onClick={() => handleEdit()}
             >
