@@ -65,8 +65,8 @@ const Perfil = () => {
   function handleEditor() {
     if (account === 10 || account === 1) {
       if(state){
-        const {id, title, banner, lead, text} = state;
-        return <EditorProfile user={userId} id={id} title={title} banner={banner} lead={lead} text={text} />
+        const {id, title, banner, lead, text, type} = state;
+        return <EditorProfile user={userId} id={id} title={title} banner={banner} lead={lead} text={text} type={type}/>
       }
       return <EditorProfile user={userId} />;
     }

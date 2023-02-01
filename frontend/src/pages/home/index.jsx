@@ -11,7 +11,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    api.get("/news/").then((res) => {
+    api.post("/news/").then((res) => {
       setNoticias(res.data.news);
     });
   }, []);

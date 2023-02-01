@@ -22,14 +22,17 @@ const Header = () => {
           <li key="inicio">
             <a href="/">INÍCIO</a>
           </li>
-          <li key="colunas">
-            <a href="/">COLUNAS</a>
-          </li>
           <li key="noticias">
-            <a href="/noticias">NOTÍCAS</a>
+            <a href="/noticias">NOTÍCIAS</a>
+          </li>
+          <li key="colunas">
+            <a href="/colunas">COLUNAS</a>
           </li>
           <li key="eventos">
-            <a href="/">EVENTOS</a>
+            <a href="/eventos">EVENTOS</a>
+          </li>
+          <li key="podcast">
+            <a href="/podcasts">PODCASTS</a>
           </li>
           <li key={Math.random()}>{handleLogPro()}</li>
         </ul>

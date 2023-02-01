@@ -10,6 +10,9 @@ import VerNoticia from "./pages/verNoticia";
 import EditarConta from "./pages/editarConta";
 import TrocarSenha from "./pages/trocarSenha";
 import ManageNoticias from "./pages/manageNotícia"
+import Colunas from "./pages/colunas";
+import Eventos from "./pages/eventos";
+import Podcasts from "./pages/podcasts";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +30,18 @@ const router = createBrowserRouter([
   {
     path: "/noticias",
     element: <Noticias />
+  },
+  {
+    path: "/colunas",
+    element: <Colunas />
+  },
+  {
+    path: "/eventos",
+    element: <Eventos />
+  },
+  {
+    path: "/podcasts",
+    element: <Podcasts />
   },
   {
     path: "/minhasNoticias",

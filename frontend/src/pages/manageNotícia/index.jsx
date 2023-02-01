@@ -25,7 +25,7 @@ const ManageNoticias = () => {
   }
 
   function handleEdit(item) {
-    navigate('/perfil', {state: {id: item.id, title: item.title, banner: item.banner, lead: item.lead, text: item.text}})
+    navigate('/perfil', {state: {id: item.id, title: item.title, banner: item.banner, lead: item.lead, text: item.text, type: item.type}})
   }
   
   useEffect(() => {
@@ -62,7 +62,7 @@ const ManageNoticias = () => {
                     <button type="button" onClick={() => handleDelete(news._id)}>
                       Del
                     </button>
-                    <button type="button" onClick={() => handleEdit({id: news._id, title: news.title, banner: news.banner, lead: news.lead, text: news.text})}>
+                    <button type="button" onClick={() => handleEdit({id: news._id, title: news.title, banner: news.banner, lead: news.lead, text: news.text, type: news.type})}>
                       Edit
                     </button>
                   </div>
