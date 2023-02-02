@@ -4,20 +4,23 @@
 
 ## Paleta de cores
 
-### Brancos e Cinzas
+### Brancos
 
 `#FFFFFF`
-`#544A4A`
-`#D9D9D9`
-`#000000`
 
-### Azul
+### Azul-esverdeado (escuro)
 
-`#00719E`
+`#368085`
 
+### Azul-esverdeado (claro)
+ #45A2A8
+
+### Cinza
+ #515454
+ 
 ### Vermelho
+  #C14F4F
 
-`#E44242`
 
 ## Componentes
 
