@@ -1,14 +1,3 @@
-* {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
-}
-
-a:hover {
-	text-decoration: none;
-  color: #00719e;
-}
-
 input {
 	outline: none;
 	border: none;

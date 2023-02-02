@@ -25,7 +25,7 @@
   flex-wrap: wrap;
 }
 
-li a{
+.link{
   cursor: pointer;
   font-size: 100%;
   color: #ffffff;
@@ -33,7 +33,7 @@ li a{
   text-decoration: none;
 }
 
-li a:hover{
+.link:hover{
    color: #b9bbbb
 }
 

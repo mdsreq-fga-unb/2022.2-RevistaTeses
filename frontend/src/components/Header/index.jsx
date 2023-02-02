@@ -9,9 +9,9 @@ const Header = () => {
   function handleLogPro() {
     const token = cookies.get("Authorization");
     if (!token) {
-      return <a href="/auth">ENTRAR</a>;
+      return <a className="link" href="/auth">ENTRAR</a>;
     } else {
-      return <a href="/perfil">PERFIL</a>;
+      return <a className="link" href="/perfil">PERFIL</a>;
     }
   }
   return (
@@ -125,19 +125,19 @@ c-16 0 -25 -6 -25 -15 0 -13 26 -15 170 -15 l170 0 0 50 c0 38 -4 50 -15 50
       <div className="headerContainer">
         <ul className="opcoes">
           <li key="inicio">
-            <a href="/">INÍCIO</a>
+            <a className="link" href="/">INÍCIO</a>
           </li>
           <li key="noticias">
-            <a href="/noticias">NOTÍCIAS</a>
+            <a className="link" href="/noticias">NOTÍCIAS</a>
           </li>
           <li key="colunas">
-            <a href="/colunas">COLUNAS</a>
+            <a className="link" href="/colunas">COLUNAS</a>
           </li>
           <li key="eventos">
-            <a href="/eventos">EVENTOS</a>
+            <a className="link" href="/eventos">EVENTOS</a>
           </li>
           <li key="podcast">
-            <a href="/podcasts">PODCASTS</a>
+            <a className="link" href="/podcasts">PODCASTS</a>
           </li>
           <li key={Math.random()}>{handleLogPro()}</li>
         </ul>
