@@ -1,9 +1,14 @@
 import React from "react";
+import Cookies from "universal-cookie";
+
 import "./styles.css";
 
 const Header = () => {
+  const cookies = new Cookies();
+
   function handleLogPro() {
-    if (!document.cookie) {
+    const token = cookies.get("Authorization");
+    if (!token) {
       return (
         <a href="/auth">ENTRAR</a>
       );

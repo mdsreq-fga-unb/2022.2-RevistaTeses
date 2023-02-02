@@ -46,7 +46,7 @@ return (
                     alt="banner"
                     /> 
                 {/* <h3>{author}</h3>  */}
-                <h5 className="text">{text}</h5>  
+                <div dangerouslySetInnerHTML={{__html: text}} />
             </div>
         </div>
     </div>
