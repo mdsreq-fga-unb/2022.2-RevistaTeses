@@ -1,8 +1,9 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ReactQuill from "react-quill";
 import Cookies from "universal-cookie";
+
+import "react-quill/dist/quill.snow.css";
 import { api } from "../../api";
 import "./styles.css";
 
@@ -15,6 +16,7 @@ const EditorProfile = (props) => {
   const [banner, setBanner] = useState("");
   const [lead, setLead] = useState("");
   const [text, setText] = useState("");
+  const [type, setType] = useState("noticia");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,8 +25,9 @@ const EditorProfile = (props) => {
       setBanner(props.banner);
       setLead(props.lead);
       setText(props.text);
-      setFormTitle("Editar Notícia")
-      setFormButton("Editar")
+      setType(props.type);
+      setFormTitle("Editar Notícia");
+      setFormButton("Editar");
     }
   }, []);
 
@@ -37,6 +40,7 @@ const EditorProfile = (props) => {
         lead: lead,
         text: text,
         user: props.user,
+        type: type,
         token: token,
       })
       .then((data) => {
@@ -46,17 +50,20 @@ const EditorProfile = (props) => {
 
   async function handleEdit() {
     const token = cookies.get("Authorization");
-    await api.patch("/news/update", {
-      _id: props.id,
-      title: title,
-      banner: banner,
-      lead: lead,
-      text: text,
-      token: token,
-    }).then((res) => {
-      console.log(res)
-      navigate(`/verNoticia/${props.id}`)
-    });
+    await api
+      .patch("/news/update", {
+        _id: props.id,
+        title: title,
+        banner: banner,
+        lead: lead,
+        text: text,
+        type: type,
+        token: token,
+      })
+      .then((res) => {
+        console.log(res);
+        navigate(`/verNoticia/${props.id}`);
+      });
   }
 
   return (
@@ -101,14 +108,46 @@ const EditorProfile = (props) => {
           onChange={(e) => setLead(e.target.value)}
           placeholder="Lead"
         />
-        <textarea
-          className="input1000"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder="Texto"
-          cols="36"
-          rows="4"
-        />
+        <ReactQuill className="textForm" theme="snow" value={text} onChange={setText} placeholder="Digite algo..."/>
+
+        <div onChange={(e) => setType(e.target.value)}>
+          <input
+            type="radio"
+            id="noticia"
+            name="type"
+            value="noticia"
+            checked={type === "noticia"}
+          />
+          <label for="noticia">Notícia</label>
+
+          <input
+            type="radio"
+            id="coluna"
+            name="type"
+            value="coluna"
+            checked={type === "coluna"}
+          />
+          <label for="coluna">Coluna</label>
+
+          <input
+            type="radio"
+            id="podcast"
+            name="type"
+            value="podcast"
+            checked={type === "podcast"}
+          />
+          <label for="podcast">Podcast</label>
+
+          <input
+            type="radio"
+            id="evento"
+            name="type"
+            value="evento"
+            checked={type === "evento"}
+          />
+          <label for="evento">Evento</label>
+        </div>
+
         <button
           className="botaoA"
           onClick={() => {
