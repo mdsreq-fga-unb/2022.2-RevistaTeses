@@ -5,12 +5,13 @@
   justify-content: space-around;
 }
 
-.headerContainer {
-  
-  background-color: #075c7d;
+.headerContainer {  
+  background-color: #368085;
   height: 4%;
   width: 75%;
-  border-radius: 5px;
+  background: #368085;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
 .opcoes {
