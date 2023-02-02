@@ -13,13 +13,13 @@
 `#368085`
 
 ### Azul-esverdeado (claro)
- #45A2A8
+ `#45A2A8`
 
 ### Cinza
- #515454
+ `#515454`
  
 ### Vermelho
-  #C14F4F
+  `#C14F4F`
 
 
 ## Componentes
