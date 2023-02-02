@@ -81,6 +81,7 @@ const Perfil = () => {
   return (
     <>
       <Header />
+    <div className="bodyPerfil">
 
       <div className="containerPerfil">
         <h3 className="tipoConta">{accountTitle}</h3>
@@ -104,7 +105,7 @@ const Perfil = () => {
           onClick={() => {
             navigate("/perfil/senha");
           }}
-        >
+          >
           Trocar a Senha
         </button>
         <button
@@ -113,20 +114,20 @@ const Perfil = () => {
           onClick={() => {
             handleLogout();
           }}
-        >
+          >
           Logout
         </button>
         <button
           className="botaoExcluir" //excluirConta
           type="button"
           onClick={() => handleDelete()}
-        >
+          >
           Excluir Conta
         </button>
       </div>
       {handleEditor()}
-      {handleChief()}
-    </>
+    </div>
+          </>
   );
 };
 

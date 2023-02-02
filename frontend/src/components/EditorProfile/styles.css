@@ -1,11 +1,9 @@
-.containerB {
-  display: flex;
+.containerPostar {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   width: 500px;
   position:relative;
-  left: 32%;
   background-color: #72bcda;
   border-radius: 15px;
   margin-top: 10px;
@@ -103,20 +101,19 @@
   color: #adadad;
 }
 
-.botaoVerNoticias{
-  position:relative;
-  left: 32%;
+.botaoVerPostagens{
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
   text-transform: uppercase;
-  width: 500px;
-  height: 50px;
-  border-radius: 25px;
-  background: #0d7736;
-  padding: 0 25px;
+  width: 300px;
+  height: 60px;
+  background: #45A2A8;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 5px;
+  align-self: flex-end;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
