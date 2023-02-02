@@ -188,3 +188,15 @@ iframe {
 .botaoPostarNoticia:hover {
   background: #333333;
 }
+
+.textForm {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  background: #e6e6e6;
+  color: #666666;
+  display: block;
+  width: 100%;
+  height:300px;
+  text-align: start;
+  margin-bottom: 10px;
+}
