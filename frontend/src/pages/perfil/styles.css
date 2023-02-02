@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -12,6 +13,8 @@ a:hover {
   color: #00719e;
 }
 
+=======
+>>>>>>> 3b2b34ae18ae91bfd4ad56012700f86449aad81c
 input {
 	outline: none;
 	border: none;
@@ -53,7 +56,7 @@ iframe {
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 16px;
-  padding-top: 16px;
+  padding-top: 156px;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -61,7 +64,6 @@ iframe {
 
 .tipoConta{
   color: #ffffff;
-  
 }
 
 .nome{

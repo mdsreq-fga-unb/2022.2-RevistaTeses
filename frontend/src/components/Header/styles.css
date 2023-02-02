@@ -5,12 +5,13 @@
   justify-content: space-around;
 }
 
-.headerContainer {
-  
+.headerContainer {  
   background-color: #368085;
   height: 4%;
   width: 75%;
-  border-radius: 5px;
+  background: #368085;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
 .opcoes {
@@ -24,7 +25,7 @@
   flex-wrap: wrap;
 }
 
-li a{
+.link{
   cursor: pointer;
   font-size: 100%;
   color: #ffffff;
@@ -32,7 +33,7 @@ li a{
   text-decoration: none;
 }
 
-li a:hover{
+.link:hover{
    color: #b9bbbb
 }
 
