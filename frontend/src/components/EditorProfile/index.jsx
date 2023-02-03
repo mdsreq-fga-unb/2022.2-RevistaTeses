@@ -69,23 +69,14 @@ const EditorProfile = (props) => {
   return (
     <>
       <button
-        className="botaoVerNoticias" //Ver notícias
+        className="botaoVerPostagens" //Ver notícias
         type="button"
-        onClick={() => navigate("/minhasNoticias")}
+        onClick={() => navigate("/minhasPostagens")}
       >
-        Ver minhas notícias
+        Ver minhas postagens
       </button>
 
-      <button
-        className="botaoPostarNoticia" //Postar nova notícia dropdown
-        type="button"
-        onClick={() => {
-          //dropdown a aparece área de postar notícia
-        }}
-      >
-        + Postar Nova Notícia
-      </button>
-      <div className="containerB">
+      <div className="containerPostar">
         <h1 className="editorTitle">{formTitle}</h1>
         <input
           className="input100"
