@@ -7,12 +7,11 @@ import LoginCadastro from './pages/LoginCadastro/index'
 import Perfil from "./pages/perfil/index";
 import Noticias from "./pages/notícia";
 import VerNoticia from "./pages/verNoticia";
-import EditarConta from "./pages/editarConta";
-import TrocarSenha from "./pages/trocarSenha";
 import ManageNoticias from "./pages/manageNotícia"
 import Colunas from "./pages/colunas";
 import Eventos from "./pages/eventos";
 import Podcasts from "./pages/podcasts";
+import EditarContaSenha from "./pages/editarContaSenha";
 
 const router = createBrowserRouter([
   {
@@ -53,12 +52,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/perfil/editar",
-    element: <EditarConta/>
+    element: <EditarContaSenha/>
   },
-  {
-    path: "/perfil/senha",
-    element: <TrocarSenha/>
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
