@@ -10,8 +10,8 @@ import "./styles.css";
 const EditorProfile = (props) => {
   const cookies = new Cookies();
 
-  const [formTitle, setFormTitle] = useState("Postar Nova Notícia");
-  const [formButton, setFormButton] = useState("Postar Notícia");
+  const [formTitle, setFormTitle] = useState("Nova postagem");
+  const [formButton, setFormButton] = useState("Postar");
   const [title, setTitle] = useState("");
   const [banner, setBanner] = useState("");
   const [lead, setLead] = useState("");
@@ -67,15 +67,7 @@ const EditorProfile = (props) => {
   }
 
   return (
-    <>
-      <button
-        className="botaoVerPostagens" //Ver notícias
-        type="button"
-        onClick={() => navigate("/minhasPostagens")}
-      >
-        Ver minhas postagens
-      </button>
-
+    <div className="bodyPerfilEditor">
       <div className="containerPostar">
         <h1 className="editorTitle">{formTitle}</h1>
         <input
@@ -153,7 +145,21 @@ const EditorProfile = (props) => {
           {formButton}
         </button>
       </div>
-    </>
+      <button
+        className="botaoVerPostagens" //Ver notícias
+        type="button"
+        onClick={() => navigate("/minhasPostagens")}
+      >
+        Ver minhas postagens
+      </button>
+      <button
+        className="botaoListaUsuarios" //Ver notícias
+        type="button"
+        // onClick={}
+      >
+        LIsta de usuários
+      </button>
+    </div>
   );
 };
 
