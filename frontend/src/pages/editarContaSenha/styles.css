@@ -78,12 +78,12 @@
   transition: 1s all ease;
 }
 
-#deslizanteLogin {
+#deslizanteDados {
   left: 0;
   right: unset;
 }
 
-#deslizanteCadastro {
+#deslizanteSenha {
   left: unset;
   right: 0;
 }
@@ -163,7 +163,7 @@
   width: 100%;
 }
 
-.botaoLogin {
+.botaoEditAccount {
   cursor: pointer;
   border: none;
   border-radius: 2rem;
@@ -175,7 +175,7 @@
   background: #368085;
 }
 
-.botaoLogin:hover {
+.botaoEditAccount:hover {
   transform: translateY(-2%);
 }
 
@@ -185,7 +185,7 @@
   margin: 2rem 0;
 }
 
-.botaoCadastro {
+.botaoEditPassword {
   cursor: pointer;
   border: none;
   border-radius: 2rem;
@@ -198,11 +198,11 @@
 
 }
 
-.botaoCadastro:hover {
+.botaoEditPassword:hover {
   transform: translateY(-2%);
 }
 
-.deslizanteCadastro .subtitulo {
+.deslizanteSenha .subtitulo {
   opacity: 0.7;
   font-size: 1.2rem;
   margin: 2rem 0;
@@ -211,8 +211,8 @@
 .botaoDeslizante {
   cursor: pointer;
   border: 0.063rem solid #e7e7e7;
-  color: #e7e7e7;
   border-radius: 2rem;
+  color: #e7e7e7;
   text-transform: uppercase;
   font-size: 0.9rem;
   background-color: transparent;
