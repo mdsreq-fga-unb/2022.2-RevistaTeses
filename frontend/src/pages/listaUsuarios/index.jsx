@@ -3,11 +3,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
+import Header from "../../components/Header/index"
 import { api } from "../../api";
 import "./styles.css";
 
 
-const ChiefProfile = () => {
+const ListaUsuarios = () => {
   const cookies = new Cookies();
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
@@ -79,7 +80,7 @@ const ChiefProfile = () => {
       <>
         <table>
           <tbody>
-            <tr>
+            <tr className="table-header">
               <th className="column" id="colunaNome">Nome</th>
               <th className="column" id="colunaEmail">Email</th>
               <th className="column" id="colunaConta">Conta</th>
@@ -94,11 +95,16 @@ const ChiefProfile = () => {
   }
 
   return (
-    <div className="containerB" id="listaUsuarios">
-      <h1 className="chiefTitle">Lista de Usuários</h1>
-      {tableConstruction()}
+    <>
+    <Header/>
+    <div className="bodyLista">
+      <div className="containerLista" id="listaUsuarios">
+        <h1 className="chiefTitle">Lista de Usuários</h1>
+        {tableConstruction()}
+      </div>
     </div>
+    </>
   );
 };
 
-export default ChiefProfile;
+export default ListaUsuarios;

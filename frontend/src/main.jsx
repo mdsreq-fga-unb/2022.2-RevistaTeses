@@ -11,6 +11,7 @@ import ManageNoticias from "./pages/manageNotícia"
 import Colunas from "./pages/colunas";
 import Eventos from "./pages/eventos";
 import Podcasts from "./pages/podcasts";
+import ListaUsuarios from "./pages/listaUsuarios";
 import EditarContaSenha from "./pages/editarContaSenha";
 
 const router = createBrowserRouter([
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/perfil/editar",
     element: <EditarContaSenha/>
+  },
+  {
+    path: "/perfil/listaUsuarios",
+    element: <ListaUsuarios/>
   },
 ]);
 
