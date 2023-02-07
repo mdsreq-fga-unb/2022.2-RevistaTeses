@@ -17,9 +17,13 @@ Foi também na unidade 2 que percebemos que precisa melhorar a comunicação com
 Uma lição importante que foi tomada sobre a Unidade 2 é de todos os membros ter pleno conhecimento sobre as tecnologias que serão utilizadas, até o fim desta unidade não foi tomada nenhuma medida para estudo e alinhamento de conhecimentos, porém em breve e antes do início da unidade 3 será feito um "dojo" sobre as tecnologias que serão utilizadas para obter esse alinhamento de conhecimento antes do início da produção do software aqui documentado.</br>
 
 ## Unidade 3
-Aprendemos a tecnologia e precisamos aprender bem mais. Aprendemos sobre organização também. Aprendemos a necessidade de dedicar mais diariamente para a produção individual e um semanal pra reunião em grupo. Aprendemos ci no actions e testes também.
+Nesta unidade, começamos o desenvolvimento do nosso site de fato. Foi quando aprendemos ainda mais tecnologia e vimos que temos aprender bem mais, principalmente quanto a CI e frontend. Notamos a necessidade de dedicar mais diariamente para a produção individual e um semanal pra reunião em grupo.
+
+Nesta unidade houveram os dojos de ci no actions e testes com o jest também. Esses dojos foram essenciais para que ganhássemos confiança e entendimento nesses temas e começar desenvolvê-los nos nossos projetos. Ao fazer um teste, errar todos juntos e posteriormente acertar todos juntos, também motivou os alunos a trabalharem.
+
+Nesta unidade conversamos com o cliente e tivermos que nos replanejar. Ao desenvolver a interface que foi acordada e outra de sugestão de melhora, o cliente pediu que seguíssemos com outra interface e  afirmaram também que a interface sugerida estava bem melhor. O cliente também nos deu livre escolha quanto a interface toda. Apesar de gratos, teremos que reorganizar o escopo, visto que não há tempo o suficiente para mudar todo o frontend e fazer todas as funcionalidades planejadas.
 
 ## Unidade 4
-A estratégia de squads utilizada nessa estratégia foi muito boa, além de aprendermos sobre a estratégia em si,conseguimos ter tempo e nos organizar para tirarmos as dúvidas e aprender junto aos colegas de outras equipes. Isso também foi muito bom para não sobrecarregar membros das equipes ao dividir as responsabilidades.
+A estratégia de squads utilizada nessa estratégia foi muito boa, além de aprendermos sobre a estratégia em si,conseguimos ter tempo e nos organizar para tirarmos as dúvidas e aprender junto aos colegas de outras equipes. Isso também foi muito bom para não sobrecarregar membros das equipes ao dividir as responsabilidades. Na segunda parte da unidade vimos que alguns membros ainda ficaram sobrecarregados.
 
-Aprendemos muito sobre testes, melhoramos nossa noção de frontend de um modo geral também. O backend e o master também ficaram mais estruturados com a estratégia.
+Aprendemos muito sobre testes, melhoramos nossa noção de frontend de um modo geral também. O backend e o master também ficaram mais estruturados com a estratégia. 
