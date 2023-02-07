@@ -6,13 +6,19 @@
 
 **Objetivo**: Postar e visualizar notícias</br>
 **Quantidade de sprints**: 2 sprints.</br>
-**Escopo**: Features 01, 02, 03 e 10</br>
+**Escopo**: Design interface, F01(US: 01,02,03,04,05), F03(US: 14,16,17,18), F02(US: 06,07,10,12), F10(US: 29,30,31,32)</br>
 
-### MVP2
+### MVP2 (original)
 
 **Objetivo**: Classificar e comentar notícias</br>
 **Quantidade de sprints**: 2 sprints.</br>
 **Escopo**: Features 04, 05, 06, 12 e 13</br>
+
+### MVP2 (atual)
+
+**Objetivo**:Mudar interface, fazer testes, acabar com os débitos técnicos anteriores e adicionar mais tipos de postagens</br>
+**Quantidade de sprints**: 2 sprints.</br>
+**Escopo**: Features F01-US5, F03-US16, F10(US:31,32), F12(US:33,34,35),F13(US:36,37,38),F14(US:39,40,41)</br>
 
 ## Personas
 
