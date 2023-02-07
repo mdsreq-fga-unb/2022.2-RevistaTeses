@@ -36,12 +36,12 @@ const login = async (req, res) => {
 
   const token = generateToken({ id: user._id, account: user.account });
   const formattedToken = "Bearer " + token;
+  
+  // maxAge: (86400 * 1000),
+  // secure: true,
+  // sameSite: 'none',
 
-  return res.status(200).cookie("Authorization", formattedToken, {
-      maxAge: (86400 * 1000),
-      secure: true,
-      sameSite: 'none',
-    })
+  return res.status(200)
     .send({
       user,
       token: formattedToken,
@@ -49,14 +49,14 @@ const login = async (req, res) => {
 };
 
 const logout = async (req, res) => { 
-  const usedToken = req.cookies.Authorization;
+  const usedToken = req.body.token;
   const parts = usedToken.split(" ");
   const [scheme, token] = parts;
 
   try {
     const blacklist = await Blacklist.create({ token: token });
 
-    return res.status(200).clearCookie("Authorization").send({ blacklist: blacklist });
+    return res.status(200).send({ blacklist: blacklist });
   } catch (err) {
     return res.status(500).send({ error: err.message });
   }

@@ -59,8 +59,15 @@ const findOneNews = async (req, res) => {
   }
 };
 
-const findAllNews = async (req, res) => { 
-  const news = await News.find();
+const findAllNews = async (req, res) => {
+  const type = req.body.type
+  let news
+
+  if(!(type)){
+    news = await News.find();
+  } else {
+    news = await News.find({type: type});
+  }
 
   if (news.length === 0) {
     return res.status(200).send({ message: "There is no news" });
@@ -69,8 +76,25 @@ const findAllNews = async (req, res) => {
   return res.status(200).send({ news });
 };
 
+const findNewsById = async (req, res) => {
+  const user = req.userId
+  
+  if (req.accountType !== 10 && req.accountType !== 1) {
+    return res.status(401).send({ error: "Unauthorized" });
+  }
+
+  const news = await News.find({user: user})
+
+  if(news.length === 0){
+    return res.status(200).send({message: "There is no news"})
+  }
+
+  return res.status(200).send({ news })
+
+}
+
 const update = async (req, res) => {
-  const { _id, title, text, lead, banner } = req.body;
+  const { _id, title, text, lead, banner, type } = req.body;
 
   if (req.accountType !== 10 && req.accountType !== 1) {
     return res.status(401).send({ error: "Unauthorized" });
@@ -99,7 +123,7 @@ const update = async (req, res) => {
       return res.status(401).send({ error: "Unauthorized" });
     }
 
-    await News.updateOne({ _id }, { title, text, lead, banner });
+    await News.updateOne({ _id }, { title, text, lead, banner, type });
 
     return res
       .status(200)
@@ -110,6 +134,7 @@ const update = async (req, res) => {
         text: text,
         lead: lead,
         banner: banner,
+        type: type
       });
   } catch (err) {
     return res.status(500).send({ error: err.message });
@@ -154,6 +179,7 @@ module.exports = {
   create,
   findOneNews,
   findAllNews,
+  findNewsById,
   update,
   erase,
 };

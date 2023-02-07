@@ -7,8 +7,9 @@ const routes = express.Router();
 
 routes.post("/create", verifyToken, newsController.create); 
 routes.get("/find/:_id", newsController.findOneNews);
-routes.get("/", newsController.findAllNews);
+routes.post("/", newsController.findAllNews);
+routes.post("/findByUser", verifyToken, newsController.findNewsById) 
 routes.patch("/update", verifyToken, newsController.update); 
-routes.delete("/delete", verifyToken, newsController.erase); 
+routes.put("/delete", verifyToken, newsController.erase);
 
 module.exports = routes;

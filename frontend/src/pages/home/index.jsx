@@ -11,7 +11,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    api.get("/news/").then((res) => {
+    api.post("/news/").then((res) => {
       setNoticias(res.data.news);
     });
   }, []);
@@ -48,13 +48,6 @@ const Home = () => {
   return (
     <div id="body">
       <Header />
-        <ul>{handleNews()}</ul>
-      <div id="areaColunas" className="areaColunas">
-        <div id="coluna" className="coluna"></div>
-      </div>
-      <div id="areaEventos" className="areaEventos">
-        <div id="evento" className="evento"></div>
-      </div>
     </div>
   );
 };

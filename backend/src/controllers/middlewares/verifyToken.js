@@ -3,13 +3,13 @@ const jwt = require("jsonwebtoken");
 const Blacklist = require("../../models/schemas/blacklist");
 
 const verifyToken = async (req, res, next) => {
-    const authCookie = req.cookies
+    const authToken = req.body.token
 
-    if(!authCookie.Authorization){
+    if(!authToken){
         return res.status(401).send({error: "No token provided"});
     }
 
-    const parts = authCookie.Authorization.split(" ");
+    const parts = authToken.split(" ");
 
     if (parts.length !== 2) {
         return res.status(401).send({ error: "Token error" });

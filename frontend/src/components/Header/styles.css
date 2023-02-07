@@ -1,21 +1,23 @@
 .header {
+  background: transparent;
   display: flex;
   align-items: center;
-  margin-left: 35px;
-  margin-top: 15px;
+  justify-content: space-around;
 }
 
-.headerContainer {
-  margin-left: 90px;
-  background-color: #00719e;
-  height: 50px;
+.headerContainer {  
+  background-color: #368085;
+  height: 4%;
   width: 75%;
-  border-radius: 10px;
+  background: #368085;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
 .opcoes {
-  padding-top: 15px;
-  border-radius: 20px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 2%;
   display: flex;
   list-style-type: none;
   justify-content: space-around;
@@ -23,13 +25,25 @@
   flex-wrap: wrap;
 }
 
-li a{
-  font-size: 20px;
+.link{
+  cursor: pointer;
+  font-size: 100%;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
-li a:hover{
-  color: #d9d9d9;
+.link:hover{
+   color: #b9bbbb
+}
+
+@media screen and (max-width:700px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+  } 
+  .headerContainer, .opcoes{
+    flex-direction: column;
+    line-height: 140%;
+    max-width: 400px;
+  }
 }

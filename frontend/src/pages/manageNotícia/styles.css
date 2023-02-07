@@ -4,24 +4,33 @@
     margin-right: 50px;
 }
 
-.areaNoticias {
+.editNews {
     background-color: rgba(0, 113, 158, 0.3);
     height: -webkit-fill-available;
     width: -webkit-fill-available;
     border-radius: 20px;
-    margin-left: 290px;
-    margin-right: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.noticia {
+.news {
     background-color: #544a4a;
-    height: 40px;
-    width: 250px;
+    height: 80px;
+    width: 500px;
     border-radius: 20px;
     margin-left: 25px;
     padding: 10px;
 }
+
+.imageThumb{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.images{
+    height: auto;
+    width: 200px;
+}
+  

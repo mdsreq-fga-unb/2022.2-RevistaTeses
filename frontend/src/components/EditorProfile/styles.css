@@ -1,64 +1,30 @@
-* {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
-}
-
-a:hover {
-	text-decoration: none;
-  color: #00719e;
-}
-
-input {
-	outline: none;
-	border: none;
-}
-
-textarea {
-  outline: none;
-  border: none;
-}
-
-textarea:focus, input:focus {
-  border-color: transparent !important;
-}
-
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-iframe {
-	border: none !important;
-}
-
-.containerB {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-  width: 500px;
+.containerPostar {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 600px;
   position:relative;
-  left: 32%;
-  background-color: #72bcda;
+  background-color: #368085;
   border-radius: 15px;
   margin-top: 10px;
+  margin-right: 2%;
   padding-left: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 50px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  justify-self: right;
 }
 
 .info{
-    font-family: Poppins-Medium;
     font-size: 18px;
     color: #666666;
     
+}
+
+.bodyPerfilEditor{
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .textContainer {
@@ -74,14 +40,12 @@ iframe {
 }
 
 .editorTitle{
-  font-family: Poppins-Regular;
   color:#ffffff;
   text-align: center;
   padding-bottom: 3rem;
 }
 
 .input100 {
-  font-family: Poppins-Medium;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -91,11 +55,10 @@ iframe {
   height: 50px;
   border-radius: 25px;
   padding: 0 30px 0 68px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .input1000 {
-  font-family: Poppins-Medium;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -106,7 +69,7 @@ iframe {
   text-align: start;
   border-radius: 25px;
   padding: 10px 68px 0 68px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .botaoA {
@@ -140,4 +103,86 @@ iframe {
   left: 0;
   pointer-events: none;
   color: #adadad;
+}
+
+.botaoVerPostagens{
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 300px;
+  height: 60px;
+  background: #368085;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  justify-self: left;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.botaoVerPostagens:hover {
+  background: #333333;
+}
+.botaoListaUsuarios{
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 300px;
+  height: 60px;
+  background: #368085;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  justify-self: left;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.botaoListaUsuarios:hover {
+  background: #333333;
+}
+
+.botaoPostarNoticia{
+  position:relative;
+  left: 32%;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  background: #0d7736;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.botaoPostarNoticia:hover {
+  background: #333333;
+}
+
+.textForm {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  background: #e6e6e6;
+  color: #666666;
+  display: block;
+  width: 100%;
+  height:300px;
+  text-align: start;
+  margin-bottom: 10px;
 }

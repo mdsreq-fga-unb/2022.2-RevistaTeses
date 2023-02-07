@@ -3,13 +3,17 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 
 import Home from './pages/home/index'
-import Login from './pages/login/index'
+import LoginCadastro from './pages/LoginCadastro/index'
 import Perfil from "./pages/perfil/index";
-import Cadastro from "./pages/cadastro";
 import Noticias from "./pages/notícia";
 import VerNoticia from "./pages/verNoticia";
-import EditarConta from "./pages/editarConta";
-import TrocarSenha from "./pages/trocarSenha";
+import ManageNoticias from "./pages/manageNotícia"
+import Colunas from "./pages/colunas";
+import Eventos from "./pages/eventos";
+import Podcasts from "./pages/podcasts";
+import ListaUsuarios from "./pages/listaUsuarios";
+import EditarContaSenha from "./pages/editarContaSenha";
+import "./styles.css"
 
 const router = createBrowserRouter([
   {
@@ -17,20 +21,32 @@ const router = createBrowserRouter([
     element: <Perfil/>,
   },
   {
-    path: "/login",
-    element: <Login />
+    path: "/auth",
+    element: <LoginCadastro />
   },
   {
     path: "/",
     element: <Home />
   },
   {
-    path: "/cadastro",
-    element: <Cadastro />
-  },
-  {
     path: "/noticias",
     element: <Noticias />
+  },
+  {
+    path: "/colunas",
+    element: <Colunas />
+  },
+  {
+    path: "/eventos",
+    element: <Eventos />
+  },
+  {
+    path: "/podcasts",
+    element: <Podcasts />
+  },
+  {
+    path: "/minhasPostagens",
+    element: <ManageNoticias/>
   },
   {
     path: "/verNoticia/:idNoticia",
@@ -38,12 +54,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/perfil/editar",
-    element: <EditarConta/>
+    element: <EditarContaSenha/>
   },
   {
-    path: "/perfil/senha",
-    element: <TrocarSenha/>
-  }
+    path: "/perfil/listaUsuarios",
+    element: <ListaUsuarios/>
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
