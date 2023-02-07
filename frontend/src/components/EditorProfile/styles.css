@@ -17,7 +17,6 @@
 }
 
 .info{
-    font-family: Poppins-Medium;
     font-size: 18px;
     color: #666666;
     
@@ -41,14 +40,12 @@
 }
 
 .editorTitle{
-  font-family: Poppins-Regular;
   color:#ffffff;
   text-align: center;
   padding-bottom: 3rem;
 }
 
 .input100 {
-  font-family: Poppins-Medium;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -62,7 +59,6 @@
 }
 
 .input1000 {
-  font-family: Poppins-Medium;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;

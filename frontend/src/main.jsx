@@ -13,6 +13,7 @@ import Eventos from "./pages/eventos";
 import Podcasts from "./pages/podcasts";
 import ListaUsuarios from "./pages/listaUsuarios";
 import EditarContaSenha from "./pages/editarContaSenha";
+import "./styles.css"
 
 const router = createBrowserRouter([
   {

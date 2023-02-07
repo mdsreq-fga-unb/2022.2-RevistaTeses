@@ -30,7 +30,6 @@ tr:nth-child(2n){
 }
 
 .column {
-  font-family: Poppins-Regular;
   color: #ffffff;
   font-size: 16px;
   text-align: center;
@@ -39,7 +38,6 @@ tr:nth-child(2n){
 }
 
 .chiefTitle {
-  font-family: Poppins-Regular;
   color: #ffffff;
   text-align: center;
   padding-top: 1rem;
@@ -47,7 +45,6 @@ tr:nth-child(2n){
 }
 
 .info {
-  font-family: Poppins-Medium;
   font-size: 18px;
   color: #666666;
 }

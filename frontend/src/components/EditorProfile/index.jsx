@@ -152,13 +152,6 @@ const EditorProfile = (props) => {
       >
         Ver minhas postagens
       </button>
-      <button
-        className="botaoListaUsuarios" //Ver notícias
-        type="button"
-        // onClick={}
-      >
-        LIsta de usuários
-      </button>
     </div>
   );
 };
