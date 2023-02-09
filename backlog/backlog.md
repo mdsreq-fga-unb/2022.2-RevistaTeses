@@ -71,4 +71,4 @@
 
 ## User Stories
 
-Todas as user stories estão disponibilizadas neste link aqui mesmo no github, o [projects](https://github.com/orgs/mdsreq-fga-unb/projects/5) . Desta forma, o acesso fica centralizado, atualizado enão repetitivo.
+Todas as user stories estão disponibilizadas neste link aqui mesmo no github, o [projects](https://github.com/orgs/mdsreq-fga-unb/projects/5) . Desta forma, o acesso fica centralizado, atualizado e não repetitivo.

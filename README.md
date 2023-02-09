@@ -1,10 +1,12 @@
-# **Portal Teses**
+# Portal Teses
 
-## 1. **Introdução**
+[Link para o site](https://revistateses.com)
+
+## Introdução
 
 Essa página destina-se ao armazenamento da documentação do projeto "Portal Teses", realizado na disciplina "Métodos de desenvolvimento de software" pela equipe "Trilegal", no semestre 2022/2. O objetivo do projeto é desenvolver uma aplicação web para postagem de conteúdo de cunho jornalístico e voltado principalmente para áreas do direito.
 
-## 2. **Membros da Equipe**
+## Membros da Equipe
 
 | Nome                                                 | Matrícula |
 | ---------------------------------------------------- | --------- |
