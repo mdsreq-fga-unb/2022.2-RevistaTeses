@@ -161,26 +161,28 @@ Para essa sprint conversamos com o professor George e negociamos o escopo do nos
 
 
 ### Review
-
+Em nossa reunião com os clientes apresentamos as user stories prontas e também explicamos a nossa dificuldade com o trabalho em grupo. Os clientes, apesar de decepcionados com a pouca mudança do layout, foram totalmente compreensivos com a situação e estão ansiosos para que continuemos trabalhando juntos e vão abrir um projeto de extensão para isso.
 
 ### Retrospectiva
 
 #### O que deu certo nessa  última Sprint ?
-
+Conseguimos resolver problemas de ci e teste com os chapters e acabamos todas as user stories.
 
 #### Quais problemas foram foram encontrados?
-
+Problemas técnicos - Não conseguíamos rodar os testes com o jest, grande parte interface não estava boa
+Problemas de equipe - Parte da equipe não comparecia as reuniões, não se comunicava e não estava tão compromissada quanto a outra parte.
 
 #### Como esses problemas foram resolvidos ?
-
+Com o chapter de ci/teste conseguimos resolver o problema saindo do jest e mudando para o viteste.
+Quanto aos problemas de equipe, fizemos uma conversa com o professor George mas faltavam 3 dias para a entrega final e situação não mudou.
 
 #### O que pode ser mudado para que o time seja mais eficaz?
-
+Comunicação, responsabilidade e compromisso.
 
 #### O que cada um pode melhorar?
-
+É necessário que parte dos membros tenham mais compromisso, responsabilidade e comunicação.
 
 ### Relato de programação em pares
-
+Não tivemos programação em pares esta sprint
 
 
