@@ -10,7 +10,7 @@ Também vamos disponibilizar o site para os clientes paraa que eles usem e repor
 O back end também deve ser testado utilizando a ferramenta para controlar os casos de teste e os resultados.
 
 ## Testes Unitários Automatizados
-### ferramenta: Jest
+### ferramenta: Vitest
 
 Como usamos a arquitetura MVC, há a Model, o Controller e a View.
 ### O que vai ser testado?
@@ -32,4 +32,4 @@ Vamos rodar todos os testes da integração contínua a cada push para o reposit
 O deploy para a main e posteriormente para a produção só deve ser realizado caso TODOS os testes unitários e da integração contínua passarem.
 O código deve ser refatorado para isso, não o teste mudado, a não ser, claro, que este tenha um erro que todos os desenvolvedores concordem.
 
-### Frequência: Toda Sprint
+### Frequência: Todo Pull Request aberto e push realizado
