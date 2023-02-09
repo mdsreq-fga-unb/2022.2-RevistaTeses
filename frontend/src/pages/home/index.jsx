@@ -48,6 +48,7 @@ const Home = () => {
   return (
     <div id="body">
       <Header />
+      {handleNews()}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const api = axios.create({
-    baseURL: "http://localhost:8000",
+    baseURL: "https://api-portal-teses.onrender.com",
     headers: {
         Accept: 'application/json',
         'Authorization': 'application/json',

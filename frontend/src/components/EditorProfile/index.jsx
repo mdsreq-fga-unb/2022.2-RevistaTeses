@@ -91,6 +91,7 @@ const EditorProfile = (props) => {
           onChange={(e) => setLead(e.target.value)}
           placeholder="Lead"
         />
+        
         <ReactQuill className="textForm" theme="snow" value={text} onChange={setText} placeholder="Digite algo..."/>
 
         <div onChange={(e) => setType(e.target.value)}>

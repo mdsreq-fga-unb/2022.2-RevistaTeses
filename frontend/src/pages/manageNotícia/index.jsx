@@ -7,7 +7,6 @@ import Header from "../../components/Header";
 import "./styles.css";
 
 const cookies = new Cookie();
-const token = cookies.get("Authorization");
 
 const ManageNoticias = () => {
   const [noticias, setNoticias] = useState([]);
@@ -29,8 +28,9 @@ const ManageNoticias = () => {
   }
   
   useEffect(() => {
+    const token = cookies.get("Authorization");
     api
-      .post("/news/findByUser", { token: token })
+    .post("/news/findByUser", { token: token })
       .then((res) => {
         setNoticias(res.data.news);
       })
